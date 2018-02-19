@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExercisesCsharp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            NcuN2(4);
+            var v = NcuN2(4);
+            Console.WriteLine(v);
             Console.ReadLine();
         }
         public static void NcuN(int n)
@@ -24,12 +25,14 @@ namespace ExercisesCsharp
                 Console.WriteLine("+");
             }
         }
-        public static void NcuN2(int n)
+        public static string NcuN2(int n)
         {
+            var r = string.Empty;
             for (int i = 0; i < n; i++)
             {
-                Console.WriteLine(new string('+', n));
+                r += (new string('+', n) + Environment.NewLine);
             }
+            return r.Trim();
         }
     }
 }

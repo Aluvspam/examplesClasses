@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{774990CE-33C3-4187-9211-4A5171CC190E}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleInheritance", "ExampleInheritance\ExampleInheritance.csproj", "{E1114F20-2F43-4FB2-A49B-3907658A19F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercisesCsharp", "ExercisesCsharp\ExercisesCsharp.csproj", "{5D3665FA-07AC-4743-A373-8BA17D4AFD3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercisesCsharpTests", "ExercisesCsharpTests\ExercisesCsharpTests.csproj", "{C8731CE8-C8B0-4538-870A-E1B0D01250D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5D3665FA-07AC-4743-A373-8BA17D4AFD3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D3665FA-07AC-4743-A373-8BA17D4AFD3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D3665FA-07AC-4743-A373-8BA17D4AFD3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
