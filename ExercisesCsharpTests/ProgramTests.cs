@@ -23,5 +23,14 @@ namespace ExercisesCsharp.Tests
             var v = Program.NcuN2(2);
             Assert.AreEqual(v, "++" + Environment.NewLine + "++");
         }
+
+        [TestMethod()]
+        public void FBTest()
+        {
+            Assert.AreEqual(Program.FB(11), "11");
+            Assert.AreEqual(Program.FB(24), "Fizz");
+            Assert.AreEqual(Program.FB(35), "Buzz");
+            Assert.AreEqual(Program.FB(60), "FizzBuzz");
+        }
     }
 }
