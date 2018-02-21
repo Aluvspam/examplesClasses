@@ -62,5 +62,36 @@ namespace ExercisesCsharp
             }
             return r.Trim();
         }
+
+        /* Să se scrie un program pentru rezolvarea sistemului de 2 ecuații de gradul 1 cu 2 necunoscute:
+        a0 * x + b0 * y = c0
+        a1 * x + b1 * y = c1
+        coeficienții a0 a1 b0 b1 c0 c1 fiind inițializați sau citiți de la tastatura;
+        hint:
+        x = ( c0 - b0 * y)/a0
+        a1*( c0 - b0 * y)/a0+b1*y = c1
+        y = (c1 - c0*a1/a0)/(b1-b0*a1/a0)
+        x = ( c0 - b0 * y)/a0        */
+        public static void Problema1()
+        {
+            Console.WriteLine("introduceti coeficientii");
+            Console.Write("a0 = ");
+            int a0 = int.Parse(Console.ReadLine());
+            Console.Write("a1 = ");
+            int a1 = int.Parse(Console.ReadLine());
+            Console.Write("b0 = ");
+            int b0 = int.Parse(Console.ReadLine());
+            Console.Write("b1 = ");
+            int b1 = int.Parse(Console.ReadLine());
+            Console.Write("c0 = ");
+            int c0 = int.Parse(Console.ReadLine());
+            Console.Write("c1 = ");
+            int c1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("solutiile sistemului de ecuatii \n {0}*x + {1}*y = {2}\n {3}*x + {4}*y = {5}  sunt", a0, b0, c0, a1, b1, c1);
+            double y = (c1 - (double)c0 * a1 / a0) / (b1 - (double)b0 * a1 / a0);
+            double x = (double)(c0 - b0 * y) / a0;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+        }
     }
 }
