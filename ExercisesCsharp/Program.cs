@@ -10,10 +10,38 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            var v = NcuN2(4);
-            Console.WriteLine(v);
-            Console.ReadLine();
+            
         }
+
+        public static string FB(int n)
+        {
+            string s = "";
+
+             if (n % 3 == 0 && n % 5 == 0)
+            {
+                s = "FizzBuzz";
+                return s;
+            }
+            else if (n % 5 == 0)
+            {
+                s = "Buzz";
+                return s;
+            }
+            else if (n % 3 == 0)
+            {
+                s = "Fizz";
+                return s;
+
+            }
+            else
+                return n.ToString();
+            
+
+
+        }
+
+
+
         public static void NcuN(int n)
         {
             for (int i = 0; i < n; i++)
