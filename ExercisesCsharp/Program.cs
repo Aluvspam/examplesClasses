@@ -35,9 +35,6 @@ namespace ExercisesCsharp
             }
             else
                 return n.ToString();
-            
-
-
         }
 
 
@@ -71,7 +68,8 @@ namespace ExercisesCsharp
         x = ( c0 - b0 * y)/a0
         a1*( c0 - b0 * y)/a0+b1*y = c1
         y = (c1 - c0*a1/a0)/(b1-b0*a1/a0)
-        x = ( c0 - b0 * y)/a0        */
+        x = ( c0 - b0 * y)/a0
+        */
         public static void Problema1()
         {
             Console.WriteLine("introduceti coeficientii");
