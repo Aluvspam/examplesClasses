@@ -74,11 +74,11 @@ namespace ExercisesCsharp
             {
                 s += "Fizz";
             }
-            else if (n % 5 == 0)
+            if (n % 5 == 0)
             {
                 s += "Buzz";
             }
-            else s += n;
+            else s = n.ToString();
                       
             return s;
         }
