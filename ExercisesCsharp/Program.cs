@@ -91,5 +91,22 @@ namespace ExercisesCsharp
             Console.WriteLine("x = " + x);
             Console.WriteLine("y = " + y);
         }
+
+        public static string FB(int n)
+        {
+            string s = "";
+
+            if (n % 3 == 0)
+            {
+                s += "Fizz";
+            }
+            else if (n % 5 == 0)
+            {
+                s += "Buzz";
+            }
+            else s += n;
+                      
+            return s;
+        }
     }
 }
