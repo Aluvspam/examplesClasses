@@ -10,10 +10,35 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            var v = NcuN2(4);
-            Console.WriteLine(v);
-            Console.ReadLine();
+            
         }
+
+        public static string FB(int n)
+        {
+            string s = "";
+
+             if (n % 3 == 0 && n % 5 == 0)
+            {
+                s = "FizzBuzz";
+                return s;
+            }
+            else if (n % 5 == 0)
+            {
+                s = "Buzz";
+                return s;
+            }
+            else if (n % 3 == 0)
+            {
+                s = "Fizz";
+                return s;
+
+            }
+            else
+                return n.ToString();
+        }
+
+
+
         public static void NcuN(int n)
         {
             for (int i = 0; i < n; i++)
@@ -43,7 +68,8 @@ namespace ExercisesCsharp
         x = ( c0 - b0 * y)/a0
         a1*( c0 - b0 * y)/a0+b1*y = c1
         y = (c1 - c0*a1/a0)/(b1-b0*a1/a0)
-        x = ( c0 - b0 * y)/a0        */
+        x = ( c0 - b0 * y)/a0
+        */
         public static void Problema1()
         {
             Console.WriteLine("introduceti coeficientii");
@@ -74,11 +100,11 @@ namespace ExercisesCsharp
             {
                 s += "Fizz";
             }
-            if (n % 5 == 0)
+            else if (n % 5 == 0)
             {
                 s += "Buzz";
             }
-            else s = n.ToString();
+            else s += n;
                       
             return s;
         }
