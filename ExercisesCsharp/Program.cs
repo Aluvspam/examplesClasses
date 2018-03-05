@@ -92,7 +92,7 @@ namespace ExercisesCsharp
             Console.WriteLine("y = " + y);
         }
 
-        public static string FB(int n)
+        public static string FB2(int n)
         {
             string s = "";
 
