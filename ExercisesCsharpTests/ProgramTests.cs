@@ -35,9 +35,8 @@ namespace ExercisesCsharp.Tests
         [TestMethod()]
         public void DingleMouseOne()
         {
-            Assert.AreEqual(new int[] { 1, 15, 15 }, Dinglemouse.humanYearsCatYearsDogYears(1));
-            
-               
+            //Assert.AreEqual(new int[] { 1, 15, 15 }, Dinglemouse.humanYearsCatYearsDogYears(1));
+            Assert.IsTrue((new int[] { 1, 15, 15 }).SequenceEqual(Dinglemouse.humanYearsCatYearsDogYears(1)));
         }
     }
 }
