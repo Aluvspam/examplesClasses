@@ -32,5 +32,11 @@ namespace ExercisesCsharp.Tests
             Assert.AreEqual(Program.FB(35), "Buzz");
             Assert.AreEqual(Program.FB(60), "FizzBuzz");
         }
+        [TestMethod()]
+        public void DingleMouseOne()
+        {
+            //Assert.AreEqual(new int[] { 1, 15, 15 }, Dinglemouse.humanYearsCatYearsDogYears(1));
+            Assert.IsTrue((new int[] { 1, 15, 15 }).SequenceEqual(Dinglemouse.humanYearsCatYearsDogYears(1)));
+        }
     }
 }

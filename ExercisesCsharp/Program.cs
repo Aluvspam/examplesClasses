@@ -10,7 +10,7 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            
+            Console.WriteLine(string.Join(" ",Dinglemouse.humanYearsCatYearsDogYears(1)));
         }
 
         public static string FB(int n)
