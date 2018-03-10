@@ -10,14 +10,21 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(string.Join(" ",Dinglemouse.humanYearsCatYearsDogYears(1)));
+            var s = ExampleSum(7, 5);
+            var s3 = ExampleSum(14, 11, 9);
+            Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+        }
+
+        private static int ExampleSum(int x, int y, int z = 0)
+        {
+            return x + y + z;
         }
 
         public static string FB(int n)
         {
             string s = "";
 
-             if (n % 3 == 0 && n % 5 == 0)
+            if (n % 3 == 0 && n % 5 == 0)
             {
                 s = "FizzBuzz";
                 return s;
@@ -105,7 +112,7 @@ namespace ExercisesCsharp
                 s += "Buzz";
             }
             else s += n;
-                      
+
             return s;
         }
     }
