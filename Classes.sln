@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercisesCsharp", "Exercise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercisesCsharpTests", "ExercisesCsharpTests\ExercisesCsharpTests.csproj", "{C8731CE8-C8B0-4538-870A-E1B0D01250D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArgs", "TestArgs\TestArgs.csproj", "{C3BCC7C4-ADE6-40B8-B327-DFF74B425E66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8731CE8-C8B0-4538-870A-E1B0D01250D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3BCC7C4-ADE6-40B8-B327-DFF74B425E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3BCC7C4-ADE6-40B8-B327-DFF74B425E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3BCC7C4-ADE6-40B8-B327-DFF74B425E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3BCC7C4-ADE6-40B8-B327-DFF74B425E66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
