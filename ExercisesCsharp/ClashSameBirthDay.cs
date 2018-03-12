@@ -12,13 +12,7 @@ namespace ExercisesCsharp
 
     class ClashSameBirthDay
     {
-        static void Main(string[] args)
-        {
-
-            Console.WriteLine(Proby(30));
-            Console.ReadLine();
-        }
-
+      
         public static double Proby(int N)
         {
             if (N == 1)
