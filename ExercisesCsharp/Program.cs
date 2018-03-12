@@ -4,15 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ExercisesCsharp
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("answer");
             var s = ExampleSum(7, 5);
             var s3 = ExampleSum(14, 11, 9);
             Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+        }
+        public int AsciiSum(string S)
+        {
+            // Write an action using Console.WriteLine()
+            // To debug: Console.Error.WriteLine("Debug messages...");
+            int sum = 0;
+
+            foreach (char item in S)
+            {
+                sum += (int)item;
+            }
+            return sum;
         }
 
         private static int ExampleSum(int x, int y, int z = 0)
