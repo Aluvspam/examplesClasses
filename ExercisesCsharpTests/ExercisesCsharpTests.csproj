@@ -51,6 +51,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Clash.cs" />
+    <Compile Include="DinglemouseRecursiveTests.cs" />
     <Compile Include="ProgramTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
