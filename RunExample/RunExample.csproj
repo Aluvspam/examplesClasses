@@ -59,6 +59,10 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Solid Examples\Solid Examples.csproj">
+      <Project>{4838f67c-047e-4659-b1bd-fbb48e324fa1}</Project>
+      <Name>Solid Examples</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
