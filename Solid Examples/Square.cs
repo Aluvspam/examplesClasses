@@ -8,6 +8,16 @@ namespace Solid_Examples
 {
     public class Square : Rectangle
     {
-
+      public double Line
+        {
+            get
+            {
+                return Line;
+            }
+            set
+            {
+                Line = value;
+            }
+        }
     }
 }
