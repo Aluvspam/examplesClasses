@@ -8,6 +8,18 @@ namespace Solid_Examples
 {
     public class Square : Rectangle
     {
+        private double sideLine;
 
+        public double SideLine
+        {
+            get
+            {
+                return sideLine;
+            }
+            set
+            {
+                sideLine = value;
+            }
+        }
     }
 }
