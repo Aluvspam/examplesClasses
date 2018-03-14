@@ -9,7 +9,6 @@ namespace Solid_Examples
     public class Square : Rectangle
     {
         private double sideLine;
-
         public double SideLine
         {
             get
