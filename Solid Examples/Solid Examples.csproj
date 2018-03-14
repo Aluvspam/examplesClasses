@@ -45,6 +45,7 @@
     <Compile Include="SquareCristi.cs" />
     <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
+    <Compile Include="SquareLuana.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
