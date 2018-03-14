@@ -26,7 +26,7 @@ namespace DingleMouse.Tests
         [TestMethod()]
         public void humanYearsCatYearsDogYearsTest()
         {
-            Assert.IsTrue((new int[] {  , 28, 29 }).SequenceEqual(DinglemouseRecursive.humanYearsCatYearsDogYears(3)));
+            Assert.IsTrue((new int[] {  3, 28, 29 }).SequenceEqual(DinglemouseRecursive.humanYearsCatYearsDogYears(3)));
         }
     }
 }

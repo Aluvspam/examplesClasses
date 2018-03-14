@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class Square : Rectangle
+    public class SquareGaby: Rectangle
     {
-        private double sideLine;
-        public double SideLine
+        private double line;
+
+        public double Line
         {
             get
             {
-                return sideLine;
+                return line;
             }
             set
             {
-                sideLine = value;
+                line = value;
             }
         }
     }
