@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class Square : Rectangle
+    public class SquareDan : Rectangle
     {
-      public double Line
+        public double line
+        public double Line
         {
             get
             {
-                return Line;
+                return line;
             }
             set
             {
-                Line = value;
+                line = value;
             }
         }
     }
