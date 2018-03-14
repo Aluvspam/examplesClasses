@@ -8,7 +8,7 @@ namespace Solid_Examples
 {
     public class SquareDan : Rectangle
     {
-        public double line
+        public double line;
         public double Line
         {
             get
