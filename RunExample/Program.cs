@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary1;
+using Solid_Examples;
 
 namespace RunExample
 {
@@ -11,6 +12,9 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            new Copy().CopyIt();
+            Console.ReadLine();
+            //old examples below
             var schoolAddress = new Address("Bucuresti", "Mihai Eminescu", "19-21");
             var andrei = new Student("AndreiRoca", new DateTime(1991, 1, 5), schoolAddress);
             andrei.Sex = Sex.male;
