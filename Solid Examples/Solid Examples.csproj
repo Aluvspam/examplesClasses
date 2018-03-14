@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
