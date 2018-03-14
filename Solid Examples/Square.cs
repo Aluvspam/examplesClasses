@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class Square : Rectangle
+    public class Square: Rectangle
     {
+        private double line;
 
+        public double Line
+        {
+            get
+            {
+                return line;
+            }
+            set
+            {
+                line = value;
+            }
+        }
     }
 }
