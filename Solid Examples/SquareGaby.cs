@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class Square: Rectangle
+    public class SquareGaby: Rectangle
     {
         private double line;
 
