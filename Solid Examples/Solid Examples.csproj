@@ -48,6 +48,7 @@
     <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
+    <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
   </ItemGroup>
