@@ -3,20 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace WinformWriteDana
 {
-    class WriteDana
+    public class WriteDana
     {
         public void WriteIt(string text)
         {
-
             for (int i = 1; i <= 7; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.Write(" {0} {1} {2} ", '\u263c', text.ToUpper(), '\u263A');
+                    Console.Write(" {0} {1} {2} ", '\u263c', text.ToUpper(), '\u263c');
+                }
+                Console.WriteLine();
+            }
+            for (int i = 7; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(" {0} {1} {2} ", '\u2663', text.ToUpper(), '\u2663');
                 }
                 Console.WriteLine();
             }

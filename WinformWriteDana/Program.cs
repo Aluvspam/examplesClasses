@@ -14,6 +14,9 @@ namespace WinformWriteDana
         [STAThread]
         static void Main()
         {
+            //new Copy().CopyIT();
+            //new ReadKeyboard().ReadIt();
+            Console.ReadLine();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
