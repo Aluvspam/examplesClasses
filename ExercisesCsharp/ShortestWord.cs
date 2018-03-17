@@ -7,21 +7,21 @@ namespace ExercisesCsharp
 
     public class ShortestWord
     {
-        public static int FindShort(string s)
-        {
-            string[] words = s.Split(" ");
-            int shortestWord = Int32.MaxValue;
+        //public static int FindShort(string s)
+        //{
+            //string[] words = s.Split(" ");
+            //int shortestWord = Int32.MaxValue;
 
-            foreach (String w in words)
-            {
-                if (w.Length < shortestWord)
-                {
-                    shortestWord = w.Length;
-                }
-            }
+            //foreach (String w in words)
+            //{
+            //    if (w.Length < shortestWord)
+            //    {
+            //        shortestWord = w.Length;
+            //    }
+            //}
 
-            return shortestWord;
+            //return shortestWord;
 
-        }
+       // }
     }
 }

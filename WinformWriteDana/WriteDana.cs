@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solid_Examples
+namespace WinformWriteDana
 {
     class WriteDana
     {
-
         public void WriteIt(string text)
         {
 

@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Solid_Examples
+namespace WinformWriteDana
 {
-    public partial class WriteDanaWinforms : Form
+    public partial class Form1 : Form
     {
-        WriteScreen my = new WriteScreen();
+        WriteDana my = new WriteDana();
         StringBuilder strTriangle = new StringBuilder();
-        public WriteDanaWinforms()
+        public Form1()
         {
             InitializeComponent();
             my.WriteIt("Peace");
+            WriteForm();
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             BackColor = Color.RoyalBlue;
-            WriteForm();
         }
         public void WriteForm()
         {
@@ -44,8 +44,8 @@ namespace Solid_Examples
         private void lblTriangle_Click(object sender, EventArgs e)
         {
             lblTriangle.Text = strTriangle.ToString();
-            //lblTriangles.Text = my.ToString();
+            //lblTriangle.Text = my.ToString();
+            
         }
     }
 }
-
