@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary1;
 using Solid_Examples;
+using System.Windows;
 
 namespace RunExample
 {

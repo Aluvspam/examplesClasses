@@ -49,6 +49,7 @@
     <Compile Include="ClashSameBirthDay.cs" />
     <Compile Include="Dinglemouse.cs" />
     <Compile Include="DingleMouseByOana.cs" />
+    <Compile Include="ShortestWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
