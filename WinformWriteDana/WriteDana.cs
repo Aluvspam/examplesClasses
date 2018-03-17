@@ -15,7 +15,7 @@ namespace WinformWriteDana
             {
                 for (int j = 1; j <= i; j++)
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.Write(" {0} {1} {2} ", '\u263c', text.ToUpper(), '\u263A');
                 }
                 Console.WriteLine();

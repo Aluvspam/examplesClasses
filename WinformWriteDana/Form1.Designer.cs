@@ -36,9 +36,9 @@
             this.lblTriangle.BackColor = System.Drawing.Color.PapayaWhip;
             this.lblTriangle.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTriangle.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblTriangle.Location = new System.Drawing.Point(12, 373);
+            this.lblTriangle.Location = new System.Drawing.Point(12, 9);
             this.lblTriangle.Name = "lblTriangle";
-            this.lblTriangle.Size = new System.Drawing.Size(571, 120);
+            this.lblTriangle.Size = new System.Drawing.Size(571, 484);
             this.lblTriangle.TabIndex = 0;
             this.lblTriangle.Text = "Start";
             this.lblTriangle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -48,6 +48,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkBlue;
             this.ClientSize = new System.Drawing.Size(595, 492);
             this.Controls.Add(this.lblTriangle);
             this.Name = "Form1";

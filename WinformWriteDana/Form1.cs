@@ -22,7 +22,7 @@ namespace WinformWriteDana
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            BackColor = Color.RoyalBlue;
+            BackColor = Color.DarkBlue;
         }
         public void WriteForm()
         {
