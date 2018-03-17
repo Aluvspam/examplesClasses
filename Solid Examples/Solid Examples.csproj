@@ -32,6 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,8 +51,20 @@
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
     <Compile Include="WriteAndreiR.cs" />
+    <Compile Include="WriteDana.cs" />
+    <Compile Include="WriteDanaWinforms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteDanaWinforms.Designer.cs">
+      <DependentUpon>WriteDanaWinforms.cs</DependentUpon>
+    </Compile>
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WriteDanaWinforms.resx">
+      <DependentUpon>WriteDanaWinforms.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
