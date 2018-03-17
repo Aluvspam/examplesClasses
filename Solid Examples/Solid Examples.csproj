@@ -54,6 +54,7 @@
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
     <Compile Include="WriteAndreiR.cs" />
+    <Compile Include="WriteDaniel.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
   </ItemGroup>
