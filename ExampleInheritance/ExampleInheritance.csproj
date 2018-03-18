@@ -50,6 +50,7 @@
     <Compile Include="ArmyUnit.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
+    <Compile Include="Game\Helicopter.cs" />
     <Compile Include="Game\Marine.cs" />
     <Compile Include="Game\MissileLauncher.cs" />
     <Compile Include="Game\ModernTank.cs" />
