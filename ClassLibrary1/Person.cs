@@ -16,6 +16,10 @@ namespace ClassLibrary1
             Address = address;
         }
 
+        public Person()
+        {
+        }
+
         public void ChangeAddress(Address newAddress)
         {
             Address = newAddress;
