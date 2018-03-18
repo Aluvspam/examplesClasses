@@ -16,7 +16,8 @@ namespace Solid_Examples.Game
             Location = location;
             HitPoint = hp;
             Damage = dmg;
-            Crew = new Person[crewSize];
+            Crew = list<Person>;
+            Crew.Add();
         }
         public abstract void InitCrew();
     }
