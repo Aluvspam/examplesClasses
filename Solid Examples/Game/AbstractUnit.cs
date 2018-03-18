@@ -10,7 +10,7 @@ namespace Solid_Examples.Game
         public int Damage;
         public int RateOfFire;//time between 2 consecutive hits in miliseconds
         public Point[] Location;
-        private List<Person> crew = new List<Person>;
+        private List<Person> crew = new List<Person>();
         private int crewIndex;
 		int crewSize = -1;
 
