@@ -1,4 +1,5 @@
-﻿using ClassLibrary1;
+﻿//varianta A
+using ClassLibrary1;
 
 namespace Solid_Examples.Game
 {
