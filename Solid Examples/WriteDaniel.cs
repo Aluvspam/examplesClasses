@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    class WriteDaniel
+    public class WriteDaniel : IWrite
     {
-        public string WriteIt(string text)
+        public void WriteIt(string text)
         {
             char[] cArray = text.ToCharArray();
             string Reverse = String.Empty;
@@ -16,7 +16,8 @@ namespace Solid_Examples
             {
                 Reverse += cArray[i];
             }
-            return Reverse;
+            Console.WriteLine(Reverse);
+            //return Reverse;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class WriteScreen
+    public class WriteScreen : IWrite
     {
         public void WriteIt(string text)
         {

@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Copy.cs" />
+    <Compile Include="DanasWrite.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
     <Compile Include="Game\Helicopter.cs" />
@@ -54,6 +55,8 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
+    <Compile Include="IRead.cs" />
+    <Compile Include="IWrite.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,6 +65,7 @@
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
     <Compile Include="WriteAndreiR.cs" />
+    <Compile Include="WriteCristi.cs" />
     <Compile Include="WriteDaniel.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
@@ -71,6 +75,13 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WinformWriteDana\WinformWriteDana.csproj">
+      <Project>{def701e6-067f-4326-9070-0508bba9321b}</Project>
+      <Name>WinformWriteDana</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
