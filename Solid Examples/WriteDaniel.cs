@@ -12,7 +12,7 @@ namespace Solid_Examples
         {
             char[] cArray = text.ToCharArray();
             string Reverse = String.Empty;
-            for (int i = cArray.Length - 1; i < -1; i--)
+            for (int i = cArray.Length - 1; i > -1; i--)
             {
                 Reverse += cArray[i];
             }
