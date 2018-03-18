@@ -16,7 +16,7 @@ namespace Solid_Examples
                 string after = "=-";
                 Console.WriteLine("Please enter yout text here...");
                 string text = Console.ReadLine();
-                Console.Write(before + " " + text + " " + after);
+                Console.Write(before + text + after);
                 Console.ReadLine();
             }
         }

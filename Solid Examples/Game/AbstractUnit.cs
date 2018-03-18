@@ -16,7 +16,6 @@ namespace Solid_Examples.Game
 
         public AbstractUnit(Point[] location, int hp, int dmg, int crewSize = -1)
         {
-            crew.add
             Location = location;
             HitPoint = hp;
             Damage = dmg;
