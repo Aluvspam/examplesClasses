@@ -14,7 +14,7 @@ namespace Solid_Examples.Game
         private List<Person> crew;
         private int crewIndex;
 
-        public AbstractUnit(Point[] location, int hp, int dmg, int crewSize)
+        public AbstractUnit(Point[] location, int hp, int dmg, int crewSize = -1)
         {
             Location = location;
             HitPoint = hp;
@@ -25,9 +25,7 @@ namespace Solid_Examples.Game
         public abstract void InitCrew();
         protected void AddCrewMember(Person p)
         {
-            crew[crewIndex] = crew.Add(new Person());
-            crewIndex++;
-
+            crew.Add(p);
         }
     }
 }
