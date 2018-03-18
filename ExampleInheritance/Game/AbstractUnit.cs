@@ -19,9 +19,6 @@ namespace Solid_Examples.Game
             Damage = dmg;
             crew = new List<Person>();
         }
-        public abstract void InitCrew()
-        {
-            crew.Add(new Person());
-        }
+        public abstract void InitCrew();
     }
 }
