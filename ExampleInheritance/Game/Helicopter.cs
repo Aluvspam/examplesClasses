@@ -13,10 +13,10 @@ namespace Solid_Examples.Game
 
         public override void InitCrew()
         {
-            Crew[0] = (new Person("Captain", DateTime.Now, null));
-            Crew[1] = (new Person("Gunner", DateTime.Now, null));
-            Crew[2] = (new Person("Gunner2", DateTime.Now, null));
-            Crew[3] = (new Person("1stOfficer", DateTime.Now, null));
+            crew.Add(new Person("Captain", DateTime.Now, null));
+            crew.Add(new Person("Gunner", DateTime.Now, null));
+            crew.Add(new Person("Gunner2", DateTime.Now, null));
+            crew.Add(new Person("1stOfficer", DateTime.Now, null));
         }
     }
 }
