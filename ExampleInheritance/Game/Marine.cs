@@ -12,7 +12,7 @@ namespace Solid_Examples.Game
 
         public override void InitCrew()
         {
-            Crew[0] = new ClassLibrary1.Person("Marine", DateTime.Now, null);
+            Crew.Add(new ClassLibrary1.Person("Marine", DateTime.Now, null));
         }
     }
 }

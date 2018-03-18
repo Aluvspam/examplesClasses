@@ -1,5 +1,6 @@
 ﻿//varianta A
 using ClassLibrary1;
+using System.Collections.Generic;
 
 namespace Solid_Examples.Game
 {
@@ -9,14 +10,14 @@ namespace Solid_Examples.Game
         public int Damage;
         public int RateOfFire;//time between 2 consecutive hits in miliseconds
         public Point[] Location;
-        public Person[] Crew;
+        public List<Person> Crew;
 
-        public AbstractUnit(Point[] location, int hp, int dmg, int crewSize)
+        public AbstractUnit(Point[] location, int hp, int dmg, int crewSize = -1)
         {
             Location = location;
             HitPoint = hp;
             Damage = dmg;
-            Crew = new Person[crewSize];
+            Crew = new List<Person>();
         }
         public abstract void InitCrew();
     }
