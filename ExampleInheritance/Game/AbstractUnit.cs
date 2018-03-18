@@ -1,5 +1,6 @@
 ﻿//varianta A
 using ClassLibrary1;
+using System.Collections.Generic;
 
 namespace Solid_Examples.Game
 {
