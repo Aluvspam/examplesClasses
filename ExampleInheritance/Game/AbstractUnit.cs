@@ -12,7 +12,7 @@ namespace Solid_Examples.Game
         public Point[] Location;
         public List<Person> Crew;
 
-        public AbstractUnit(Point[] location, int hp, int dmg, int crewSize)
+        public AbstractUnit(Point[] location, int hp, int dmg, int crewSize = -1)
         {
             Location = location;
             HitPoint = hp;
