@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArmyUnit.cs" />
+    <Compile Include="Game\AbstractUnit.cs" />
+    <Compile Include="Game\Marine.cs" />
+    <Compile Include="Game\MissileLauncher.cs" />
+    <Compile Include="Game\ModernTank.cs" />
+    <Compile Include="Game\Point.cs" />
+    <Compile Include="Game\Tank.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Soldier.cs" />
@@ -55,6 +61,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
