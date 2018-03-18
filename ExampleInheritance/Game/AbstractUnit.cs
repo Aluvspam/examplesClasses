@@ -12,16 +12,13 @@ namespace Solid_Examples.Game
         public Point[] Location;
         public List<Person> crew;
 
-        public AbstractUnit(Point[] location, int hp, int dmg)
+        public AbstractUnit(Point[] location, int hp, int dmg, int deprecatedParam = -1)
         {
             Location = location;
             HitPoint = hp;
             Damage = dmg;
             crew = new List<Person>();
         }
-        public abstract void InitCrew()
-        {
-            crew.Add(new Person());
-        }
+        public abstract void InitCrew();
     }
 }
