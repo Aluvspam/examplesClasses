@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ExercisesCsharp
+﻿namespace ExercisesCsharp
 {
     /*Your program must output the probability that at least two persons in a group have their birthday on the same day.
       The year is assumed to have 365 days and no person in the group is born on a February 29th.

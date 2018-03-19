@@ -15,14 +15,14 @@ namespace WinformWriteDana
         WriteDana my = new WriteDana();
         StringBuilder strTriangle = new StringBuilder();
         public Form1()
-        {
-            InitializeComponent();
-            my.WriteIt("Peace");
+        {   InitializeComponent();
             WriteForm();
+            my.WriteIt("Peace");
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             BackColor = Color.DarkBlue;
+            WriteForm();
         }
         public void WriteForm()
         {
@@ -36,7 +36,7 @@ namespace WinformWriteDana
             for (int i = 1; i <= n; i++)
             {
                 for (int j = 1; j <= i; j++)
-                    strTriangle.Append('\u263a');
+                    strTriangle.Append('\u269c');
                 strTriangle.AppendLine();
             }
             strTriangle.AppendLine();
@@ -45,7 +45,7 @@ namespace WinformWriteDana
         {
             lblTriangle.Text = strTriangle.ToString();
             //lblTriangle.Text = my.ToString();
-            
+          
         }
     }
 }

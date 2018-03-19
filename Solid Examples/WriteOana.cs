@@ -2,7 +2,7 @@
 
 namespace Solid_Examples
 {
-    public class WriteOana
+    public class WriteOana :IWrite
     {
         public void WriteIt(string text)
         {
