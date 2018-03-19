@@ -11,6 +11,7 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+            DanProblem.Execute();
             Console.WriteLine("answer");
             var s = ExampleSum(7, 5);
             var s3 = ExampleSum(14, 11, 9);
