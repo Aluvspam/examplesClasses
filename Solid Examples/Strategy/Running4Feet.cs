@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.AndreiR
 {
-    public class World: IMove
+    class Running4Feet : IMoveStrategy
     {
-        string color;
-        string sex;
-
-        public void Move( World animal)
+        public void Move()
         {
-            Move();
+            Console.WriteLine("I run fast on all my 4 feet");
         }
-
     }
 }

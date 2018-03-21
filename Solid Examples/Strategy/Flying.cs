@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.AndreiR
 {
-    public class Dog : IMove
+    public class Flying : IMoveStrategy
     {
         public void Move()
         {
-            Console.WriteLine("walk on 4 legs");
+            Console.WriteLine("I fly!");
         }
     }
 }

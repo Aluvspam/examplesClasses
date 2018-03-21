@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.AndreiR
 {
-   public class Bird: IMove
+    public class Bird
     {
         string name = "Bird";
+        IMoveStrategy moveStrategy = new Flying();
         public void Move()
         {
-            Console.WriteLine("I am a {0} and I fly", name);
+            Console.Write("I am a {0}", name);
+            moveStrategy.Move();
         }
     }
 }
