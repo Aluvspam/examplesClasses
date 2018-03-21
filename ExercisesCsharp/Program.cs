@@ -15,6 +15,30 @@ namespace ExercisesCsharp
             var s3 = ExampleSum(14, 11, 9);
             Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
         }
+        public static string[] Wave(string str)
+        {
+            string[] arr = new string[str.Length];
+            if (str == string.Empty)
+            {
+                arr = new string[1];
+                arr[0] = "'";
+            }
+            else
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    {
+                        char c = str[i];
+                        string d = c.ToString().ToUpper();
+                        char e = char.Parse(d);
+                        arr[i] = str.Replace(c, e);// imi schimba toate valorile din caracterul respectiv
+
+                    }
+                }
+            }
+
+            return arr;
+        }
         public int AsciiSum(string S)
         {
             // Write an action using Console.WriteLine()
