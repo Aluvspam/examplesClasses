@@ -7,18 +7,21 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            DanProblem.Execute();
-            Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
+            //DanProblem.Execute();
+            //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
+            //Console.ReadLine();
+            //Console.WriteLine("answer");
+            //var s = ExampleSum(7, 5);
+            //var s3 = ExampleSum(14, 11, 9);
+            //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+            Console.WriteLine(string.Join(" ", Wave("Andrei")));
             Console.ReadLine();
-            Console.WriteLine("answer");
-            var s = ExampleSum(7, 5);
-            var s3 = ExampleSum(14, 11, 9);
-            Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
         }
         public static string[] Wave(string str)
         {
-            string[] arr = new string[str.Length];
-            if (str == string.Empty)
+            string Str = str.ToLower();
+            string[] arr = new string[Str.Length];
+            if (Str == string.Empty)
             {
                 arr = new string[1];
                 arr[0] = "'";
@@ -28,10 +31,10 @@ namespace ExercisesCsharp
                 for (int i = 0; i < arr.Length; i++)
                 {
                     {
-                        char c = str[i];
+                        char c = Str[i];
                         string d = c.ToString().ToUpper();
                         char e = char.Parse(d);
-                        arr[i] = str.Replace(c, e);// imi schimba toate valorile din caracterul respectiv
+                        arr[i] = Str.Replace(c, e);// imi schimba toate valorile din caracterul respectiv
 
                     }
                 }
