@@ -58,7 +58,7 @@
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
     <Compile Include="AnimalDaniel\IMove.cs" />
-    <Compile Include="AnimalDaniel\InterfaceDaniel.cs" />
+    <Compile Include="AnimalDaniel\World.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

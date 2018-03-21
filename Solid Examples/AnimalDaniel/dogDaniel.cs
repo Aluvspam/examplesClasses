@@ -7,11 +7,10 @@ namespace Solid_Examples
 {
     public class dogDaniel : IMove
     {
-        string dog = new dogDaniel;
-
+        string name = "dog";
         public void Move()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("I walk on 4 legs", name); 
         }
     }
 }
