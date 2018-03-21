@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 
 namespace ExercisesCsharp
 {
@@ -40,7 +40,7 @@ namespace ExercisesCsharp
                     }
                 }
             }
-            return arr;
+            return arr.ToList();
         }
         public int AsciiSum(string S)
         {
