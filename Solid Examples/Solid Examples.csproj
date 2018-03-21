@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndreiR\Bird.cs" />
+    <Compile Include="AndreiR\Dog.cs" />
+    <Compile Include="AndreiR\IMove.cs" />
+    <Compile Include="AndreiR\World.cs" />
     <Compile Include="Copy.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
