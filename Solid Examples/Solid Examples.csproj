@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AClass.cs" />
+    <Compile Include="B1.cs" />
+    <Compile Include="B2.cs" />
     <Compile Include="Copy.cs" />
     <Compile Include="DanasWrite.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
