@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 
 namespace ExercisesCsharp
@@ -17,7 +18,7 @@ namespace ExercisesCsharp
             Console.WriteLine(string.Join(" ", Wave("Andrei")));
             Console.ReadLine();
         }
-        public static string[] Wave(string str)
+        public static List<string> Wave(string str)
         {
             string Str = str.ToLower();
             string[] arr = new string[Str.Length];
@@ -39,7 +40,6 @@ namespace ExercisesCsharp
                     }
                 }
             }
-
             return arr;
         }
         public int AsciiSum(string S)
