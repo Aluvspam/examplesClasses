@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Solid_Examples
 {
-    public interface IMove: InterfaceDaniel
+    public interface IMove
     {
         void Move();
     }

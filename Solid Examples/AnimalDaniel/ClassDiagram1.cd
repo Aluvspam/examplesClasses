@@ -4,7 +4,7 @@
     <Position X="4" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>birdDaniel.cs</FileName>
+      <FileName>AnimalDaniel\birdDaniel.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -12,7 +12,7 @@
     <Position X="6" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>dogDaniel.cs</FileName>
+      <FileName>AnimalDaniel\dogDaniel.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>

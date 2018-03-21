@@ -45,10 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="birdDaniel.cs" />
+    <Compile Include="AnimalDaniel\birdDaniel.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Copy.cs" />
-    <Compile Include="dogDaniel.cs" />
+    <Compile Include="AnimalDaniel\dogDaniel.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
     <Compile Include="Game\Helicopter.cs" />
@@ -57,8 +57,8 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
-    <Compile Include="IMove.cs" />
-    <Compile Include="InterfaceDaniel.cs" />
+    <Compile Include="AnimalDaniel\IMove.cs" />
+    <Compile Include="AnimalDaniel\InterfaceDaniel.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +78,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="AnimalDaniel\ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
