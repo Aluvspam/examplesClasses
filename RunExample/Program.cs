@@ -10,6 +10,7 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            Decorator.Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();

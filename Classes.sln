@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{774990CE-33C3-4187-9211-4A5171CC190E}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid ExamplesTests", "Solid ExamplesTests\Solid ExamplesTests.csproj", "{3934F433-5124-4AFE-B902-E3DB291E8049}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformWriteDana", "WinformWriteDana\WinformWriteDana.csproj", "{DEF701E6-067F-4326-9070-0508BBA9321B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Solid Examples\Decorator\Decorator\Decorator.csproj", "{6DF09AED-4430-4550-80C4-3DAE4157337A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{DEF701E6-067F-4326-9070-0508BBA9321B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEF701E6-067F-4326-9070-0508BBA9321B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEF701E6-067F-4326-9070-0508BBA9321B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
