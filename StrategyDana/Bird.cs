@@ -8,11 +8,13 @@ namespace StrategyDana
 {
     class Bird
     {
-         string colour;
-        string wait;
-        public Move()
+        string name = "Bird";
+        IMoveStrategy moveStrategy = new Flying();
+        public void Move()
         {
-            Console.WriteLine();
+            Console.Write("I am a {0}", name);
+            moveStrategy.Move();
         }
+
     }
 }
