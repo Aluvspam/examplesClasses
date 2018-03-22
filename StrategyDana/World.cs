@@ -6,22 +6,27 @@ using System.Threading.Tasks;
 
 namespace StrategyDana
 {
-    class World
+    public class World
     {
-        string colour;
-        string sex;
-
-        IMove myPet;
-        public World(IMove Something)
-        {
-            Dog = dog;
-            Cat = cat;
-
-        }
         public void execute()
-            {
-            myPet.Move;
-            }
-        
+        {
+            var b = new Bird();
+            var d = new Dog();
+            var d2 = new Drone();
+            //object[] things= new object[3] { b, d, d2 };
+            //foreach (var thing in things)
+            //{
+            //    thing.
+            //}
+            //TO DO: create an abstract class that is implemented by Bird, Dog 
+            //and Drone classes and move all common code from these classes in that
+            //abstract class. fix the foreach loop above and uncomment it. erase this
+            //text after fixing
+            b.Move();
+            d.Move();
+            d2.Move();
+        }
+
+
     }
 }
