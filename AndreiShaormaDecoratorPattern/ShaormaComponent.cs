@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AndreiShaormaDecoratorPattern
 {
-    public class Class1
+    abstract class ShaormaComponent
     {
+        public abstract string GetName();
+        public abstract double GetPrice();
     }
 }

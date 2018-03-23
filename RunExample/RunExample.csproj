@@ -59,6 +59,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AndreiShaormaDecoratorPattern\AndreiShaormaDecoratorPattern.csproj">
+      <Project>{a5982945-dd8d-4721-a96f-9e43887acc46}</Project>
+      <Name>AndreiShaormaDecoratorPattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>

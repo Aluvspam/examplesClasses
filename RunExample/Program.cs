@@ -4,12 +4,17 @@ using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
 
+
+
 namespace RunExample
 {
     class Program
     {
         static void Main(string[] args)
         {
+            //my Shaorma a la Andrei
+            
+            Console.ReadLine();
             Decorator.Run.Execute();
             var world = new World();
             world.execute();
