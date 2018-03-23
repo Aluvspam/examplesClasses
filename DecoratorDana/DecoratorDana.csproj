@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheeseDecorator.cs" />
+    <Compile Include="Decorator.cs" />
+    <Compile Include="PizzaDough.cs" />
+    <Compile Include="HawayDecorator.cs" />
+    <Compile Include="NameCardDecorator.cs" />
+    <Compile Include="PizzaComponent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Run.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
