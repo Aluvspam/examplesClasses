@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace AndreiShaormaDecoratorPattern
 {
-    public abstract class ShaormaComponent
+    class CeapaDecorator : ShaormaDecorator
     {
-        public abstract string GetName();
-        public abstract double GetPrice();
+        public CeapaDecorator(ShaormaComponent shaormaComponent) : base(shaormaComponent)
+        {
+        }
     }
 }

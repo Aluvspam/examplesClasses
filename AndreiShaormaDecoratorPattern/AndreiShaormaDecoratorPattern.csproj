@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,13 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CastravetiMuratiDecorator.cs" />
+    <Compile Include="CeapaDecorator.cs" />
     <Compile Include="ComandaRun.cs" />
     <Compile Include="LaFarfurieBase.cs" />
     <Compile Include="PuiDecorator.cs" />
+    <Compile Include="RosiiDecorator.cs" />
     <Compile Include="ShaormaComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShaormaDecorator.cs" />
     <Compile Include="ShaormaLaPachetBase.cs" />
+    <Compile Include="VarzaDecorator.cs" />
+    <Compile Include="VitaDecorator.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

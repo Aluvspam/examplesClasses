@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AndreiShaormaDecoratorPattern
 {
     public class ComandaRun
@@ -11,11 +12,12 @@ namespace AndreiShaormaDecoratorPattern
         public static void Execute()
         {
             ShaormaComponent DePui = new PuiDecorator(new ShaormaLaPachetBase());
-            Convert.ToString(DePui);
+            Print(DePui);
+            ShaormaComponent DeVita = new VitaDecorator(new LaFarfurieBase(new RosiiDecorator(new CastravetiMuratiDecorator(new CeapaDecorator(new VarzaDecorator())))));
         }
-        public static void (ShaormaComponent sBase)
+        public static void Print (ShaormaComponent cBase)
         {
-            Console.WriteLine("Ati comandat o {0} cu: {1}",  );
+            Console.WriteLine("Ati comandat o {0}, pret: {1} lei.", cBase.GetName(), cBase.GetPrice() );
         }
 
 

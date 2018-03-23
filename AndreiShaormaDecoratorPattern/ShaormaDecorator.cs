@@ -24,7 +24,7 @@ namespace AndreiShaormaDecoratorPattern
        
         public override string GetName()
         {
-            return string.Format("{0}, {1}", ShaormaComponent.GetName(), name);
+            return string.Format("{0} contine: {1}", ShaormaComponent.GetName(), name);
         }
     }
 }
