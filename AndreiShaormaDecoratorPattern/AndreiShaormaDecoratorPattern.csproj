@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComandaRun.cs" />
     <Compile Include="LaFarfurieBase.cs" />
     <Compile Include="PuiDecorator.cs" />
     <Compile Include="ShaormaComponent.cs" />

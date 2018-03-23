@@ -5,7 +5,6 @@ using Solid_Examples;
 using Solid_Examples.AndreiR;
 
 
-
 namespace RunExample
 {
     class Program
@@ -13,7 +12,7 @@ namespace RunExample
         static void Main(string[] args)
         {
             //my Shaorma a la Andrei
-            
+            AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
             Console.ReadLine();
             Decorator.Run.Execute();
             var world = new World();

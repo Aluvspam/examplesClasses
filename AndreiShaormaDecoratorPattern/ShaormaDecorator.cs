@@ -21,9 +21,10 @@ namespace AndreiShaormaDecoratorPattern
         {
             return price + ShaormaComponent.GetPrice();
         }
+       
         public override string GetName()
         {
-            return string.Concat("Ati comandat o {0}, cu: {1}. Total de plata: {2} lei.", ShaormaComponent, name, ShaormaComponent.GetPrice());
+            return string.Format("{0}, {1}", ShaormaComponent.GetName(), name);
         }
     }
 }
