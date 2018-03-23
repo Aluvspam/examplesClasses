@@ -10,6 +10,12 @@ namespace StrategyDana
     {
         string name = "dog";
         IMoveStrategy moveStrategy = new Running4Feet();
+
+        public void FlyInRomania()
+        {
+            Console.WriteLine("I am flying here{0}", name);
+        }
+
         public void Move()
         {
             Console.Write("I'm a {0}", name);

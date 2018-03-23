@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Drone.cs" />
+    <Compile Include="Fly.cs" />
     <Compile Include="Flying.cs" />
     <Compile Include="Running4Feet.cs" />
     <Compile Include="World.cs" />
