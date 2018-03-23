@@ -13,11 +13,12 @@ namespace AndreiShaormaDecoratorPattern
         {
             ShaormaComponent DePui = new PuiDecorator(new ShaormaLaPachetBase());
             Print(DePui);
-            ShaormaComponent DeVita = new VitaDecorator(new LaFarfurieBase(new RosiiDecorator(new CastravetiMuratiDecorator(new CeapaDecorator(new VarzaDecorator())))));
+            ShaormaComponent DeVita = new VitaDecorator(new RosiiDecorator(new CastravetiMuratiDecorator(new CeapaDecorator(new VarzaDecorator(new LaFarfurieBase())))));
+            Print(DeVita);
         }
         public static void Print (ShaormaComponent cBase)
         {
-            Console.WriteLine("Ati comandat o {0}, pret: {1} lei.", cBase.GetName(), cBase.GetPrice() );
+            Console.WriteLine("Ati comandat o {0} total de plata: {1} lei.", cBase.GetName(), cBase.GetPrice());
         }
 
 

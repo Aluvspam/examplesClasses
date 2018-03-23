@@ -8,7 +8,7 @@ namespace AndreiShaormaDecoratorPattern
 {
     class LaFarfurieBase: ShaormaComponent
     {
-        string name = "Shaorma la farfurie";
+        string name = "Shaorma la farfurie ce contine:";
         double price = 15.5;
 
         public override string GetName()
