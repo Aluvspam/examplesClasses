@@ -10,6 +10,8 @@ namespace StrategyDana
     {
         static void Main(string[] args)
         {
+         
+            Console.ReadLine();
         }
     }
 }

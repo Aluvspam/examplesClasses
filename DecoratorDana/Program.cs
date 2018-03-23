@@ -10,6 +10,9 @@ namespace DecoratorDana
     {
         static void Main(string[] args)
         {
+
+            Run.Execute();
+            Console.ReadLine();
         }
     }
 }
