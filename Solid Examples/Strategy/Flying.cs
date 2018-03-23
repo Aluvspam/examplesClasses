@@ -10,7 +10,7 @@ namespace Solid_Examples.AndreiR
     {
         public void Move()
         {
-            Console.WriteLine("I fly!");
+            Console.WriteLine(" I fly!");
         }
     }
 }

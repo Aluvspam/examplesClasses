@@ -10,7 +10,7 @@ namespace Solid_Examples.AndreiR
     {
         public void Move()
         {
-            Console.WriteLine("I run fast on all my 4 feet");
+            Console.WriteLine(" I run fast on all my 4 feet");
         }
     }
 }
