@@ -54,7 +54,7 @@
     <Compile Include="B2.cs" />
     <Compile Include="Strategy\Bird.cs" />
     <Compile Include="Strategy\Dog.cs" />
-    <Compile Include="Strategy\IMove.cs" />
+    <Compile Include="Strategy\IMoveStrategy.cs" />
     <Compile Include="Strategy\World.cs" />
     <Compile Include="Copy.cs" />
     <Compile Include="DanasWrite.cs" />

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.AndreiR
 {
-    public interface IMoveStrategy
+    public interface IMoveStrategy// interfata de actiune 
     {
         void Move();
     }

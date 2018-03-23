@@ -9,17 +9,15 @@ namespace Solid_Examples.AndreiR
 {
     public class Bird : Entities
     {
-        string name;
         IMoveStrategy moveStrategy = new Flying();
-        public void Move()
-        {
-            Console.Write("I am a {0}", name);
-            moveStrategy.Move();
-        }
-
         public override string SetName()
         {
-            return name = "Bird";
+            return "bird";
+        }
+        public override void Move()
+        {
+            Console.Write("I'm a {0}", SetName());
+            moveStrategy.Move();
         }
     }
 }
