@@ -8,7 +8,7 @@ namespace AndreiShaormaDecoratorPattern
 {
     abstract class ShaormaDecorator : ShaormaComponent
     {
-        ShaormaComponent ShaormaComponent = null; //ce inseamna asta, e o instanta de clasa abstracta?
+        ShaormaComponent ShaormaComponent = null; //ce inseamna asta? e partea aia de [has a] si [is a]
 
         public string name = "Inexistent";
         public double price = 0.0;
