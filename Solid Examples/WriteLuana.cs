@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-	class WriteLuana
+	class WriteLuana : IWrite
 	{
 		public void WriteIt(string text)
 		{
