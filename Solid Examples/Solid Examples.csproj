@@ -54,6 +54,15 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
+    <Compile Include="PizzaDecLuana\BaseLayer.cs" />
+    <Compile Include="PizzaDecLuana\Cheese.cs" />
+    <Compile Include="PizzaDecLuana\Chilly.cs" />
+    <Compile Include="PizzaDecLuana\Decorator.cs" />
+    <Compile Include="PizzaDecLuana\Meat.cs" />
+    <Compile Include="PizzaDecLuana\Mushrooms.cs" />
+    <Compile Include="PizzaDecLuana\Olives.cs" />
+    <Compile Include="PizzaDecLuana\PizzaBase.cs" />
+    <Compile Include="PizzaDecLuana\Run.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -71,6 +80,7 @@
     <Compile Include="Strategy\World.cs" />
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteDaniel.cs" />
+    <Compile Include="WriteLuana.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
   </ItemGroup>
