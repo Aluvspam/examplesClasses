@@ -8,7 +8,7 @@ using Solid_Examples.Strategy.IMove;
 
 namespace Solid_Examples.Strategy
 {
-	public class World
+	public class World 
 	{
 		public void execute()
 		{
