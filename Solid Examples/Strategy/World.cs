@@ -17,10 +17,14 @@ namespace Solid_Examples.Strategy
 			var d2 = new Drone();
 
 			object[] things = new object[3] { b, d, d2 };
-			foreach (AbstractWorld in things)
+			foreach (var thing in things)
 			{
-				AbstractWorld.Move();
+				thing.Move();
 			}
+
+			b.Move();
+			d.Move();
+			d2.Move();
 		}
 	}
 }

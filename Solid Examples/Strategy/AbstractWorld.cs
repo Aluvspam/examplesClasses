@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.Strategy
 {
-	class AbstractWorld
+	public abstract class AbstractWorld
 	{
-		
+		public abstract string GetName();
+		public abstract void Move();
 	}
 }
