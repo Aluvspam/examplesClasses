@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Solid_Examples.AndreiR.Bird" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Strategy\Bird.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solid_Examples.AndreiR.Dog" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Strategy\Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solid_Examples.AndreiR.Drone" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Strategy\Drone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solid_Examples.Strategy.Entities" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Strategy\Entities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Solid_Examples.AndreiR.Flying" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy\Flying.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.362" />
+  </Class>
+  <Class Name="Solid_Examples.AndreiR.Running4Feet" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy\Running4Feet.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="Solid_Examples.AndreiR.World" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy\World.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Solid_Examples.AndreiR.IMoveStrategy" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Strategy\IMoveStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

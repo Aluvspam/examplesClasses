@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AndreiShaormaDecoratorPattern.CastravetiMuratiDecorator" Collapsed="true">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CastravetiMuratiDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.CeapaDecorator" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CeapaDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.ComandaRun" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ComandaRun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.LaFarfurieBase" Collapsed="true">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>LaFarfurieBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.PuiDecorator" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PuiDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.RosiiDecorator" Collapsed="true">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RosiiDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.ShaormaComponent" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ShaormaComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.ShaormaDecorator" Collapsed="true">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABABAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ShaormaDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.ShaormaLaPachetBase" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAABAA=</HashCode>
+      <FileName>ShaormaLaPachetBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AndreiShaormaDecoratorPattern.VitaDecorator" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VitaDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
