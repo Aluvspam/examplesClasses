@@ -7,9 +7,12 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.AndreiR
 {
-    public class Drone : Entities
+    public class Drone : AbstractEntities
     {
-        IMoveStrategy moveStrategy = new Flying();
+        public Drone()
+        {
+            SetNewStrategy(new Flying());
+        }
         public override string SetName()
         {
             return "drone";
@@ -17,8 +20,8 @@ namespace Solid_Examples.AndreiR
         public override void Move()
         {
             Console.Write("I'm a {0}", SetName());
-            moveStrategy.Move();
+            base.Move();
         }
-        
+
     }
 }

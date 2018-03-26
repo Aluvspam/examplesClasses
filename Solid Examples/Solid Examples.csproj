@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="AClass.cs" />
     <Compile Include="Strategy\Drone.cs" />
-    <Compile Include="Strategy\Entities.cs" />
+    <Compile Include="Strategy\AbstractEntities.cs" />
     <Compile Include="Strategy\Flying.cs" />
     <Compile Include="Strategy\Running4Feet.cs" />
     <Compile Include="B1.cs" />
