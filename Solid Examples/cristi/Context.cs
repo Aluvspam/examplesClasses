@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.cristi
 {
-    class Context : Client
+    public class Context
     {
-        
+
     }
 }

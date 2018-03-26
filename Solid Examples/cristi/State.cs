@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.cristi
 {
-   public class State : Context
+   public abstract class State 
     {
-
+        public abstract void goNext(Context context);
     }
 }
