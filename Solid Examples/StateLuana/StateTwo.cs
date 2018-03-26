@@ -12,5 +12,7 @@ namespace Solid_Examples.StateLuana
 		{
 			context.setState(new StateTwo());
 		}
+		 
+		public var 
 	}
 }

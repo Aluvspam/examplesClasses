@@ -11,7 +11,7 @@ namespace Solid_Examples.StateLuana
 		AbstractState current;
 		public void goNext()
 		{
-			current.goNext();
+			current.goNext(this);
 		}
 
 		public void setState(AbstractState newState)
