@@ -12,7 +12,7 @@ namespace Solid_Examples.StateDaniel
         {
             context.setState(new StateTwo());
         }
-        public void DanielMath(bool d, int x)
+        public double DanielMath(bool d, int x)
         {
             double result = 0;
 
@@ -26,12 +26,13 @@ namespace Solid_Examples.StateDaniel
             }
             else if (d == true && x <= 0)
             {
-                result = -(x * x)
+                result = -(x * x);
             }
             else if (d == false && x <= 0)
             {
-                result = -(Math.Sqrt(x));
+                result = -Math.Sqrt(-x);
             }
+            return result;
         }
     }
 }
