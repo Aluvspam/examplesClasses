@@ -37,7 +37,7 @@ namespace Solid_Examples.StateLuana
 
 			else if (bul = false && x < 0)
 			{
-				result = -Math.Sqrt(-2);
+				result = -Math.Sqrt(x);
 			}
 
 			return result;
