@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrategyDana
 {
-    public class World
+    public class World: FlyEuDana
     {
         public void execute()
         {
@@ -22,7 +22,8 @@ namespace StrategyDana
             //and Drone classes and move all common code from these classes in that
             //abstract class. fix the foreach loop above and uncomment it. erase this
             //text after fixing
-            b.Move();
+           
+        b.Move();
             d.Move();
             d2.Move();
         }

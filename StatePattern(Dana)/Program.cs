@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StrategyDana
+namespace StatePattern_Dana_
 {
-    public abstract class Fly
+    class Program
     {
-        public void FlyInRomania()
+        static void Main(string[] args)
         {
-
         }
     }
 }

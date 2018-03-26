@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace StrategyDana
 {
-   public class Drone
+   public class Drone: FlyEuDana
     {
         string name = "Drone";
         IMoveStrategy moveStrategy = new Flying();
 
-        public void FlyInRomania()
-        {
-            Console.WriteLine("I am flying here{0}", name);
-        }
+       
 
         public void Move()
         {

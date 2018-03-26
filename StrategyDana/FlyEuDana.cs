@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace StrategyDana
 {
-    class Bird: FlyEuDana
+    public abstract class FlyEuDana
     {
-        string name = "Bird";
         IMoveStrategy moveStrategy = new Flying();
-        public void Move()
+         public void AddMove(Bird Bird)
+          
         {
-            Console.Write("I am a {0}", name);
-            moveStrategy.Move();
+            Bird.AddMove(Bird);
         }
 
-       
     }
+    
 }

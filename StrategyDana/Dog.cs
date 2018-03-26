@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace StrategyDana
 {
-    class Dog
+    class Dog: FlyEuDana
     {
         string name = "dog";
         IMoveStrategy moveStrategy = new Running4Feet();
 
-        public void FlyInRomania()
-        {
-            Console.WriteLine("I am flying here{0}", name);
-        }
+      
 
         public void Move()
         {
