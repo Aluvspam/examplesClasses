@@ -8,7 +8,8 @@ namespace Solid_Examples.State
 {
     public class StateTwo : AbstractState
     {
-        public override void goNext()
+       
+        public override void goNext(Context InContext)
         {
             throw new NotImplementedException();
         }
