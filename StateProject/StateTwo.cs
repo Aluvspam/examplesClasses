@@ -17,19 +17,19 @@ namespace StateProject
         {
             double result = 0;
 
-            if (b = true && x >= 0)
+            if (b == true && x >= 0)
             {
                 result = x * x;
             }
-            else if (b = false && x >= 0)
+            else if (b == false && x >= 0)
             {
                 result = Math.Sqrt(x);
             }
-            else if (b = true && x < 0)
+            else if (b == true && x < 0)
             {
                 result = -(x * x);
             }
-            else if (b = false && x < 0)
+            else if (b == false && x < 0)
             {
                 result = -Math.Sqrt(-x);
             }
