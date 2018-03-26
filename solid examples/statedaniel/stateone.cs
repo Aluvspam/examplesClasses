@@ -30,7 +30,7 @@ namespace Solid_Examples.StateDaniel
             }
             else if (d == false && x <= 0)
             {
-                result = -(Math.Sqrt(x));
+                result = -Math.Sqrt(-x);
             }
             return result;
         }
