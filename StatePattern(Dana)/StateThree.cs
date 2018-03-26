@@ -8,9 +8,11 @@ namespace StatePattern_Dana_
 {
     public class StateThree: IState
     {
-        public void goNext()
-        {
+        
 
+        public void goNext(Context inContext)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace StatePattern_Dana_
 {
-    public class Context: IState
+    public class Context
     {
-        IState state  = new  
+
+        IState current;
+         
         public void goNext()
         {
-        
+            current.goNext(this);//obiectul de tipul asta
         }
-        public void setState()
+        public void setState(IState state )
         {
-            
+            current = state;
         }
     }
 }

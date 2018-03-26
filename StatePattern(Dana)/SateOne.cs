@@ -8,9 +8,9 @@ namespace StatePattern_Dana_
 {
     public class SateOne: IState
     {
-        public void goNext()
+        public  void goNext(Context inContext)
         {
-
+            inContext.setState(new StateTwo());
         }
     }
 }

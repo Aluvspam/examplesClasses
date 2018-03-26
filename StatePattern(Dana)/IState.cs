@@ -8,6 +8,7 @@ namespace StatePattern_Dana_
 {
     public interface IState
     {
-        void goNext();
+         void goNext(Context inContext);
+        
     }
 }
