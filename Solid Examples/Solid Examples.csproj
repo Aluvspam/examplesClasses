@@ -70,6 +70,12 @@
     <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
+    <Compile Include="StateLuana\Client.cs" />
+    <Compile Include="StateLuana\Context.cs" />
+    <Compile Include="StateLuana\AbstractState.cs" />
+    <Compile Include="StateLuana\StateOne.cs" />
+    <Compile Include="StateLuana\StateThree.cs" />
+    <Compile Include="StateLuana\StateTwo.cs" />
     <Compile Include="Strategy\AbstractWorld.cs" />
     <Compile Include="Strategy\Bird.cs" />
     <Compile Include="Strategy\Dog.cs" />
