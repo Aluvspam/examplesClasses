@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Copy.cs" />
+    <Compile Include="cristi\Client.cs" />
+    <Compile Include="cristi\Context.cs" />
+    <Compile Include="cristi\State.cs" />
+    <Compile Include="cristi\StateOne.cs" />
+    <Compile Include="cristi\StateThree.cs" />
+    <Compile Include="cristi\StateTwo.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
     <Compile Include="Game\Helicopter.cs" />
