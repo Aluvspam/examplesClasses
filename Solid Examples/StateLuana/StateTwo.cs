@@ -13,6 +13,35 @@ namespace Solid_Examples.StateLuana
 			context.setState(new StateTwo());
 		}
 		 
-		public var 
+		public double MathLuana(bool bul, int x)
+		{
+			double result = 0;
+
+			if (bul = true && x >= 0)
+			{
+				result = x * x;
+
+			}
+
+			else if (bul = false && x >= 0)
+			{
+				result = Math.Sqrt(x);
+
+			}
+
+			else if (bul = true && x < 0)
+			{
+				result = -(x * x);
+
+			}
+
+			else if (bul = false && x < 0)
+			{
+				result = -Math.Sqrt(-2);
+			}
+
+			return result;
+
+		}
 	}
 }
