@@ -8,10 +8,8 @@ namespace Solid_Examples.StateDaniel
 {
     class Context
     {
-        private void current()
-        {
+        State current;
 
-        }
         public override goNext()
         {
             current.goNext(this);

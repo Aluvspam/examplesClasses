@@ -70,6 +70,8 @@
     <Compile Include="StateDaniel\Client.cs" />
     <Compile Include="StateDaniel\State.cs" />
     <Compile Include="StateDaniel\StateOne.cs" />
+    <Compile Include="StateDaniel\StateThree.cs" />
+    <Compile Include="StateDaniel\StateTwo.cs" />
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteDaniel.cs" />
     <Compile Include="WriteScreen.cs" />

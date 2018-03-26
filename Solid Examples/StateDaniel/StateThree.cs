@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.StateDaniel
 {
-    class StateOne
+    class StateThree
     {
-       public void goNext()
-        {
-            context.setState(StateTwo);
-        }
     }
 }
