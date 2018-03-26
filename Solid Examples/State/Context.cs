@@ -17,6 +17,5 @@ namespace Solid_Examples.State
         {
 
         }
-   
     }
 }

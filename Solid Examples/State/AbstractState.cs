@@ -8,6 +8,6 @@ namespace Solid_Examples.State
 {
     public abstract class AbstractState
     {
-        public abstract void goNext();
+        public abstract void goNext( Context InContext);
     }
 }
