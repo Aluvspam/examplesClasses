@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.StateLuana
 {
-	class Context 
+	public class Context 
 	{
 		AbstractState current;
 		public void goNext()
 		{
-			current.goNext(this);
+			current.goNext();
 		}
 
 		public void setState(AbstractState newState)

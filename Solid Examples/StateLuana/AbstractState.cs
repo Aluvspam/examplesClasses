@@ -10,5 +10,6 @@ namespace Solid_Examples.StateLuana
 	{
 
 		public abstract void goNext(Context context);
+		
 	}
 }

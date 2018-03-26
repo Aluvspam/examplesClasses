@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.StateLuana
 {
-	class StateThree : AbstractState
+	public class StateThree : AbstractState
 	{
 		public override void goNext(Context context)
 		{
