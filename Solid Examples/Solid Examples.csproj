@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <None Include="State\ClassDiagram1.cd" />
     <None Include="Strategy\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
