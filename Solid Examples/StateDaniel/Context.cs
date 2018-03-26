@@ -10,13 +10,13 @@ namespace Solid_Examples.StateDaniel
     {
         State current;
 
-        public override goNext()
+        public void goNext()
         {
             current.goNext(this);
         }
-        public void setState()
+        public void setState(State state)
         {
-
+            current = state;
         }
     }
 }

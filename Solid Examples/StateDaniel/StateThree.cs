@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.StateDaniel
 {
-    class StateThree
-    {
-    }
+    //class StateThree
+    //{
+    //}
 }

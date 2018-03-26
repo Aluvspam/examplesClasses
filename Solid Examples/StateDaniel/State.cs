@@ -8,6 +8,6 @@ namespace Solid_Examples.StateDaniel
 {
     interface State
     {
-        void goNext();
+        void goNext(Context context);
     }
 }

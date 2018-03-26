@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.StateDaniel
 {
-    class StateTwo
+    class StateTwo : State
     {
+        public void goNext(Context context)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
