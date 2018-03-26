@@ -28,7 +28,7 @@
       <FileName>Strategy\Entities.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Solid_Examples.AndreiR.Flying" Collapsed="true">
+  <Class Name="Solid_Examples.AndreiR.Flying">
     <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -36,7 +36,7 @@
     </TypeIdentifier>
     <Lollipop Orientation="Right" Position="0.362" />
   </Class>
-  <Class Name="Solid_Examples.AndreiR.Running4Feet" Collapsed="true">
+  <Class Name="Solid_Examples.AndreiR.Running4Feet">
     <Position X="5.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -51,8 +51,8 @@
       <FileName>Strategy\World.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="Solid_Examples.AndreiR.IMoveStrategy" Collapsed="true">
-    <Position X="2.75" Y="3" Width="1.5" />
+  <Interface Name="Solid_Examples.AndreiR.IMoveStrategy">
+    <Position X="3" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Strategy\IMoveStrategy.cs</FileName>

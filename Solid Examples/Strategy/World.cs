@@ -18,7 +18,7 @@ namespace Solid_Examples.AndreiR
             foreach (Entities thing in things)
             {
                 thing.Move();
-            }
+            } 
             //b.Move();
             //d.Move();
             //d2.Move();
