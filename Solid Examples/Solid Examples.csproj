@@ -61,6 +61,11 @@
     <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
+    <Compile Include="States\Context.cs" />
+    <Compile Include="States\State.cs" />
+    <Compile Include="States\StateOne.cs" />
+    <Compile Include="States\StateThree.cs" />
+    <Compile Include="States\StateTwo.cs" />
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteDaniel.cs" />
     <Compile Include="WriteScreen.cs" />
