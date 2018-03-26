@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AClass.cs" />
+    <Compile Include="State\AbstractState.cs" />
+    <Compile Include="State\Client.cs" />
+    <Compile Include="State\Context.cs" />
+    <Compile Include="State\StateOne.cs" />
+    <Compile Include="State\StateThree.cs" />
+    <Compile Include="State\StateTwo.cs" />
     <Compile Include="Strategy\Drone.cs" />
     <Compile Include="Strategy\AbstractEntities.cs" />
     <Compile Include="Strategy\Flying.cs" />
