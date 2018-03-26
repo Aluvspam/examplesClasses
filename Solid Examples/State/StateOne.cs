@@ -12,5 +12,10 @@ namespace Solid_Examples.State
         {
             InContext.SetState(new StateOne());
         }
+        public override void Test()
+        {
+            base.Test();
+            Console.Write(" plus text adauga prin override");
+        }
     }
 }

@@ -8,6 +8,10 @@ namespace Solid_Examples.State
 {
     public abstract class AbstractState
     {
-        public abstract void goNext( Context InContext);
+        public abstract void goNext(Context InContext);
+        public virtual void Test()
+        {
+            Console.WriteLine("Test virtual");
+        }
     }
 }
