@@ -10,7 +10,7 @@ namespace Solid_Examples.State
     {
         public override void goNext(Context InContext)
         {
-            throw new NotImplementedException();
+            InContext.SetState(new StateOne());
         }
     }
 }

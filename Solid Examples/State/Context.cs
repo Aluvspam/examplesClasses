@@ -9,13 +9,13 @@ namespace Solid_Examples.State
     public class Context
     {
         private AbstractState current;
-        public static void goNext()
+        public void goNext()
         {
-
+            current.goNext(this);
         }
-        public static void SetState(AbstractState state)
+        public void SetState(AbstractState state)
         {
-
+            current = state;
         }
     }
 }

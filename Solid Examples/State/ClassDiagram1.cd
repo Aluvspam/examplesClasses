@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Solid_Examples.State.Context">
-    <Position X="2.5" Y="1.25" Width="1.5" />
+    <Position X="1.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>State\Context.cs</FileName>
