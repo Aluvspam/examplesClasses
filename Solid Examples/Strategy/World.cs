@@ -15,10 +15,11 @@ namespace Solid_Examples.AndreiR
             var d = new Dog();
             var d2 = new Drone();
             object[] things = new object[3] { b, d, d2 };
-            foreach (Entities thing in things)
+            foreach (AbstractEntities thing in things)
             {
                 thing.Move();
-            } 
+                thing.SetNewStrategy(new Flying());
+            }
             //b.Move();
             //d.Move();
             //d2.Move();
