@@ -8,6 +8,6 @@ namespace StateProject
 {
     public abstract class State
     {
-        public abstract void goNext(Context inContext)
+        public abstract void goNext(Context inContext);
     }
 }

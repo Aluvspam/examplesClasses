@@ -10,6 +10,13 @@ namespace StateProject
     {
         static void Main(string[] args)
         {
+            var stateObject = new StateTwo();
+            var m1 = stateObject.GabiMath(true, 2);
+            Console.WriteLine(m1);
+            Console.WriteLine(stateObject.GabiMath(false, 3));
+            Console.WriteLine(stateObject.GabiMath(true, -4));
+            Console.WriteLine(stateObject.GabiMath(false, -5));
+            Console.ReadLine();
         }
     }
 }
