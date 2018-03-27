@@ -23,6 +23,8 @@ namespace StateProject.HomeworkGeometry
         {
             x = X;
             y = Y;
+
+            Point[] Array = new Point[2];
         } 
         #endregion
     }
