@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AClass.cs" />
+    <Compile Include="Chain of Responsability Pattern\ConcreteHandler1.cs" />
+    <Compile Include="Chain of Responsability Pattern\ConcreteHandler2.cs" />
+    <Compile Include="Chain of Responsability Pattern\Handler.cs" />
     <Compile Include="State\AbstractState.cs" />
     <Compile Include="State\Client.cs" />
     <Compile Include="State\Context.cs" />
