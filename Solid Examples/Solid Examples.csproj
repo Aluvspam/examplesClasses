@@ -54,6 +54,9 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
+    <Compile Include="GeometryLuana\Point.cs" />
+    <Compile Include="GeometryLuana\Segment.cs" />
+    <Compile Include="GeometryLuana\Triangle.cs" />
     <Compile Include="PizzaDecLuana\BaseLayer.cs" />
     <Compile Include="PizzaDecLuana\Cheese.cs" />
     <Compile Include="PizzaDecLuana\Chilly.cs" />
