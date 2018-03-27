@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Solid Examples
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateProject", "StateProject\StateProject.csproj", "{07E4E40A-DF73-45FA-9F30-BD65A049CD8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryGabi", "GeometryGabi\GeometryGabi.csproj", "{D4297323-F4C9-4C55-8DA0-3132BD72F1F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{07E4E40A-DF73-45FA-9F30-BD65A049CD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07E4E40A-DF73-45FA-9F30-BD65A049CD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07E4E40A-DF73-45FA-9F30-BD65A049CD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4297323-F4C9-4C55-8DA0-3132BD72F1F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4297323-F4C9-4C55-8DA0-3132BD72F1F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4297323-F4C9-4C55-8DA0-3132BD72F1F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4297323-F4C9-4C55-8DA0-3132BD72F1F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,25 +6,22 @@ using System.Threading.Tasks;
 
 namespace StateProject.HomeworkGeometry
 {
-    class Triangle
+    class Segment
     {
         #region Fields
-        private Point[] points;
+        private Point[] endpoints;
         #endregion
 
         #region Properties
-        public Point[] Points { get; set; }
-        public Segment[] Edges { get; set; }
-        public double Area { get; set; }
+        public Point[] Endpoinds {
+            get { return endpoints; }
+            set { endpoints = value; }
+        }
+        public double Length { get; set; }
         #endregion
 
         #region Constructors
-        public Triangle(Point k, Point l, Point m)
-        {
-
-        }
-
-        public Triangle(int[] array)
+        public Segment(short x1, short x2, short y1, short y2)
         {
 
         } 

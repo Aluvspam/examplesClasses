@@ -21,7 +21,8 @@ namespace StateProject.HomeworkGeometry
         #region Constructors
         public Point(short x, short y)
         {
-
+            x = X;
+            y = Y;
         } 
         #endregion
     }
