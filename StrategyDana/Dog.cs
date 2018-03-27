@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace StrategyDana
 {
-    class Dog: FlyEuDana
+    class Dog: AbstractFly
     {
         string name = "dog";
         IMoveStrategy moveStrategy = new Running4Feet();
 
-      
+      public Dog()
+        {
+            SetNewStrategy(new Running4Feet());
+        }
+        public override string SetName()
+        {
+            return name;
+        }
 
-        public void Move()
+        public override void Move()
         {
             Console.Write("I'm a {0}", name);
-            moveStrategy.Move();
+            base.Move();
         }
     }
 }

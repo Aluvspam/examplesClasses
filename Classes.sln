@@ -21,11 +21,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solid ExamplesTests", "Soli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformWriteDana", "WinformWriteDana\WinformWriteDana.csproj", "{DEF701E6-067F-4326-9070-0508BBA9321B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyDana", "StrategyDana\StrategyDana.csproj", "{399E65CF-8D75-45C6-9EE8-A2B135B00A08}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternStrategyDana", "StrategyDana\PatternStrategyDana.csproj", "{399E65CF-8D75-45C6-9EE8-A2B135B00A08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorDana", "DecoratorDana\DecoratorDana.csproj", "{8C5F9E1B-CD80-4DD4-A5EC-3653918738B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternDecoratorDana", "DecoratorDana\PatternDecoratorDana.csproj", "{8C5F9E1B-CD80-4DD4-A5EC-3653918738B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePattern(Dana)", "StatePattern(Dana)\StatePattern(Dana).csproj", "{181F5D96-5DD9-4859-B885-A5D0DD947C36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternState(Dana)", "StatePattern(Dana)\PatternState(Dana).csproj", "{181F5D96-5DD9-4859-B885-A5D0DD947C36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternChainOfResponsibility", "PatternChainOfResponsibility\PatternChainOfResponsibility.csproj", "{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointDana", "PointDana\PointDana.csproj", "{D55F1696-2893-4DE9-8A49-F39627A94BF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{181F5D96-5DD9-4859-B885-A5D0DD947C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{181F5D96-5DD9-4859-B885-A5D0DD947C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{181F5D96-5DD9-4859-B885-A5D0DD947C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

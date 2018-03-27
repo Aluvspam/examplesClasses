@@ -14,8 +14,9 @@ namespace StatePattern_Dana_
             var m1 = stateObject.CristiMath(true, 3);
             Console.WriteLine(m1);
             Console.WriteLine(stateObject.CristiMath(false,3));
-            Console.WriteLine(stateObject.CristMath(true, -4));
-            Console.WriteLine(stateObject.CristMath(false, -5));
+            Console.WriteLine(stateObject.CristiMath(true, -4));
+            Console.WriteLine(stateObject.CristiMath(false, -5));
+            Console.ReadLine();
         }
     }
 }
