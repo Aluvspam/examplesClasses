@@ -31,7 +31,7 @@ namespace Solid_Examples.State
             }
             else if (b == false && x <0)
             {
-                result = Math.Sqrt(-a);
+                result = -Math.Sqrt(-a);
             }
             return Convert.ToInt32(result);
         }
