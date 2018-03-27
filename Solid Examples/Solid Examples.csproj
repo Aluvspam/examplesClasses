@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainOfResponsibilityLuana\Handler.cs" />
+    <Compile Include="ChainOfResponsibilityLuana\HandlerOne.cs" />
+    <Compile Include="ChainOfResponsibilityLuana\HandlerTwo.cs" />
     <Compile Include="Copy.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
