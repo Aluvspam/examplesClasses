@@ -4,27 +4,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StateProject.HomeworkGeometry
+namespace GeometryGabi
 {
     class Point
     {
         #region Fields
-        private short x;
-        private short y;
+        private short x = 5;
+        private short y = 9;
         #endregion
 
         #region Properties
-        public short X { get; set; }
-        public short Y { get; set; }
+        public short X
+        {
+            get { return x; }
+            set { x = value; }
+        }
+        public short Y {
+            get { return y; }
+            set { y = value; }
+        }
         #endregion
 
         #region Constructors
         public Point(short x, short y)
         {
-            x = X;
-            y = Y;
-
-            Point[] Array = new Point[2];
+            
+            Point[] Array = new Point[2] {x, y };
         } 
         #endregion
     }

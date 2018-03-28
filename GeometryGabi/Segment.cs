@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StateProject.HomeworkGeometry
+namespace GeometryGabi
 {
     class Segment
     {
@@ -21,9 +21,12 @@ namespace StateProject.HomeworkGeometry
         #endregion
 
         #region Constructors
-        public Segment(short x1, short x2, short y1, short y2)
+        public Segment(short x1, short y1, short x2, short y2)
         {
+            
 
+            Point[] X = new Point[2] { x1, y1 };
+            Point[] Y = new Point[2];
         } 
         #endregion
     }

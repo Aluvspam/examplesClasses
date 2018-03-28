@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StateProject.HomeworkGeometry
+namespace GeometryGabi
 {
     class Triangle
     {
@@ -30,7 +30,7 @@ namespace StateProject.HomeworkGeometry
 
         public Triangle(int[] array)
         {
-
+           array = new Point[x, y, z];
         } 
         #endregion
     }
