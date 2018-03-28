@@ -28,8 +28,8 @@ namespace GeometryGabi
         #region Constructors
         public Point(short x, short y)
         {
-            
-            Point[] Array = new Point[2] {x, y };
+            x = X;
+            y = Y;
         } 
         #endregion
     }

@@ -23,10 +23,8 @@ namespace GeometryGabi
         #region Constructors
         public Segment(short x1, short y1, short x2, short y2)
         {
-            
-
-            Point[] X = new Point[2] { x1, y1 };
-            Point[] Y = new Point[2];
+            Point[] X = new Point[] { };
+            Point[] Y = new Point[] { };
         } 
         #endregion
     }

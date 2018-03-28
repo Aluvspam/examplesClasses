@@ -25,12 +25,12 @@ namespace GeometryGabi
         #region Constructors
         public Triangle(Point x, Point y, Point z)
         {
-
+            Point[] triangle = new Point[] { x, y, z };
         }
 
         public Triangle(int[] array)
         {
-           array = new Point[x, y, z];
+           
         } 
         #endregion
     }
