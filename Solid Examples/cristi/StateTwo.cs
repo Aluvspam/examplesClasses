@@ -8,6 +8,13 @@ namespace Solid_Examples.cristi
 {
     class StateTwo : State
     {
+        public void CristiMath(bool b, int x)
+        {
+  
+            
+            
+
+        }
 
     }
 }
