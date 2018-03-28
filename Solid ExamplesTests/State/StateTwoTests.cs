@@ -19,7 +19,7 @@ namespace Solid_Examples.State.Tests
         [TestMethod()]
         public void CristiMathTest2()
         {
-            Assert.AreEqual(StateTwo.CristiMath(true, -1), 1);
+            Assert.AreEqual(StateTwo.CristiMath(true, 2), 4);
         }
         [TestMethod()]
         public void CristiMathTest3()
@@ -29,7 +29,7 @@ namespace Solid_Examples.State.Tests
         [TestMethod()]
         public void CristiMathTest4()
         {
-            Assert.AreEqual(StateTwo.CristiMath(false, -1), 1);
+            Assert.AreEqual(StateTwo.CristiMath(false, 2), 4);
         }
     }
 }

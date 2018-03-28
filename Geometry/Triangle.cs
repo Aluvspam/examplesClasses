@@ -23,8 +23,9 @@ namespace Geometry
             {
                 for (int i = 0; i < 7; i++)
                 {
-                    Triangle((Points[0],Points[1]), (Points[2], Points[3]),Points[4],Points[5]));
+                    //   Triangle((Points[0],Points[1]), (Points[2], Points[3]),Points[4],Points[5]));
                 }
             }
         }
     }
+}

@@ -8,7 +8,7 @@ namespace Solid_Examples.State
 {
     public class StateTwo : AbstractState
     {
-       
+
         public override void goNext(Context InContext)
         {
             throw new NotImplementedException();
@@ -17,21 +17,24 @@ namespace Solid_Examples.State
         {
             double a = Convert.ToDouble(x);
             double result = 0.0;
-            if( b == true && x >= 0)
+
+            if (b)
             {
-                result= Math.Pow(a, 2.00);
+                if (x >= 0)
+                {
+                    result = Math.Pow(a, 2.00);
+                }
+                else
+                    result = Math.Sqrt(a);
             }
-            else if( b == true && x <0)
+            else if(!b)
             {
-                result = Math.Sqrt(-a);
-            }
-            else if (b == false && x >=0)
-            {
-                result = Math.Sqrt(a);
-            }
-            else if (b == false && x <0)
-            {
-                result = -Math.Sqrt(-a);
+                if (x >= 0)
+                {
+                    result = Math.Pow(a, 2.00);
+                }
+                else
+                    result = -Math.Sqrt(-a);
             }
             return Convert.ToInt32(result);
         }
