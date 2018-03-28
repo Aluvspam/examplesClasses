@@ -7,18 +7,29 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.Geometry
 {
-    class Segment
+    public class Segment
     {
-        private endpoints: Point[];
-    }
-    public Endpoints: Point[]
+        private Point[,] endpoints;
+        public Point[,] Endpoints
         {
+            get { return endpoints; }
+            set { endpoints = value; }
         }
-    public Length Length: double
-    {
-    }
-    public ClassNamePlaceholder()
-    {
-    public Segment Segment(short, short, short, short);
-    }
+        public double Length
+        {
+            get { return Length; }
+            set { Length = 0; } // length se calculeaza cu Pitagora
+        }
+        public Segment(short x, short y, short x1y1, short x2y2)
+        {
+            endpoints = new Point[x1y1, x2y2];
+        }
+        public double LengthTo(Point Point)
+        {
+            return Math.Sqrt((Point.X - Point.X) * (Point.X - Point.X) + Math.Pow(Point.Y - Point.X, 2));
+            // Pitagora calculEaza distanta ca radical din a*a+b*b 
+            //unde a este diferenta pe axa X iar b diferenta pe axa Y. 
+            //in cazul lui b la patrat am folosit functia Math.Pow()
+        }
+    }   
 }

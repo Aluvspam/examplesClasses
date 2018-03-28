@@ -1,20 +1,29 @@
-﻿using Solid_Examples.Geometry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿+using System;
++using System.Collections.Generic;
++using System.Linq;
++using System.Text;
++using System.Threading.Tasks;
 
 namespace Solid_Examples.Geometry
 {
-    class Point
+    public class Point
     {
-        private int x :short;
-
-        private int y :short;
-    }
-    public ClassNamePlaceholder()
-    {
-        public Point(short, short);
+        private short x;
+        private short y;
+        public short X
+        {
+            get { return x; }
+            set { x = value; }
+        }
+        public short Y
+        {
+            get { return y; }
+            set { y = value; }
+        }
+        public Point(short x, short y)
+        {
+            X = x;
+            Y = y;
+        }
     }
 }
