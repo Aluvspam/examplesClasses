@@ -8,9 +8,21 @@ namespace ChainOfResponibilityGabi
 {
     class HandlerTwo: Handler
     {
-        if (true)
-	{
+        public override void Handle()
+        {
+            if (CanHandle())
+            {
+                this.CanHandle();
+            }
+            else
+            {
+                super.Handle();
+            }
+        }
 
-	}
+        private bool CanHandle()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

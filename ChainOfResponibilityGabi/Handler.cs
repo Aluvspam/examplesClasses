@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ChainOfResponibilityGabi
 {
-    public class Handler
+    public abstract class Handler
     {
-        private Handler super;
+        protected Handler super;
         private Handler nextHandler;
 
-        public void Handle()
+        public virtual void Handle()
         {
             nextHandler.Handle();
         }
