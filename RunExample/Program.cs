@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
-
+using Curs17.BuiltInObserverBank;
 namespace RunExample
 {
     class Program
     {
         static void Main(string[] args)
         {
+            RunExamples.Run();
             Decorator.Run.Execute();
             var world = new World();
             world.execute();
