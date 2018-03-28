@@ -10,8 +10,8 @@ namespace Geometry
     {
         private Point[] points;
         public Point[] Points { get { return points; } set { points = value; } }
-        public Segment[] Edges { get; set; }
-        public double Area { get; set; }
+        public Segment[] Edges { get; set; }// fara set, doar cu get - daca setam punctele setam si muchiile 
+        public double Area { get; set; }// fara set la area, doar cu get // folosesc prop lungime din segment si facu un radical 
         public Triangle(Point a, Point b, Point c)
         {
             Point[] triangle = new Point[] { a, b, c };
