@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace PatternChainOfResponsibility
 {
-    public class Handler
+    public abstract class Handler
     {
         protected Handler super;
         protected Handler nextHandler;
 
-        public void handle()
-        {
-            nextHandler.handle();
-        }
+        public abstract void HandleRequest();
     }
 }
+
+
+

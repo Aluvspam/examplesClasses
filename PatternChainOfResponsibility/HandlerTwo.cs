@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace PatternChainOfResponsibility
 {
-    class HandlerTwo : Handler
+    public class HandlerTwo : Handler
     {
-        public bool request;
-        public  void handle()
+        public override void HandleRequest()
         {
-            if (CanHandle(request))
+            if (CanHandle())
             {
-                Console.WriteLine("Handle it");
+                CanHandle();
             }
             else
             {
-                super.handle();
+                super.HandleRequest();
             }
         }
-        public bool CanHandle(bool request)
+
+        public bool CanHandle()
         {
-            return (request);
+            return true;
         }
+
     }
 }

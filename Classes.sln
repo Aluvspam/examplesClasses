@@ -29,7 +29,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternState(Dana)", "State
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternChainOfResponsibility", "PatternChainOfResponsibility\PatternChainOfResponsibility.csproj", "{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointDana", "PointDana\PointDana.csproj", "{D55F1696-2893-4DE9-8A49-F39627A94BF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryDana", "PointDana\GeometryDana.csproj", "{D55F1696-2893-4DE9-8A49-F39627A94BF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
