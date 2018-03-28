@@ -25,11 +25,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternStrategyDana", "Stra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternDecoratorDana", "DecoratorDana\PatternDecoratorDana.csproj", "{8C5F9E1B-CD80-4DD4-A5EC-3653918738B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternState(Dana)", "StatePattern(Dana)\PatternState(Dana).csproj", "{181F5D96-5DD9-4859-B885-A5D0DD947C36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternStateDana", "StatePattern(Dana)\PatternStateDana.csproj", "{181F5D96-5DD9-4859-B885-A5D0DD947C36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternChainOfResponsibility", "PatternChainOfResponsibility\PatternChainOfResponsibility.csproj", "{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryDana", "PointDana\GeometryDana.csproj", "{D55F1696-2893-4DE9-8A49-F39627A94BF8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryDana", "GeometryDanaP\GeometryDana.csproj", "{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,10 +89,10 @@ Global
 		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D55F1696-2893-4DE9-8A49-F39627A94BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
