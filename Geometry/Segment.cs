@@ -9,12 +9,16 @@ namespace Geometry
 	class Segment
 	{
 		private Point[] endpoints;
-		public Point[] Endpoints { get; set; }
+		public Point[] Endpoints
+		{
+			get { return endpoints; }
+			set { endpoints = value; }
+		}
 		public double Length { get; set; }
 
 		public Segment(short a, short b, short c, short d)
 		{
-
-		}
+			Point[] X = new Point[2] { a, b };
+		} 
 	}
 }
