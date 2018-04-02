@@ -32,11 +32,9 @@ namespace GeometryGabi
             Point[] triangle = new Point[] { x, y, z };
         }
 
-        public Triangle(int[] array)
+        public Triangle(short[] array)
         {
-            Segment S1 = new Segment[] { new Point(x, y) };
-            Segment S2 = new Segment[] { new Point(y, z) };
-            Segment S3 = new Segment[] { new Point(z, x) };
+            
         } 
         #endregion
     }
