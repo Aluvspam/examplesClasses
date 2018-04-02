@@ -28,20 +28,27 @@ namespace GeometryDanaP
         }
         public Triangle(int[] myArray)
         {
-            if (myArray.Length >= 7)
+            if (myArray.Length >= 5)
             {
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i < 5; i++)
                 {
 
                 }
             }
         }
-        public double TriangleArea(double a, double b, double c)
-        {
-            s = (a + b + c) / 2;
-            area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
-            return area;
-        }
+
+
+
+
+
+
+
+        //public double TriangleArea(double a, double b, double c)
+        //{
+        //    s = (a + b + c) / 2;
+        //    area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+        //    return area;
+        //}
 
     }
 }
