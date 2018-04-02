@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\Flux\AppData\Local\Temp\vsFBA7.tmp\Debug\</IntermediateOutputPath>
     <IntermediateOutputPath>C:\Users\IVB4A0~1\AppData\Local\Temp\vsC801.tmp\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\Flux\AppData\Local\Temp\vsFBA7.tmp\Release\</IntermediateOutputPath>
     <IntermediateOutputPath>C:\Users\IVB4A0~1\AppData\Local\Temp\vsC801.tmp\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>

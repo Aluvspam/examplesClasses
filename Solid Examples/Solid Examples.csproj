@@ -77,6 +77,7 @@
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteCristi.cs" />
     <Compile Include="WriteDaniel.cs" />
+    <Compile Include="WriteLuana.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
   </ItemGroup>
@@ -92,6 +93,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Decorator\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
