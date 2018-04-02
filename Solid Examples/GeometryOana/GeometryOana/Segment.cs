@@ -22,7 +22,7 @@ namespace GeometryOana
 
         public Segment(short x1, short y1, short x2, short y2)
         {
-            endpoints = new Point[2];
+            endpoints = new Point[] { new Point(x1, y1), new Point(x2, y2) };
         }
 
         public double Length
