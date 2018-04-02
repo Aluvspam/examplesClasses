@@ -46,6 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnimalDaniel\birdDaniel.cs" />
+    <Compile Include="ChainOfResponsibility\Handler.cs" />
+    <Compile Include="ChainOfResponsibility\HandlerOne.cs" />
+    <Compile Include="ChainOfResponsibility\HandlerTwo.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Copy.cs" />
     <Compile Include="AnimalDaniel\dogDaniel.cs" />
@@ -59,9 +62,6 @@
     <Compile Include="Game\Tank.cs" />
     <Compile Include="AnimalDaniel\IMove.cs" />
     <Compile Include="AnimalDaniel\World.cs" />
-    <Compile Include="Geometry\Point.cs" />
-    <Compile Include="Geometry\Segment.cs" />
-    <Compile Include="Geometry\Triangle.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
