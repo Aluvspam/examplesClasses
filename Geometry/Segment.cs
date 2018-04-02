@@ -23,7 +23,7 @@ namespace Geometry
         {
             get
             {
-                return Math.Pow((endpoints[0].X - endpoints[1].X), 2.0) + Math.Pow((endpoints[0].Y - endpoints[1].Y), 2.0);
+                return Math.Sqrt( Math.Pow((endpoints[0].X - endpoints[1].X), 2.0) + Math.Pow((endpoints[0].Y - endpoints[1].Y), 2.0));
             }
         }
     }
