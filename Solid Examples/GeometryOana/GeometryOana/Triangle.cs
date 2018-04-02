@@ -39,7 +39,7 @@ namespace GeometryOana
 
         public Triangle(Point p1, Point p2, Point p3)
         {
-            Point[] triangle = new Point[] { p1, p2, p3 };
+            Point[] points = new Point[] { p1, p2, p3 };
             Segment[] edges = new Segment[] { new Segment(p1, p2), new Segment(p2, p3), new Segment(p3, p1) };
         }
 
