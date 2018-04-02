@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryGabi", "GeometryGab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponibilityGabi", "ChainOfResponibilityGabi\ChainOfResponibilityGabi.csproj", "{A43953CC-16CB-44EE-8D9D-2FC39F8C4B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerOfTwo", "PowerOfTwo\PowerOfTwo.csproj", "{66E15797-D971-4731-B63C-0016C7643CAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{A43953CC-16CB-44EE-8D9D-2FC39F8C4B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A43953CC-16CB-44EE-8D9D-2FC39F8C4B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A43953CC-16CB-44EE-8D9D-2FC39F8C4B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E15797-D971-4731-B63C-0016C7643CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E15797-D971-4731-B63C-0016C7643CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E15797-D971-4731-B63C-0016C7643CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E15797-D971-4731-B63C-0016C7643CAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
