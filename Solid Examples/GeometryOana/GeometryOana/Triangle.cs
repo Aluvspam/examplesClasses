@@ -7,6 +7,7 @@ namespace GeometryOana
     class Triangle
     {
         private Point[] points;
+        private Segment[] edges;
 
         public Point[] Points
         {
@@ -23,7 +24,7 @@ namespace GeometryOana
         {
             get
             {
-                return 
+                return edges;
             }
         }
         public double Area
@@ -39,11 +40,8 @@ namespace GeometryOana
         public Triangle(Point p1, Point p2, Point p3)
         {
             Point[] triangle = new Point[] { p1, p2, p3 };
+            Segment[] edges = new Segment[] { new Segment(p1, p2), new Segment(p2, p3), new Segment(p3, p1) };
         }
 
-        public Triangle(Point[] p)
-        {
-
-        }
     }
 }
