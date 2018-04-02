@@ -23,7 +23,7 @@ namespace GeometryOana
         {
             get
             {
-
+                return 
             }
         }
         public double Area

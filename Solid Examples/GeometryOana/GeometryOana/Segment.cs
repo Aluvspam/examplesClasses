@@ -20,9 +20,9 @@ namespace GeometryOana
             }
         }
 
-        public Segment(short x1, short y1, short x2, short y2)
+        public Segment(Point p1, Point p2)
         {
-            endpoints = new Point[] { new Point(x1, y1), new Point(x2, y2) };
+            Point[] endpoints = new Point[] { p1, p2 };
         }
 
         public double Length
