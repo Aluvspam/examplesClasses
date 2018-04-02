@@ -8,8 +8,11 @@ namespace Geometry
 {
     class Segment
     {
-        private Point[] endpoints;
-        public Point[] Endpoints
+
+		private Point[] endpoints;
+
+
+		public Point[] Endpoints
         {
             get { return endpoints; }
             set { endpoints = value; }
