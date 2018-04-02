@@ -10,6 +10,7 @@ namespace GeometryGabi
     {
         #region Fields
         private Point[] points;
+        private Segment[] edges;
         #endregion
 
         #region Properties
@@ -18,7 +19,10 @@ namespace GeometryGabi
             get { return points; }
             set { points = value; }
         }
-        public Segment[] Edges { get; set; }
+        public Segment[] Edges
+        {
+            get { return edges; }
+        }
         public double Area { get; set; }
         #endregion
 
