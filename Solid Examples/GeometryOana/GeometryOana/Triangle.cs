@@ -26,7 +26,7 @@ namespace GeometryOana
 
             }
         }
-        public double Area 
+        public double Area
         {
             get
             {
@@ -41,7 +41,7 @@ namespace GeometryOana
             Point[] triangle = new Point[] { p1, p2, p3 };
         }
 
-        public Triangle(Point[] p) 
+        public Triangle(Point[] p)
         {
 
         }
