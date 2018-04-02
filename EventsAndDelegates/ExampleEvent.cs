@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace EventsAndDelegates
 {
     public delegate void AndreisDelegate(int x);
-    class Program
+    public class ExampleEvent
     {
         public static event AndreisDelegate Xevent;
         static void Main(string[] args)
