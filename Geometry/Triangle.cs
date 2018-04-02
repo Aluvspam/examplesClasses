@@ -10,7 +10,7 @@ namespace Geometry
     {
         private Point[] points;
         public Point[] Points { get { return points; } set { points = value; } }
-        public Segment[] Edges { get; set; }// fara set, doar cu get - daca setam punctele setam si muchiile 
+        public Segment[] Edges { get; set; }// fara set, doar cu get - daca setam punctele setam si muchiile // folosim 3 puncte 
         public double Area { get; set; }// fara set la area, doar cu get // folosesc prop lungime din segment si facu un radical 
         private Point[] triangle; //am initializat aici triunghiul
         public Point[] Triunghi
