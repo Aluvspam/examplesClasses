@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace GeometryDanaP
 {
-    
     public class Point
         {
             private short x;
             private short y;
-       
         public short X
             {
                 get { return x; }
@@ -22,15 +20,11 @@ namespace GeometryDanaP
                 get { return y; }
                 set { y = value; }
             }
-
             public Point(short x, short y)
             {
                 X = x;
                 Y = y;
-
             }
-           
-
         
 
         //daca vreau sa...print:

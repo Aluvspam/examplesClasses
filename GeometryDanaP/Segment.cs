@@ -8,25 +8,20 @@ namespace GeometryDanaP
 {
     class Segment
     {
-        private Point[,] endpoints;
-
-
-        public Point[,] Endpoints
+        private Point[] endpoints;//segment cu doua capete
+        public Point[] Endpoints
         {
             get { return endpoints; }
             set { endpoints = value; }
         }
         public double Length
         {
-            get { return Length; }
+            get { return Length; } 
             set { Length = 0; }//Length se calculează cu Pitagora
         }
-        public Segment(short x, short y, short x1y1, short x2y2)
+        public Segment(short x1, short y1, short x2, short y2)//coordonatele
         {
-           
-
-            endpoints = new Point[x1y1, x2y2];
-             
+            Point [] segment = new Point[] { new Point (x1, y1)};//array de 9 puncte 
         }
         public double LengthTo(Point Point)
         {
@@ -35,10 +30,6 @@ namespace GeometryDanaP
             //unde a este diferenta pe axa X iar b diferenta pe axa Y. 
             //in cazul lui b la patrat am folosit functia Math.Pow()
         }
-       
-        
-        
-       
 
     }
 }

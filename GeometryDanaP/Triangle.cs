@@ -19,16 +19,22 @@ namespace GeometryDanaP
 
         public double Area
         {
-            get { return Area; }
-            set { Area = area; }
+            get { return Area; }//fara set
+            
         }
-        public Triangle(Point x1y1, Point x2y2, Point x3y3)
+        public Triangle(Point a, Point b, Point c)
         {
+            Point[] triangle = new Point[] { a, b, c };
+        }
+        public Triangle(int[] myArray)
+        {
+            if (myArray.Length >= 7)
+            {
+                for (int i = 0; i < 7; i++)
+                {
 
-        }
-        public Triangle(int[,] myArray)
-        {
-            myArray = new int[x1y1, x2y2, x3y3];
+                }
+            }
         }
         public double TriangleArea(double a, double b, double c)
         {
