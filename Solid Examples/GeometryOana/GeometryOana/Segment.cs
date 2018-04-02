@@ -22,9 +22,9 @@ namespace GeometryOana
 
         public Segment(Point p1, Point p2)
         {
-            Point[] endpoints = new Point[] { p1, p2 };
+            endpoints = new Point[] { p1, p2 };
         }
-
+        //TO DO: fix Length
         public double Length
         {
             get
