@@ -19,9 +19,9 @@ namespace GeometryGabi
         }
         public double Length {
             get {
-                return Math.Sqrt(Math.Pow((endpoints[0].X - endpoints[1].X), 2) + Math.Pow((endpoints[0].Y - endpoints[1].Y), 2);
+                return Math.Sqrt(Math.Pow((endpoints[0].X - endpoints[1].X), 2) + Math.Pow((endpoints[0].Y - endpoints[1].Y), 2));
                     }
-            set { };
+            set { }
         }
         #endregion
 
