@@ -54,6 +54,9 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Point.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Segment.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Triangle.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
