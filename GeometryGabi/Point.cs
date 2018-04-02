@@ -9,8 +9,8 @@ namespace GeometryGabi
     class Point
     {
         #region Fields
-        private short x = 5;
-        private short y = 9;
+        private short x;
+        private short y;
         #endregion
 
         #region Properties
@@ -28,8 +28,8 @@ namespace GeometryGabi
         #region Constructors
         public Point(short x, short y)
         {
-            x = X;
-            y = Y;
+            X = x;
+            Y = y;
         } 
         #endregion
     }
