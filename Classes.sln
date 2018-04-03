@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{C1DEA586-D1EB-418C-B9A3-05409F120418}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegates\EventsAndDelegates.csproj", "{BB729763-9E2C-401A-B7ED-118491CE69DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,18 +77,6 @@ Global
 		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF09AED-4430-4550-80C4-3DAE4157337A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5982945-DD8D-4721-A96F-9E43887ACC46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5982945-DD8D-4721-A96F-9E43887ACC46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5982945-DD8D-4721-A96F-9E43887ACC46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5982945-DD8D-4721-A96F-9E43887ACC46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5A48AB4-7396-4E19-A1C9-4BBC65EA5170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5A48AB4-7396-4E19-A1C9-4BBC65EA5170}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5A48AB4-7396-4E19-A1C9-4BBC65EA5170}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5A48AB4-7396-4E19-A1C9-4BBC65EA5170}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1DEA586-D1EB-418C-B9A3-05409F120418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1DEA586-D1EB-418C-B9A3-05409F120418}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1DEA586-D1EB-418C-B9A3-05409F120418}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1DEA586-D1EB-418C-B9A3-05409F120418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
