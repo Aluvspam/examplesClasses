@@ -10,7 +10,7 @@ namespace EventsAndDelegates
     public class ExampleEvent
     {
         public static event AndreisDelegate Xevent;
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var r = new Random();
             int i = 0;
