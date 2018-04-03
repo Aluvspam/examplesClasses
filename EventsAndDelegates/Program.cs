@@ -19,8 +19,13 @@ namespace EventsAndDelegates
                 if (i == r.Next(10000))
                 {
                     Xevent.Invoke(r.Next(10) + 1);
+                    Xevent.Invoke(AndreiRCalc(i));
                 }
             }
+        }
+        public static void AndreiRCalc(AndreisDelegate x)
+        {
+            Console.WriteLine(x);
         }
     }
 }
