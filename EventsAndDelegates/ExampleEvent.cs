@@ -21,16 +21,17 @@ namespace EventsAndDelegates
                     Xevent.Invoke(r.Next(10) + 1);
                 }
             }
-            r.Xevent += new AndreisDelegate(CorlysMethod);
-
         }
 
-        public static void CorlysMethod(int i)
+        protected virtual void OnXevent()
         {
-            
+            if (Xevent != null)
+            {
+                Xevent(10);
+            }
         }
 
-        AndreisDelegate d1 = new AndreisDelegate(Xevent);
+        
         
     }
 }
