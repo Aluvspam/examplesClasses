@@ -87,6 +87,7 @@
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteCristi.cs" />
     <Compile Include="WriteDaniel.cs" />
+    <Compile Include="WriteLuana.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
   </ItemGroup>
