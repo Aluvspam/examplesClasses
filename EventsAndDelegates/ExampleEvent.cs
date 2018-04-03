@@ -26,7 +26,7 @@ namespace EventsAndDelegates
             var eventSubscriber = new EventSubscriber();  //aici creez o instanta
 
             exampleEvent.Xevent += EventSubscriber.OnXevent; //aici observ ca nu se folosesc paranteze pentru ca
-                                                             //nu se cheama metoda, ci se foloseste numai numele ei
+                                                             //nu se apeleaza metoda, ci se foloseste numai numele ei
                                                              //ca referinta
                                                              
 
