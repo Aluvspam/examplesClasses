@@ -23,7 +23,7 @@ namespace Geometry
             triangle = new Point[] { a, b, c };
         }
 
-        public Triangle(int[] a)
+        public Triangle(short[] a)
         {
             if (a.Length >= 7)
             {
