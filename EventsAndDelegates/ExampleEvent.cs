@@ -13,8 +13,8 @@ namespace EventsAndDelegates
         {
 
         }
-        private ExampleEvent instance;
-        public ExampleEvent Instance
+        private static ExampleEvent instance;
+        public static ExampleEvent Instance
         {
             get
             {
@@ -27,6 +27,7 @@ namespace EventsAndDelegates
         }
         public static event AndreisDelegate Xevent;
         public static event EventHandler Xevent2;
+        public event EventHandler Xevent3;
         public static void Main(string[] args)
         {
             var r = new Random();
@@ -47,6 +48,10 @@ namespace EventsAndDelegates
                 }
                 i++;
             }
+        }
+        public void MoreEvents()
+        {
+            Xevent3.Invoke(this, new AndreisArgs(3.3));
         }
     }
     public class AndreisArgs : EventArgs
