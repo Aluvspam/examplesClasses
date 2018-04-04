@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternChainOfResponsibilit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryDana", "GeometryDanaP\GeometryDana.csproj", "{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegations\EventsAndDelegates.csproj", "{34841E1D-1E30-49E0-B2D2-2204B9D91065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34841E1D-1E30-49E0-B2D2-2204B9D91065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34841E1D-1E30-49E0-B2D2-2204B9D91065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34841E1D-1E30-49E0-B2D2-2204B9D91065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34841E1D-1E30-49E0-B2D2-2204B9D91065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
