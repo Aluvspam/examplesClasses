@@ -1,10 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DingleMouse;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DingleMouse.Tests
 {
@@ -26,7 +21,7 @@ namespace DingleMouse.Tests
         [TestMethod()]
         public void humanYearsCatYearsDogYearsTest()
         {
-            Assert.IsTrue((new int[] {  , 28, 29 }).SequenceEqual(DinglemouseRecursive.humanYearsCatYearsDogYears(3)));
+            Assert.IsTrue((new int[] {  3, 28, 29 }).SequenceEqual(DinglemouseRecursive.humanYearsCatYearsDogYears(3)));
         }
     }
 }

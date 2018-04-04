@@ -47,8 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClashSameBirthDay.cs" />
+    <Compile Include="DanProblem.cs" />
     <Compile Include="Dinglemouse.cs" />
     <Compile Include="DingleMouseByOana.cs" />
+    <Compile Include="ScrambleProblem.cs" />
+    <Compile Include="ShortestWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
