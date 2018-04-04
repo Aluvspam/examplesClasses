@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solid_Examples.Strategy
+namespace Solid_Examples.AndreiR
 {
-	public interface IMove
-	{
-		void Move();
-	}
+    public interface IMoveStrategy
+    {
+        void Move();
+    }
 }

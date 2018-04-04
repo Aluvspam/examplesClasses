@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solid_Examples.Strategy
+namespace Solid_Examples.AndreiR
 {
-	public class Dog
-	{
-		string name = "Dog";
-		IMove moveStrategy = new Running4Feet();
-		public void Move()
-		{
-			Console.WriteLine("I'm a {0}", name);
-			moveStrategy.Move();
-		}
-	}
+    public class Dog
+    {
+        string name = "dog";
+        IMoveStrategy moveStrategy = new Running4Feet();
+        public void Move()
+        {
+            Console.Write("I'm a {0}", name);
+            moveStrategy.Move();
+        }
+    }
 }

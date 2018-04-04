@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class WriteScreen : IWrite
+    public class AClass
     {
-        public void WriteIt(string text)
+        public int ceva;
+        public string altceva;
+        public void DoCeva()
         {
-            Console.WriteLine(text);
+            Console.WriteLine("I am doing ceva");
         }
     }
 }

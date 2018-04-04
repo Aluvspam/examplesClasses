@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ExercisesCsharp
 {
@@ -7,10 +8,39 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("answer");
-            var s = ExampleSum(7, 5);
-            var s3 = ExampleSum(14, 11, 9);
-            Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+            //DanProblem.Execute();
+            //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
+            //Console.ReadLine();
+            //Console.WriteLine("answer");
+            //var s = ExampleSum(7, 5);
+            //var s3 = ExampleSum(14, 11, 9);
+            //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+            Console.WriteLine(string.Join(" ", Wave("Andrei")));
+            Console.ReadLine();
+        }
+        public static List<string> Wave(string str)
+        {
+            string Str = str.ToLower();
+            string[] arr = new string[Str.Length];
+            if (Str == string.Empty)
+            {
+                arr = new string[1];
+                arr[0] = "'";
+            }
+            else
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    {
+                        char c = Str[i];
+                        string d = c.ToString().ToUpper();
+                        char e = char.Parse(d);
+                        arr[i] = Str.Replace(c, e);// imi schimba toate valorile din caracterul respectiv
+
+                    }
+                }
+            }
+            return arr.ToList();
         }
         public int AsciiSum(string S)
         {

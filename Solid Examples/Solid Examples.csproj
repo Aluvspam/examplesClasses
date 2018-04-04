@@ -45,10 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChainOfResponsibilityLuana\Handler.cs" />
-    <Compile Include="ChainOfResponsibilityLuana\HandlerOne.cs" />
-    <Compile Include="ChainOfResponsibilityLuana\HandlerTwo.cs" />
+    <Compile Include="AClass.cs" />
+    <Compile Include="Strategy\Drone.cs" />
+    <Compile Include="Strategy\Flying.cs" />
+    <Compile Include="Strategy\Running4Feet.cs" />
+    <Compile Include="B1.cs" />
+    <Compile Include="B2.cs" />
+    <Compile Include="Strategy\Bird.cs" />
+    <Compile Include="Strategy\Dog.cs" />
+    <Compile Include="Strategy\IMove.cs" />
+    <Compile Include="Strategy\World.cs" />
     <Compile Include="Copy.cs" />
+    <Compile Include="DanasWrite.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
     <Compile Include="Game\Helicopter.cs" />
@@ -57,18 +65,8 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
-    <Compile Include="GeometryLuana\Point.cs" />
-    <Compile Include="GeometryLuana\Segment.cs" />
-    <Compile Include="GeometryLuana\Triangle.cs" />
-    <Compile Include="PizzaDecLuana\BaseLayer.cs" />
-    <Compile Include="PizzaDecLuana\Cheese.cs" />
-    <Compile Include="PizzaDecLuana\Chilly.cs" />
-    <Compile Include="PizzaDecLuana\Decorator.cs" />
-    <Compile Include="PizzaDecLuana\Meat.cs" />
-    <Compile Include="PizzaDecLuana\Mushrooms.cs" />
-    <Compile Include="PizzaDecLuana\Olives.cs" />
-    <Compile Include="PizzaDecLuana\PizzaBase.cs" />
-    <Compile Include="PizzaDecLuana\Run.cs" />
+    <Compile Include="IRead.cs" />
+    <Compile Include="IWrite.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -76,21 +74,8 @@
     <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
-    <Compile Include="StateLuana\Client.cs" />
-    <Compile Include="StateLuana\Context.cs" />
-    <Compile Include="StateLuana\AbstractState.cs" />
-    <Compile Include="StateLuana\StateOne.cs" />
-    <Compile Include="StateLuana\StateThree.cs" />
-    <Compile Include="StateLuana\StateTwo.cs" />
-    <Compile Include="Strategy\AbstractWorld.cs" />
-    <Compile Include="Strategy\Bird.cs" />
-    <Compile Include="Strategy\Dog.cs" />
-    <Compile Include="Strategy\Drone.cs" />
-    <Compile Include="Strategy\Flying.cs" />
-    <Compile Include="Strategy\IMove.cs" />
-    <Compile Include="Strategy\Running4Feet.cs" />
-    <Compile Include="Strategy\World.cs" />
     <Compile Include="WriteAndreiR.cs" />
+    <Compile Include="WriteCristi.cs" />
     <Compile Include="WriteDaniel.cs" />
     <Compile Include="WriteLuana.cs" />
     <Compile Include="WriteScreen.cs" />
@@ -101,9 +86,16 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WinformWriteDana\WinformWriteDana.csproj">
+      <Project>{def701e6-067f-4326-9070-0508bba9321b}</Project>
+      <Name>WinformWriteDana</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="System\Collections\Generic\" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Decorator\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

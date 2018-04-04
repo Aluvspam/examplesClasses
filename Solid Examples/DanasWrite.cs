@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class WriteCristi : IWrite
+    public class DanasWrite : IWrite
     {
+        WinformWriteDana.WriteDana formElem = new WinformWriteDana.WriteDana();
         public void WriteIt(string text)
         {
-            string before = "-=";
-            string after = "=-";
-            Console.Write(before + " " + text + " " + after);
-            Console.ReadLine();
+            formElem.WriteIt(text);
         }
     }
 }

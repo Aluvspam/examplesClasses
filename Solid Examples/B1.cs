@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solid_Examples.AndreiR
+namespace Solid_Examples
 {
-    public class Flying : IMoveStrategy
+    class B1 : AClass
     {
-        public void Move()
+        public void Execute()
         {
-            Console.WriteLine("I fly!");
+            DoCeva();
+            ceva = 2;
+            altceva = "2";
         }
     }
 }
