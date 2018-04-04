@@ -80,6 +80,7 @@ namespace RunExample
 
         private static void RunEventsAndDelegates()
         {
+            (new EventSubscriber()).XeventSubscriber();
             ExampleEvent.Main(new string[0]);
         }
 
@@ -88,6 +89,6 @@ namespace RunExample
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
 
-        
+
     }
 }
