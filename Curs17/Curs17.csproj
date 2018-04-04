@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A761CE25-E5D1-4805-A5AF-BF3CE5D23DD4}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{21454130-F2AE-454F-954A-67FC94EC4859}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RunExample</RootNamespace>
-    <AssemblyName>RunExample</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Curs17</RootNamespace>
+    <AssemblyName>Curs17</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,17 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,34 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BankExample\AbstractClient.cs" />
+    <Compile Include="BankExample\Bank.cs" />
+    <Compile Include="BankExample\Importer.cs" />
+    <Compile Include="BankExample\Person.cs" />
+    <Compile Include="BankExample\RunExamples.cs" />
+    <Compile Include="BankExample\TourismAgency.cs" />
+    <Compile Include="BuiltInObserverBank\AbstractClient.cs" />
+    <Compile Include="BuiltInObserverBank\Bank.cs" />
+    <Compile Include="BuiltInObserverBank\Importer.cs" />
+    <Compile Include="BuiltInObserverBank\Person.cs" />
+    <Compile Include="BuiltInObserverBank\RunExamples.cs" />
+    <Compile Include="BuiltInObserverBank\TourismAgency.cs" />
+    <Compile Include="ChainOfResponsability\AbstractHandler.cs" />
+    <Compile Include="ChainOfResponsability\AntiPattern.cs" />
+    <Compile Include="ChainOfResponsability\EurHandler.cs" />
+    <Compile Include="ChainOfResponsability\Exchange.cs" />
+    <Compile Include="ChainOfResponsability\RonHandler.cs" />
+    <Compile Include="ChainOfResponsability\RunExamples.cs" />
+    <Compile Include="ChainOfResponsability\UsdHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
-      <Name>ClassLibrary1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj">
-      <Project>{bb729763-9e2c-401a-b7ed-118491ce69df}</Project>
-      <Name>EventsAndDelegates</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Curs17\Curs17.csproj">
-      <Project>{21454130-f2ae-454f-954a-67fc94ec4859}</Project>
-      <Name>Curs17</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Solid Examples\Decorator\Decorator\Decorator.csproj">
-      <Project>{6df09aed-4430-4550-80c4-3dae4157337a}</Project>
-      <Name>Decorator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Solid Examples\Solid Examples.csproj">
-      <Project>{4838f67c-047e-4659-b1bd-fbb48e324fa1}</Project>
-      <Name>Solid Examples</Name>
-    </ProjectReference>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
