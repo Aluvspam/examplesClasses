@@ -27,13 +27,12 @@ namespace EventsAndDelegates
         }
         public static event AndreisDelegate Xevent;
         public static event EventHandler Xevent2;
-        public static event EventHandler Xevent3;// l-am facut static ca nu era sau nu trebuia? 
+        public event EventHandler Xevent3;
         public static void Main(string[] args)
         {
             AndreisArgs objAnd = new AndreisArgs(4.67);
             EventArgs objEv = new EventArgs();
             EventRoca objRoca = new EventRoca();
-            Xevent.Invoke(55) += objRoca;
             var r = new Random();
             int i = 0;
 
@@ -43,14 +42,14 @@ namespace EventsAndDelegates
                 {
                     Xevent.Invoke(r.Next(10) + 1);
                 }
-                else if (i / 2 == r.Next(1000))
+               /* else if (i / 2 == r.Next(1000))
                  {
                      Xevent2.Invoke(Instance, objEv);// am incercat sa adaug instanta ExempleEvent si un obj de tip EventArgs - da eroare
                  }
                  else
                  {
                      Xevent2.Invoke(Instance, objAnd);
-                 }
+                 }*/
                 i++;
             }
            
@@ -78,8 +77,7 @@ namespace EventsAndDelegates
         {
             ExampleEvent.Xevent += OnXevent;
             ExampleEvent.Xevent += AndreiRCalc;
-            //ExampleEvent.Xevent3 += AndreiRCalc;// aici imi da eroare, de ce, semnatura metodei nu e ok?
-
+            EventRoca.Revent += AndreiRCalc;
         }
         public static void AndreiRCalc(int x)
         {
@@ -114,6 +112,7 @@ namespace EventsAndDelegates
       
         public void OnRevent(int a)
         {
+            
             Console.WriteLine("RocaEvent (bazat pe eventul anterior): " + a);
         }
         public void ReventSubscriber()
