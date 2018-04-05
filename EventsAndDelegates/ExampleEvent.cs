@@ -32,7 +32,6 @@ namespace EventsAndDelegates
         {
             AndreisArgs objAnd = new AndreisArgs(4.67);
             EventArgs objEv = new EventArgs();
-            EventRoca objRoca = new EventRoca();
             var r = new Random();
             int i = 0;
 
@@ -88,6 +87,7 @@ namespace EventsAndDelegates
     public delegate void RocaDelegate(int a);//delegate-ul meu
     public class EventRoca
     {
+      
         public EventRoca()
         {
 
@@ -112,8 +112,8 @@ namespace EventsAndDelegates
       
         public void OnRevent(int a)
         {
-            
             Console.WriteLine("RocaEvent (bazat pe eventul anterior): " + a);
+            
         }
         public void ReventSubscriber()
         {
