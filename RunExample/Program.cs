@@ -89,6 +89,7 @@ namespace RunExample
         private static void RunEventsAndDelegates()
         {
             (new EventSubscriber()).XeventSubscriber();
+            new RocaEventSubscriber().ReventSubscriber();
             ExampleEvent.Main(new string[0]);
         }
 
