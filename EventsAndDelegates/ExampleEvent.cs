@@ -33,6 +33,7 @@ namespace EventsAndDelegates
             AndreisArgs objAnd = new AndreisArgs(4.67);
             EventArgs objEv = new EventArgs();
             EventRoca objRoca = new EventRoca();
+            Xevent.Invoke(55) += objRoca;
             var r = new Random();
             int i = 0;
 
