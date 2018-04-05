@@ -40,19 +40,28 @@ namespace EventsAndDelegates
             {
                 if (i == r.Next(1000))
                 {
-                    Xevent.Invoke(r.Next(10) + 1);
+                    if (Xevent != null)
+                    {
+                        Xevent.Invoke(r.Next(10) + 1);
+                    }
                 }
-               /* else if (i / 2 == r.Next(1000))
-                 {
-                     Xevent2.Invoke(Instance, objEv);// am incercat sa adaug instanta ExempleEvent si un obj de tip EventArgs - da eroare
-                 }
-                 else
-                 {
-                     Xevent2.Invoke(Instance, objAnd);
-                 }*/
+                else if (i / 2 == r.Next(1000))
+                {
+                    if (Xevent2 != null)
+                    {
+                        Xevent2.Invoke(Instance, objEv);
+                    }
+                }
+                else
+                {
+                    if (Xevent2 != null)
+                    {
+                        Xevent2.Invoke(Instance, objAnd);
+                    }
+                }
                 i++;
             }
-           
+
         }
         public void MoreEvents()
         {
@@ -105,14 +114,14 @@ namespace EventsAndDelegates
             }
         }
         public static event RocaDelegate Revent;//nu stiu cum sa leg event-ul asta sa se bazeze pe eventu-ul lui Andrei
-        
+
     }
     public class RocaEventSubscriber
     {
-      
+
         public void OnRevent(int a)
         {
-            
+
             Console.WriteLine("RocaEvent (bazat pe eventul anterior): " + a);
         }
         public void ReventSubscriber()
