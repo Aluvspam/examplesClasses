@@ -40,11 +40,11 @@ namespace EventsAndDelegates
                 }
                 else if (i / 2 == r.Next(1000))
                 {
-                    Xevent2.Invoke(new ExampleEvent(), new EventArgs());
+                   Xevent2.Invoke(new ExampleEvent(), new EventArgs());
                 }
                 else
                 {
-                    Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
+                  Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
                 }
                 i++;
             }
