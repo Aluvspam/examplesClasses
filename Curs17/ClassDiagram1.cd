@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Curs17.BuiltInObserverBank.AbstractClient">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuiltInObserverBank\AbstractClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Curs17.BuiltInObserverBank.Bank">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAgAAAAAAgACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuiltInObserverBank\Bank.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Curs17.BuiltInObserverBank.Importer">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuiltInObserverBank\Importer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Curs17.BuiltInObserverBank.Person">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuiltInObserverBank\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Curs17.BuiltInObserverBank.RunExamples">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>BuiltInObserverBank\RunExamples.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Curs17.BuiltInObserverBank.TourismAgency">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BuiltInObserverBank\TourismAgency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="Curs17.BuiltInObserverBank.MyEventHandler">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>BuiltInObserverBank\Bank.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

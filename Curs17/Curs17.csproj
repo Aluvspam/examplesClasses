@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{774990CE-33C3-4187-9211-4A5171CC190E}</ProjectGuid>
+    <ProjectGuid>{21454130-F2AE-454F-954A-67FC94EC4859}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Curs17</RootNamespace>
+    <AssemblyName>Curs17</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -20,7 +20,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <IntermediateOutputPath>C:\Users\tony\AppData\Local\Temp\vs2497.tmp\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,13 +28,8 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <IntermediateOutputPath>C:\Users\tony\AppData\Local\Temp\vs2497.tmp\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,22 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
-    <Compile Include="Category.cs" />
-    <Compile Include="Constants.cs" />
-    <Compile Include="Curs.cs" />
-    <Compile Include="DayOfWeek.cs" />
-    <Compile Include="Orar.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="BankExample\AbstractClient.cs" />
+    <Compile Include="BankExample\Bank.cs" />
+    <Compile Include="BankExample\Importer.cs" />
+    <Compile Include="BankExample\Person.cs" />
+    <Compile Include="BankExample\RunExamples.cs" />
+    <Compile Include="BankExample\TourismAgency.cs" />
+    <Compile Include="BuiltInObserverBank\AbstractClient.cs" />
+    <Compile Include="BuiltInObserverBank\Bank.cs" />
+    <Compile Include="BuiltInObserverBank\Importer.cs" />
+    <Compile Include="BuiltInObserverBank\Person.cs" />
+    <Compile Include="BuiltInObserverBank\RunExamples.cs" />
+    <Compile Include="BuiltInObserverBank\TourismAgency.cs" />
+    <Compile Include="ChainOfResponsability\AbstractHandler.cs" />
+    <Compile Include="ChainOfResponsability\AntiPattern.cs" />
+    <Compile Include="ChainOfResponsability\EurHandler.cs" />
+    <Compile Include="ChainOfResponsability\Exchange.cs" />
+    <Compile Include="ChainOfResponsability\RonHandler.cs" />
+    <Compile Include="ChainOfResponsability\RunExamples.cs" />
+    <Compile Include="ChainOfResponsability\UsdHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Session.cs" />
-    <Compile Include="Sex.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Teacher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,6 +4,8 @@ using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
 using EventsAndDelegates;
+using Curs17;
+using Decorator;
 
 
 namespace RunExample
@@ -18,12 +20,14 @@ namespace RunExample
             AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
             Console.ReadLine();
             Decorator.Run.Execute();
+            Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();
             List<IWrite> writers = new List<IWrite>();
             IRead ir = new ReadKeyboard();
             writers.AddRange(new IWrite[] { new WriteAndreiR(), new WriteCristi(), new WriteOana(), new WriteScreen(), new WriteDaniel(), new DanasWrite() });
+            var ceva = new List<int>[writers.Count];
             foreach (var writer in writers)
             {
                 new Copy().CopyIt(ir, writer);
@@ -84,6 +88,7 @@ namespace RunExample
 
         private static void RunEventsAndDelegates()
         {
+            (new EventSubscriber()).XeventSubscriber();
             ExampleEvent.Main(new string[0]);
         }
 
@@ -91,5 +96,7 @@ namespace RunExample
         {
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
+
+
     }
 }
