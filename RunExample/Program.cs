@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
+using EventsAndDelegates;
+using Curs17;
+using Decorator;
+
 
 namespace RunExample
 {
@@ -10,13 +14,16 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
-            Decorator.Run.Execute();
+            RunEventsAndDelegates();
+            return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
+            Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();
             List<IWrite> writers = new List<IWrite>();
             IRead ir = new ReadKeyboard();
             writers.AddRange(new IWrite[] { new WriteAndreiR(), new WriteCristi(), new WriteOana(), new WriteScreen(), new WriteDaniel(), new DanasWrite() });
+            var ceva = new List<int>[writers.Count];
             foreach (var writer in writers)
             {
                 new Copy().CopyIt(ir, writer);
@@ -74,9 +81,20 @@ namespace RunExample
             int a4 = ((Teacher)AndyDeLa).Wage + 1;
             Console.ReadLine();
         }
+
+        private static void RunEventsAndDelegates()
+        {
+            (new EventSubscriber()).XeventSubscriber();
+            World myWorld = new World();
+            ExampleEvent.Xevent += myWorld.OnXeventHandler;
+            ExampleEvent.Main(new string[0]);
+        }
+
         private static Person Promote(Person pupil)
         {
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
+
+
     }
 }

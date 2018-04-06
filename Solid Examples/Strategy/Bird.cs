@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.AndreiR
 {
-    public class Bird
+    public class Bird : AbstractEntity
     {
-        string name = "Bird";
-        IMoveStrategy moveStrategy = new Flying();
-        public void Move()
+        public Bird()
         {
-            Console.Write("I am a {0}", name);
-            moveStrategy.Move();
+            name = "Bird";
+            moveStrategy = new Flying();
         }
     }
 }
