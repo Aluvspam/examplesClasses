@@ -4,8 +4,10 @@ using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
 using EventsAndDelegates;
+using Curs17;
+using Decorator;
 
-using Curs17.BuiltInObserverBank;
+
 namespace RunExample
 {
     class Program
@@ -14,14 +16,14 @@ namespace RunExample
         {
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
-            RunExamples.Run();
-            Decorator.Run.Execute();
+            Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();
             List<IWrite> writers = new List<IWrite>();
             IRead ir = new ReadKeyboard();
             writers.AddRange(new IWrite[] { new WriteAndreiR(), new WriteCristi(), new WriteOana(), new WriteScreen(), new WriteDaniel(), new DanasWrite() });
+            var ceva = new List<int>[writers.Count];
             foreach (var writer in writers)
             {
                 new Copy().CopyIt(ir, writer);
@@ -82,6 +84,9 @@ namespace RunExample
 
         private static void RunEventsAndDelegates()
         {
+            (new EventSubscriber()).XeventSubscriber();
+            World myWorld = new World();
+            ExampleEvent.Xevent += myWorld.OnXeventHandler;
             ExampleEvent.Main(new string[0]);
         }
 
@@ -89,5 +94,7 @@ namespace RunExample
         {
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
+
+
     }
 }
