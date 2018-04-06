@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Solid_Examples
+namespace Solid_Examples.AndreiR
 {
-    public class WriteScreen : IWrite
+    public class Flying : IMoveStrategy
     {
-        public void WriteIt(string text)
+        public void Move()
         {
-            Console.WriteLine(text);
+            Console.WriteLine("I fly!");
         }
     }
 }

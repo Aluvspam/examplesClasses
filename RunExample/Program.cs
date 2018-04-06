@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using ClassLibrary1;
 using Solid_Examples;
+using Solid_Examples.AndreiR;
 
 namespace RunExample
 {
@@ -9,7 +10,18 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
-            new Copy().CopyIt();
+            Decorator.Run.Execute();
+            var world = new World();
+            world.execute();
+            Console.ReadLine();
+            List<IWrite> writers = new List<IWrite>();
+            IRead ir = new ReadKeyboard();
+            writers.AddRange(new IWrite[] { new WriteAndreiR(), new WriteCristi(), new WriteOana(), new WriteScreen(), new WriteDaniel(), new DanasWrite() });
+            foreach (var writer in writers)
+            {
+                new Copy().CopyIt(ir, writer);
+            }
+
             Console.ReadLine();
             //old examples below
             var schoolAddress = new Address("Bucuresti", "Mihai Eminescu", "19-21");

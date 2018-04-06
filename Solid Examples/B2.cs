@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    public class WriteScreen : IWrite
+    class B2
     {
-        public void WriteIt(string text)
+        AClass myThing = new AClass();
+        public void Execute()
         {
-            Console.WriteLine(text);
+            myThing.DoCeva();
+            myThing.ceva = 2;
+            myThing.altceva = "2";
         }
     }
 }
