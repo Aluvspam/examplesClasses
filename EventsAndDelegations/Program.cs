@@ -7,12 +7,33 @@ using System.Threading.Tasks;
 namespace EventsAndDelegates
 {
     public delegate void AndreisDelegate(int x);  // declarare delegat
-    //ExampleEvent
-    class Program
+    public class ExampleEvent
     {
+        private ExampleEvent()// exemplu de Singleton, am deja constructor, nu mai am voie sa fac altul dar accesez instanta care-mi da deja un obiect//folosim pt obiecte care nu sunt statice
+        {
+
+        }
+        private static ExampleEvent instance;//instanta private
+        public static ExampleEvent Instance// static le accesez din clasa
+        {
+            get
+
+            {
+                if (instance != null)
+                {
+                    instance = new ExampleEvent();//
+                }
+                return instance;
+            }
+        }
         public static event AndreisDelegate Xevent; //declarare eveniment de tip delagat
+        public static event AndreisDelegate Xevent2;
+        public  event AndreisDelegate Xevent3;//nu mai este static
+
         public static void Main(string[] args)
         {
+
+
             var r = new Random();
             int i = 0;
             while (true)
@@ -26,7 +47,10 @@ namespace EventsAndDelegates
         }
         //ideea ca eu nu am acces la codul de mai sus, nu scriu in metoda lui Andrei
         // 
-
+        public void MoreEvent()
+        {
+            //Xevent.Invoke(this, new AndreisArgs(3, 30));//THIS il trimit ca parametru in obiect
+        }
         public class EventSubscriber
         {
             public void OnXevent(int x)
@@ -38,7 +62,7 @@ namespace EventsAndDelegates
                 //ExampleEvent.Xevent += OnXevent;
 
             }
-          
+
             //private static void RunEventsAndDelegates() // in run
             //{
             //ExempleEvent.Main(new string[0]);

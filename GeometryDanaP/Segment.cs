@@ -16,8 +16,8 @@ namespace GeometryDanaP
         }
         public double Length
         {
-            get { return Length; } 
-            set { Length = 0; }//Length se calculează cu Pitagora
+            //get { return Math.Sqrt(Math.Pow((endpoints[0].X - endpoints[1].X),2)+Math); } //Length se calculează cu Pitagora
+            set { Length = 0; }
         }
         public Segment(short x1, short y1, short x2, short y2)//coordonatele
         {
