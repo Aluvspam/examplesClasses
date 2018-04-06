@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using ClassLibrary1;
 using Solid_Examples;
 
+
 namespace RunExample
 {
     class Program
     {
         static void Main(string[] args)
         {
+           // RunEventsAndDelegates();
             new Copy().CopyIt();
             Console.ReadLine();
             //old examples below
@@ -61,10 +63,17 @@ namespace RunExample
             AndyDeLa = Promote(AndyDeLa);
             int a4 = ((Teacher)AndyDeLa).Wage + 1;
             Console.ReadLine();
+
         }
+
         private static Person Promote(Person pupil)
         {
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
+        //private static void RunEventsAndDelegates()
+        //{
+        //    (new EventSubscriber()).XeventSubscriber();
+        //    ExampleEvent.Main(new string[0]);
+        //}
     }
 }

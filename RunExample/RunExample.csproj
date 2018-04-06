@@ -63,6 +63,10 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EventsAndDelegations\EventsAndDelegates.csproj">
+      <Project>{34841e1d-1e30-49e0-b2d2-2204b9d91065}</Project>
+      <Name>EventsAndDelegates</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Solid Examples\Solid Examples.csproj">
       <Project>{4838f67c-047e-4659-b1bd-fbb48e324fa1}</Project>
       <Name>Solid Examples</Name>
