@@ -34,18 +34,24 @@ namespace EventsAndDelegates
             int i = 0;
             while (true)
             {
-                if (i == r.Next(100))
+                if ((i % 500) == r.Next(500))
                 {
-                    Xevent.Invoke(r.Next(10) + 1);
+                    if (Xevent != null)
+                    {
+                        Xevent.Invoke(r.Next(10) + 1);
+                    }
                 }
                 else if (i / 2 == r.Next(1000))
                 {
-                   Xevent2.Invoke(new ExampleEvent(), new EventArgs());
+                    if (Xevent2 != null)
+                    {
+                        Xevent2.Invoke(new ExampleEvent(), new EventArgs());
+                    }
                 }
-                else
-                {
-                  Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
-                }
+                //else
+                //{
+                //    Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
+                //}
                 i++;
             }
         }

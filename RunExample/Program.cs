@@ -85,6 +85,8 @@ namespace RunExample
         private static void RunEventsAndDelegates()
         {
             (new EventSubscriber()).XeventSubscriber();
+            World myWorld = new World();
+            ExampleEvent.Xevent += myWorld.OnXeventHandler;
             ExampleEvent.Main(new string[0]);
         }
 
