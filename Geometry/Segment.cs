@@ -21,6 +21,14 @@ namespace Geometry
             {
                 return Math.Sqrt(Math.Pow(endpoints[0].X - endpoints[1].X, 2.0) + Math.Pow(endpoints[0].Y - endpoints[1].Y, 2.0));
             }
+            set
+            {
+                if (value > 0)
+                {
+
+                }
+                Console.WriteLine("length can't be less than 0");
+            }
         }
 
         public Segment(short x1, short y1, short x2, short y2)
