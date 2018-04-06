@@ -37,8 +37,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs17", "..\..\..\Desktop\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "..\..\..\Desktop\Cursuri Programare\DesignPatterns\DesignPatterns.csproj", "{FA4C10BA-ED75-446F-90A4-CA8131967B9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs17", "Curs17\Curs17.csproj", "{21454130-F2AE-454F-954A-67FC94EC4859}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,10 +111,6 @@ Global
 		{FA4C10BA-ED75-446F-90A4-CA8131967B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4C10BA-ED75-446F-90A4-CA8131967B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4C10BA-ED75-446F-90A4-CA8131967B9B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21454130-F2AE-454F-954A-67FC94EC4859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21454130-F2AE-454F-954A-67FC94EC4859}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21454130-F2AE-454F-954A-67FC94EC4859}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21454130-F2AE-454F-954A-67FC94EC4859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
