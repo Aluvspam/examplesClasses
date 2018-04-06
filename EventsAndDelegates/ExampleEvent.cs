@@ -86,7 +86,7 @@ namespace EventsAndDelegates
         {
             ExampleEvent.Xevent += OnXevent;
             ExampleEvent.Xevent += AndreiRCalc;
-            EventRoca.Revent += AndreiRCalc;
+            //EventRoca.Revent += AndreiRCalc;
         }
         public static void AndreiRCalc(int x)
         {
