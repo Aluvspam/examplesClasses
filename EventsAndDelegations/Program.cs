@@ -14,7 +14,7 @@ namespace EventsAndDelegates
 
         }
         private static ExampleEvent instance;//instanta private
-        public static ExampleEvent Instance// static le accesez din clasa
+        public static ExampleEvent Instance// static, le accesez din clasa
         {
             get
 
@@ -27,13 +27,10 @@ namespace EventsAndDelegates
             }
         }
         public static event AndreisDelegate Xevent; //declarare eveniment de tip delagat
-        public static event AndreisDelegate Xevent2;
-        public  event AndreisDelegate Xevent3;//nu mai este static
-
+        public static event EventHandler Xevent2;
+        public event EventHandler Xevent3;//nu mai este static
         public static void Main(string[] args)
         {
-
-
             var r = new Random();
             int i = 0;
             while (true)
@@ -42,34 +39,47 @@ namespace EventsAndDelegates
                 {
                     Xevent.Invoke(r.Next(10) + 1);//lansare eveniment
                 }
+                else if (i / 2 == r.Next(1000))
+                {
+                    Xevent2.Invoke(new ExampleEvent(), new EventArgs());
+                }
+                else
+                {
+                    Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
+                }
                 i++;
             }
         }
-        //ideea ca eu nu am acces la codul de mai sus, nu scriu in metoda lui Andrei
-        // 
+        //nu am acces la codul de mai sus, nu scriu in metoda lui Andrei
         public void MoreEvent()
         {
-            //Xevent.Invoke(this, new AndreisArgs(3, 30));//THIS il trimit ca parametru in obiect
+            Xevent3.Invoke(this, new AndreisArgs(3.3));//THIS il trimit ca parametru in obiect
         }
-        public class EventSubscriber
+
+        public class AndreisArgs : EventArgs
         {
-            public void OnXevent(int x)
+            public AndreisArgs(double d)
             {
-                Console.WriteLine("Dana" + x);
+                score = d;
             }
-            protected virtual void XeventSubscriber()
+            double score;
+
+            public class EventSubscriber
             {
-                //ExampleEvent.Xevent += OnXevent;
+                public void OnXevent(int x)
+                {
+                    Console.WriteLine("Dana" + x);
+                }
+                protected virtual void XeventSubscriber()//aici ma abonez
+                {
+                    ExampleEvent.Xevent += OnXevent;
 
+                }
+
+               
             }
 
-            //private static void RunEventsAndDelegates() // in run
-            //{
-            //ExempleEvent.Main(new string[0]);
-            //    (new EventSubscriber
-            //}
         }
-
     }
 }
 
@@ -77,3 +87,4 @@ namespace EventsAndDelegates
 //  : Și creați o metodă
 //  : Pe care să o abonăm la eveniment
 //  : Să se execute când este invocat acesta
+// + abonare la eveniment
