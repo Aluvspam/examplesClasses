@@ -17,7 +17,7 @@ namespace RunExample
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
             //my Shaorma a la Andrei
-            AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
+          //  AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
             Console.ReadLine();
             Decorator.Run.Execute();
             Run.Execute();
