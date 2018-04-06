@@ -91,6 +91,7 @@ namespace EventsAndDelegates
         public static void AndreiRCalc(int x)
         {
             Console.WriteLine("andrei " + x);
+            EventRoca.Instance.TriggerEvent(x);
         }
     }
     #region TEMA AR
@@ -101,8 +102,8 @@ namespace EventsAndDelegates
         {
 
         }
-        private EventRoca instance;
-        public EventRoca Instance
+        private static EventRoca instance;
+        public static EventRoca Instance
         {
             get
             {
@@ -114,6 +115,10 @@ namespace EventsAndDelegates
             }
         }
         public static event RocaDelegate Revent;//nu stiu cum sa leg event-ul asta sa se bazeze pe eventu-ul lui Andrei
+        public void TriggerEvent(int x)
+        {
+            Revent.Invoke(x);
+        }
 
     }
     public class RocaEventSubscriber
