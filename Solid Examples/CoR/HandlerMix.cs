@@ -12,19 +12,10 @@ namespace Solid_Examples.CoR
         {
             if (CanHandle(r))
             {
-                if (r.X == 7)
+                if (r.X == 7 || r.X == 11 || r.X == 13)
                 {
-                    Console.Write(words[7]);
-                    r.Handled = true;
-                }
-                else if (r.X == 11)
-                {
-                    Console.Write(words[11]);
-                    r.Handled = true;
-                }
-                else if( r.X == 13)
-                {
-                    Console.Write(words[13]);
+                    int n = r.X;
+                    Console.Write(words[n]);
                     r.Handled = true;
                 }
             }
