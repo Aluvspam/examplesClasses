@@ -15,7 +15,8 @@ namespace RunExample
         static void Main(string[] args)
         {
             FizzBuzz fb = new FizzBuzz();
-            fb.Run(100);
+            fb.Run(16);
+            Console.ReadLine();
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
             Run.Execute();

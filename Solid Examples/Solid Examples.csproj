@@ -51,6 +51,7 @@
     <Compile Include="CoR\AbstractHandler.cs" />
     <Compile Include="CoR\Handler3.cs" />
     <Compile Include="CoR\Handler5.cs" />
+    <Compile Include="CoR\HandlerMix.cs" />
     <Compile Include="CoR\Request.cs" />
     <Compile Include="Strategy\AbstractEntity.cs" />
     <Compile Include="Strategy\Drone.cs" />
@@ -104,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <None Include="CoR\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Decorator\" />
