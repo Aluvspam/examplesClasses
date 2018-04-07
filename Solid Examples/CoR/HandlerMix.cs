@@ -14,17 +14,17 @@ namespace Solid_Examples.CoR
             {
                 if (r.X == 7)
                 {
-                    Console.WriteLine(words[7]);
+                    Console.Write(words[7]);
                     r.Handled = true;
                 }
                 else if (r.X == 11)
                 {
-                    Console.WriteLine(words[11]);
+                    Console.Write(words[11]);
                     r.Handled = true;
                 }
                 else if( r.X == 13)
                 {
-                    Console.WriteLine(words[13]);
+                    Console.Write(words[13]);
                     r.Handled = true;
                 }
             }
