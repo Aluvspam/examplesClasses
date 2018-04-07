@@ -6,7 +6,7 @@ using Solid_Examples.AndreiR;
 using EventsAndDelegates;
 using Curs17;
 using Decorator;
-
+using Solid_Examples.CoR;
 
 namespace RunExample
 {
@@ -14,6 +14,8 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            FizzBuzz fb = new FizzBuzz();
+            fb.Run(100);
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
             Run.Execute();
