@@ -27,11 +27,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternDecoratorDana", "Dec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternStateDana", "StatePattern(Dana)\PatternStateDana.csproj", "{181F5D96-5DD9-4859-B885-A5D0DD947C36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternChainOfResponsibility", "PatternChainOfResponsibility\PatternChainOfResponsibility.csproj", "{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternChainOfResponsibilityDana", "PatternChainOfResponsibility\PatternChainOfResponsibilityDana.csproj", "{94C1FA8B-0B00-4F92-BE33-AF52231BBAF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometryDana", "GeometryDanaP\GeometryDana.csproj", "{F5B28FA3-EF23-4A0F-8E31-1A8F7ADF4B70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegations\EventsAndDelegates.csproj", "{34841E1D-1E30-49E0-B2D2-2204B9D91065}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegatesDana", "EventsAndDelegations\EventsAndDelegatesDana.csproj", "{34841E1D-1E30-49E0-B2D2-2204B9D91065}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
