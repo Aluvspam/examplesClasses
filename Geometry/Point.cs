@@ -8,10 +8,14 @@ namespace Geometry
 {
     public class Point
     {
-        private short x;//camp
-        private short y;//camp
-        public short X { get { return x; } set { x = value; } } //proprietatea ce foloseste campul privat x
-        public short Y { get { return y; } set { y = value; } }//proprietatea ce foloseste campul privat y
+        #region fields 
+        private short x;
+        private short y;
+        #endregion
+        #region proprieties
+        public short X { get { return x; } set { x = value; } } 
+        public short Y { get { return y; } set { y = value; } }
+        #endregion
         public Point(short X, short Y)
         {
            x = X;

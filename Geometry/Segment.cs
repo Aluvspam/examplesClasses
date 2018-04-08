@@ -8,13 +8,16 @@ namespace Geometry
 {
     public class Segment
     {
-        private Point[] endpoints;//camp
-        public Point[] EndPoints//propietatea ce foloseste campul privat endpoints
+        #region fields 
+        private Point[] endpoints;
+        #endregion
+        #region proprieties 
+        public Point[] EndPoints
         {
             get { return endpoints; }
             set { endpoints = value; }
         }
-       
+        #endregion
         public Segment(short x1, short y1, short x2, short y2)
         {
             endpoints = new Point[] { new Point(x1, y1), new Point(x2, y2) };

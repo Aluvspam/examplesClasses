@@ -6,7 +6,7 @@ using Solid_Examples.AndreiR;
 using EventsAndDelegates;
 using Curs17;
 using Decorator;
-
+using Geometry;
 
 namespace RunExample
 {
@@ -14,6 +14,15 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            Segment seg = new Segment(-1, -2, 4, 2);
+            var lungSeg = seg.Length;
+            Console.WriteLine("lungimea segmentului este: " + lungSeg.ToString());
+            Triangle tri = new Triangle(new Point(2, 5), new Point(6, 8), new Point(12, 15));
+            var ariaTri = tri.Area;
+            Console.WriteLine("aria triunghiului este: " + ariaTri.ToString());
+            var cercle = new Cercle(3, -3, 6, -6);
+            var cerA = cercle.Aria;
+            Console.WriteLine("aria cercului este: "+ cerA);
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
             //my Shaorma a la Andrei

@@ -75,6 +75,10 @@
       <Project>{bb729763-9e2c-401a-b7ed-118491ce69df}</Project>
       <Name>EventsAndDelegates</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Geometry\Geometry.csproj">
+      <Project>{C5A48AB4-7396-4E19-A1C9-4BBC65EA5170}</Project>
+      <Name>Geometry</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Solid Examples\Decorator\Decorator\Decorator.csproj">
       <Project>{6df09aed-4430-4550-80c4-3dae4157337a}</Project>
       <Name>Decorator</Name>
