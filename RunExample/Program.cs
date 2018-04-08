@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
-using EventsAndDelegates;
-using Curs17;
-using Decorator;
+using EventsAndDelegatesDana;
 using Solid_Examples.CoR;
 
 namespace RunExample
@@ -19,7 +17,7 @@ namespace RunExample
             Console.ReadLine();
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
-            Run.Execute();
+           // Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();

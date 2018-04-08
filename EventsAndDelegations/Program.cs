@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EventsAndDelegates
+namespace EventsAndDelegatesDana
 {
     public delegate void AndreisDelegate(int x);  // declarare delegat
     public class ExampleEvent
@@ -46,14 +46,14 @@ namespace EventsAndDelegates
                 {
                     if (Xevent2 != null)
                     {
-                        Xevent2.Invoke(Instance, Eve);
+                        Xevent2.Invoke(new ExampleEvent(), new EventArgs());
                     }
                 }
                 else
                 {
                     if (Xevent2 != null)//
                     {
-                        Xevent2.Invoke(Instance, objAnd);
+                        Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
                     }
                 }
                 i++;
