@@ -35,17 +35,26 @@ namespace EventsAndDelegates
             int i = 0;
             while (true)
             {
-                if (i == r.Next(10000))
+                if (i == r.Next(1000))
                 {
-                    Xevent.Invoke(r.Next(10) + 1);//lansare eveniment
+                    if (Xevent != null)//verific sa nu fie nul si numai atunci il invoc, nu are sens sa invoc daca e null
+                    {
+                        Xevent.Invoke(r.Next(10) + 1);//lansare eveniment
+                    }
                 }
                 else if (i / 2 == r.Next(1000))
                 {
-                    Xevent2.Invoke(new ExampleEvent(), new EventArgs());
+                    if (Xevent2 != null)
+                    {
+                        Xevent2.Invoke(Instance, Eve);
+                    }
                 }
                 else
                 {
-                    Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
+                    if (Xevent2 != null)//
+                    {
+                        Xevent2.Invoke(Instance, objAnd);
+                    }
                 }
                 i++;
             }
@@ -73,9 +82,20 @@ namespace EventsAndDelegates
                 protected virtual void XeventSubscriber()//aici ma abonez
                 {
                     ExampleEvent.Xevent += OnXevent;
+                    ExampleEvent.Xevent += DanaTry;
+                    ExampleEvent.Xevent2 += ExampleEvent_Xevent2;
 
                 }
 
+                private void ExampleEvent_Xevent2(object sender, EventArgs e)
+                {
+                    throw new NotImplementedException();
+                }
+
+                public static void DanaTry(int x)
+                {
+                    Console.WriteLine("Dana" + x);
+                }
                
             }
 
