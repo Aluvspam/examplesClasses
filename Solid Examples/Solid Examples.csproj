@@ -53,6 +53,7 @@
     <Compile Include="CoR\Handler5.cs" />
     <Compile Include="CoR\HandlerMix.cs" />
     <Compile Include="CoR\Request.cs" />
+    <Compile Include="cristi\dictionary parse OK.cs" />
     <Compile Include="cristi\dictionary parse.cs" />
     <Compile Include="Strategy\AbstractEntity.cs" />
     <Compile Include="Strategy\Drone.cs" />

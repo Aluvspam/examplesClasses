@@ -27,3 +27,4 @@ namespace Solid_Examples.cristi
     }
 }
 //nu am reusit sa adaug constructor care sa faca parse la int de la tastatura.
+//varianta asta este failure 
