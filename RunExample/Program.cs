@@ -5,6 +5,7 @@ using Solid_Examples;
 using Solid_Examples.AndreiR;
 using EventsAndDelegatesDana;
 using Solid_Examples.CoR;
+using static EventsAndDelegatesDana.ExampleEvent.AndreisArgs;
 
 namespace RunExample
 {
@@ -90,7 +91,7 @@ namespace RunExample
             ExampleEvent.Xevent += myWorld.OnXeventHandler;
             ExampleEvent.Main(new string[0]);
         }
-
+       
         private static Person Promote(Person pupil)
         {
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);

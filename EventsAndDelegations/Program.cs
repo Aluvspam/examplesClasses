@@ -79,7 +79,7 @@ namespace EventsAndDelegatesDana
                 {
                     Console.WriteLine("Dana" + x);
                 }
-                protected virtual void XeventSubscriber()//aici ma abonez
+                public virtual void XeventSubscriber()//aici ma abonez
                 {
                     ExampleEvent.Xevent += OnXevent;
                     ExampleEvent.Xevent += DanaTry;
