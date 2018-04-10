@@ -53,6 +53,15 @@
     <Compile Include="CoR\Handler5.cs" />
     <Compile Include="CoR\HandlerMix.cs" />
     <Compile Include="CoR\Request.cs" />
+    <Compile Include="Decorator\ArtificialScentDecorator.cs" />
+    <Compile Include="Decorator\BakeryComponent.cs" />
+    <Compile Include="Decorator\CakeBase.cs" />
+    <Compile Include="Decorator\CherryDecorator.cs" />
+    <Compile Include="Decorator\CreamDecorator.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
+    <Compile Include="Decorator\NameCardDecorator.cs" />
+    <Compile Include="Decorator\PastryBase.cs" />
+    <Compile Include="Decorator\Run.cs" />
     <Compile Include="Strategy\AbstractEntity.cs" />
     <Compile Include="Strategy\Drone.cs" />
     <Compile Include="Strategy\Flying.cs" />
@@ -103,9 +112,7 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="CoR\ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Decorator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,6 +6,7 @@ using Solid_Examples.AndreiR;
 using EventsAndDelegatesDana;
 using Solid_Examples.CoR;
 using static EventsAndDelegatesDana.ExampleEvent.AndreisArgs;
+using Decorator;
 
 namespace RunExample
 {
@@ -18,7 +19,7 @@ namespace RunExample
             Console.ReadLine();
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
-           // Run.Execute();
+           Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();

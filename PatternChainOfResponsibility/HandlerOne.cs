@@ -8,7 +8,21 @@ namespace PatternChainOfResponsibility
 {
     class HandlerOne : Handler
     {
-        
+        public override void HandleRequest()
+        {
+            if (CanHandle())
+            {
+                CanHandle();
+            }
+            else
+            {
+                super.HandleRequest();
+            }
+        }
+        public bool CanHandle()
+        {
+            return true;
+        }
     }
 }
    
