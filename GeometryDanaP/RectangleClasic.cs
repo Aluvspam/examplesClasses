@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GeometryDanaP
 {
-    public class Rectangle
+    public class RectangleClasic
     {
         private int width;
         private int height;
@@ -33,7 +33,7 @@ namespace GeometryDanaP
                 height = value;
             }
         }
-        public Rectangle(int height, int width)
+        public RectangleClasic(int height, int width)
             {
             Height = height;
             Width = width;

@@ -8,20 +8,43 @@ namespace GeometryDanaP
 {
     class Triangle
     {
-        private Point[] points;
+        private Point[] points;//camp
         double area, s;
-        public Point[] Points
+        public Point[] Points//prop
         {
-            get { return points; }
-            set { points = value; }
+            get
+            {
+                return points;
+            }
+            set
+            {
+                points = value;
+            }
         }
-        public Segment[] Edges { get; }
+        public Segment[] Edges { get; }//muchiile, folosim 3 pct
 
-        public double Area
+        public double Area//cu radical, folosesc prop lungime din segment
         {
-            get { return Area; }//fara set
-            
+            get
+            {
+                return Area;
+            }//fara set
+
         }
+        private Point[] triangle;//initializez triunghiul
+
+        public Point[] Triunghi
+        {
+            get
+            {
+                return triangle;
+            }
+            set
+            {
+                triangle = value;
+            }
+        }
+
         public Triangle(Point a, Point b, Point c)
         {
             Point[] triangle = new Point[] { a, b, c };
@@ -32,7 +55,7 @@ namespace GeometryDanaP
             {
                 for (int i = 0; i < 5; i++)
                 {
-//Triangle ((Points[0], Points[]...))
+                    //Triangle ((Points[0], Points[]...))
                 }
             }
         }
@@ -43,12 +66,12 @@ namespace GeometryDanaP
 
 
 
-        //public double TriangleArea(double a, double b, double c)
-        //{
-        //    s = (a + b + c) / 2;
-        //    area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
-        //    return area;
-        //}
+        public double TriangleArea(double a, double b, double c)
+        {
+            s = (a + b + c) / 2;
+            area = Math.Sqrt(s * (s - a) * (s - b) * (s - c));
+            return area;
+        }
 
     }
 }

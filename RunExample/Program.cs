@@ -14,6 +14,7 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            
             FizzBuzz fb = new FizzBuzz();
             fb.Run(16);
             Console.ReadLine();
@@ -31,6 +32,9 @@ namespace RunExample
             {
                 new Copy().CopyIt(ir, writer);
             }
+
+
+            
 
             Console.ReadLine();
             //old examples below

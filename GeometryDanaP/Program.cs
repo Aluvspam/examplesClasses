@@ -12,7 +12,7 @@ namespace GeometryDanaP
         {   
            
             //Point p = new Point(20, 10);
-            Rectangle r = new Rectangle(4,5);
+            RectangleClasic r = new RectangleClasic(4,5);
             r.Print();
            
             Console.ReadLine();
