@@ -74,9 +74,16 @@ namespace EventsAndDelegates
         {
             Console.WriteLine("gaby" + x);
         }
+
+        public void OnOanaXevent(int i)
+        {
+            Console.WriteLine("Oana " + i);
+        }
+
         public virtual void XeventSubscriber()
         {
             ExampleEvent.Xevent += OnXevent;
+            ExampleEvent.Xevent += OnOanaXevent;
         }
     }
 }
