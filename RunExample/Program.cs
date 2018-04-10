@@ -6,7 +6,7 @@ using Solid_Examples.AndreiR;
 using EventsAndDelegatesDana;
 using Solid_Examples.CoR;
 using static EventsAndDelegatesDana.ExampleEvent.AndreisArgs;
-using Decorator;
+using GeometryDana;
 
 namespace RunExample
 {
@@ -14,7 +14,8 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
-            
+          
+           
             FizzBuzz fb = new FizzBuzz();
             fb.Run(16);
             Console.ReadLine();
@@ -102,6 +103,7 @@ namespace RunExample
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
 
+        Segment seg = new Segment(4, 5, 6, 7);
 
     }
 }

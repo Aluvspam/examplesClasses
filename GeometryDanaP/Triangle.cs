@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeometryDanaP
+namespace GeometryDana
 {
     class Triangle
     {
@@ -21,7 +21,7 @@ namespace GeometryDanaP
                 points = value;
             }
         }
-        public Segment[] Edges { get; }//muchiile, folosim 3 pct
+        public Segment[] Edges { get; }//muchiile de tip segment, folosim 3 pct
 
         public double Area//cu radical, folosesc prop lungime din segment
         {

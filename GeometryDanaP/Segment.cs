@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeometryDanaP
+namespace GeometryDana
 {
-    class Segment
+    public class Segment
     {
         private Point[] endpoints;//camp
         public Point[] Endpoints//prop
