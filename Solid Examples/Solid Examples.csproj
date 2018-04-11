@@ -46,6 +46,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AClass.cs" />
+    <Compile Include="CoR\FinalHandle.cs" />
+    <Compile Include="CoR\FizzBuzz.cs" />
+    <Compile Include="CoR\AbstractHandler.cs" />
+    <Compile Include="CoR\Handler3.cs" />
+    <Compile Include="CoR\Handler5.cs" />
+    <Compile Include="CoR\HandlerMix.cs" />
+    <Compile Include="CoR\Request.cs" />
+    <Compile Include="cristi\dictionary parse OK.cs" />
+    <Compile Include="cristi\dictionary parse.cs" />
     <Compile Include="Strategy\AbstractEntity.cs" />
     <Compile Include="Strategy\Drone.cs" />
     <Compile Include="Strategy\Flying.cs" />
@@ -98,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <None Include="CoR\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Decorator\" />
