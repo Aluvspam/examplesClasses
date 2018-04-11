@@ -15,7 +15,7 @@ namespace Solid_Examples.CoR
                 if (r.X == 7 || r.X == 11 || r.X == 13)
                 {
                     int n = r.X;
-                    Console.Write(words[n]);
+                    Console.Write(words[n]);//made by Andrei Roca
                     r.Handled = true;
                 }
             }

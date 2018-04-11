@@ -15,6 +15,7 @@ namespace Solid_Examples.CoR
             handler.AddHandler(new Handler5());
             handler.AddHandler(new HandlerMix());
             handler.AddHandler(new FinalHandle());
+            handler.AddHandler(new HandlerDana());
         }
         public FizzBuzz(int a, int b)
         {

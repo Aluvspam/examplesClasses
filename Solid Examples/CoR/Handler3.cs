@@ -3,7 +3,7 @@
 namespace Solid_Examples.CoR
 {
     public class Handler3 : AbstractHandler
-    {
+    { 
         public override void Handle(Request r)
         {
             if (CanHandle(r))

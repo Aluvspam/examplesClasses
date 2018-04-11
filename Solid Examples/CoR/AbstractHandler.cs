@@ -18,6 +18,8 @@ namespace Solid_Examples.CoR
             words.Add(7, "Gizz");
             words.Add(11, "Quizz");
             words.Add(13, "Jazz");
+            words.Add(15, "Dana");
+
         }
         public virtual void Handle(Request r)
         {

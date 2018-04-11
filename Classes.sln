@@ -41,6 +41,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestArgs", "TestArgs\TestAr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformWriteDana", "WinformWriteDana\WinformWriteDana.csproj", "{DEF701E6-067F-4326-9070-0508BBA9321B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EventStuff", "EventStuff", "{0A6E6FBA-301A-46DA-BF64-09C6D62B0E76}"
+	ProjectSection(SolutionItems) = preProject
+		EventStuff.cs = EventStuff.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

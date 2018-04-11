@@ -51,6 +51,7 @@
     <Compile Include="CoR\AbstractHandler.cs" />
     <Compile Include="CoR\Handler3.cs" />
     <Compile Include="CoR\Handler5.cs" />
+    <Compile Include="CoR\HandlerDana.cs" />
     <Compile Include="CoR\HandlerMix.cs" />
     <Compile Include="CoR\Request.cs" />
     <Compile Include="Decorator\ArtificialScentDecorator.cs" />
