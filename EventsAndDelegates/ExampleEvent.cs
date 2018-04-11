@@ -34,7 +34,7 @@ namespace EventsAndDelegates
             int i = 0;
             while (true)
             {
-                if (i == r.Next(100))
+                if ((i % 500) == r.Next(500))
                 {
                     if (Xevent != null)
                     {
@@ -48,13 +48,10 @@ namespace EventsAndDelegates
                         Xevent2.Invoke(new ExampleEvent(), new EventArgs());
                     }
                 }
-                else
-                {
-                    if (Xevent2 != null)
-                    {
-                        Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
-                    }
-                }
+                //else
+                //{
+                //    Xevent2.Invoke(new ExampleEvent(), new AndreisArgs(4.67));
+                //}
                 i++;
             }
         }
@@ -77,9 +74,16 @@ namespace EventsAndDelegates
         {
             Console.WriteLine("gaby" + x);
         }
+
+        public void OnOanaXevent(int i)
+        {
+            Console.WriteLine("Oana " + i);
+        }
+
         public virtual void XeventSubscriber()
         {
             ExampleEvent.Xevent += OnXevent;
+            ExampleEvent.Xevent += OnOanaXevent;
         }
     }
 }
