@@ -72,7 +72,10 @@ namespace EventsAndDelegatesDana
                 score = d;
             }
             double score;
-
+            //---------------------------
+            //Uitați-vă la semnătura delegate-ului
+            // Și creați o metodă, pe care să o abonăm la eveniment
+            //Să se execute când este invocat acesta + abonare la eveniment
             public class EventSubscriber
             {
                 public void OnXevent(int x)
@@ -103,8 +106,3 @@ namespace EventsAndDelegatesDana
     }
 }
 
-//Uitați-vă la semnătura delegate-ului
-//  : Și creați o metodă
-//  : Pe care să o abonăm la eveniment
-//  : Să se execute când este invocat acesta
-// + abonare la eveniment
