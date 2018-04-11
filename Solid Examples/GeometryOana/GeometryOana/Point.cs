@@ -8,7 +8,29 @@ namespace GeometryOana
     {
         private short x, y;
 
-        public short X, Y;
+        public short X
+        {
+            get
+            {
+                return x;
+            }
+            set
+            {
+                x = value;
+            }
+        }
+
+        public short Y
+        {
+            get
+            {
+                return y;
+            }
+            set
+            {
+                y = value;
+            }
+        }
 
         public Point(short x, short y)
         {

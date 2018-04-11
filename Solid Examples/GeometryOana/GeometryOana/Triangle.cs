@@ -32,15 +32,18 @@ namespace GeometryOana
             get
             {
                 // Heron formula
-                //semiperimeter = (edge a + edge b + edge c) / 2;
-                //return Math.Sqrt(semiperimeter(semiperimeter - a)(semiperimeter - b)(semiperimeter - c)); 
+                //var a = new Segment[] { new Segment(p1, p2) };
+                //var b = new Segment[] { new Segment(p2, p3) };
+                //var c = new Segment[] { new Segment(p3, p1) };
+                semiperimeter = (a.Length + b.Length + c.Length) / 2;
+                return Math.Sqrt(semiperimeter(semiperimeter - a)(semiperimeter - b)(semiperimeter - c)); 
             }
         }
 
         public Triangle(Point p1, Point p2, Point p3)
         {
-            Point[] points = new Point[] { p1, p2, p3 };
-            Segment[] edges = new Segment[] { new Segment(p1, p2), new Segment(p2, p3), new Segment(p3, p1) };
+            points = new Point[] { p1, p2, p3 };
+            edges = new Segment[] { new Segment(p1, p2), new Segment(p2, p3), new Segment(p3, p1) };
         }
 
     }
