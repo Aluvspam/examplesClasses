@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EventsAndDelegates;
+﻿using System.Collections.Generic;
 
 namespace Solid_Examples.AndreiR
 {
@@ -52,8 +47,11 @@ namespace Solid_Examples.AndreiR
             }
             else
             {
-                var entity = coada.Dequeue();
-                entity.Move();
+                if (coada.Count > 0)
+                {
+                    var entity = coada.Dequeue();
+                    entity.Move();
+                }
             }
         }
         private void DequeOnAList()

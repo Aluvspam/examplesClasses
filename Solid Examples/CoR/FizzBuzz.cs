@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Solid_Examples.CoR
+﻿namespace Solid_Examples.CoR
 {
     public class FizzBuzz
     {
         AbstractHandler handler;
         public FizzBuzz()
         {
-            handler = new Handler3();
-            handler.AddHandler(new Handler5());
-            handler.AddHandler(new HandlerMix());
+            handler = new HandleUniversal(7);
+            handler.AddHandler(new HandleUniversal(11));
+            //handler.AddHandler(new HandlerMix());
             handler.AddHandler(new FinalHandle());
         }
         public FizzBuzz(int a, int b)

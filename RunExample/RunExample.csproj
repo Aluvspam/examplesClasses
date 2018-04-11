@@ -63,10 +63,6 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Curs17\Curs17.csproj">
-      <Project>{21454130-F2AE-454F-954A-67FC94EC4859}</Project>
-      <Name>Curs17</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj">
       <Project>{bb729763-9e2c-401a-b7ed-118491ce69df}</Project>
       <Name>EventsAndDelegates</Name>
