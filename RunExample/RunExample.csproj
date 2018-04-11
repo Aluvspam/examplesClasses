@@ -68,7 +68,7 @@
       <Name>ClassLibrary1</Name>
     </ProjectReference>
     <ProjectReference Include="..\Curs17\Curs17.csproj">
-      <Project>{21454130-F2AE-454F-954A-67FC94EC4859}</Project>
+      <Project>{21454130-f2ae-454f-954a-67fc94ec4859}</Project>
       <Name>Curs17</Name>
     </ProjectReference>
     <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj">
@@ -76,7 +76,7 @@
       <Name>EventsAndDelegates</Name>
     </ProjectReference>
     <ProjectReference Include="..\Geometry\Geometry.csproj">
-      <Project>{C5A48AB4-7396-4E19-A1C9-4BBC65EA5170}</Project>
+      <Project>{c5a48ab4-7396-4e19-a1c9-4bbc65ea5170}</Project>
       <Name>Geometry</Name>
     </ProjectReference>
     <ProjectReference Include="..\Solid Examples\Decorator\Decorator\Decorator.csproj">

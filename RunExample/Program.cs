@@ -7,6 +7,7 @@ using EventsAndDelegates;
 using Curs17;
 using Decorator;
 using Geometry;
+using Solid_Examples.StateDoor;
 
 namespace RunExample
 {
@@ -14,6 +15,7 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            RunCurrentTest();
             Segment seg = new Segment(-1, -2, 4, 2);
             var lungSeg = seg.Length;
             Console.WriteLine("lungimea segmentului este: " + lungSeg.ToString());
@@ -22,11 +24,11 @@ namespace RunExample
             Console.WriteLine("aria triunghiului este: " + ariaTri.ToString());
             var cercle = new Cercle(3, -3, 6, -6);
             var cerA = cercle.Aria;
-            Console.WriteLine("aria cercului este: "+ cerA);
+            Console.WriteLine("aria cercului este: " + cerA);
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
-            //my Shaorma a la Andrei
-          //  AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
+                   //my Shaorma a la Andrei
+                   //  AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
             Console.ReadLine();
             Decorator.Run.Execute();
             Run.Execute();
@@ -92,6 +94,17 @@ namespace RunExample
             Person AndyDeLa = new Student("AndyDeLa", DateTime.Now, schoolAddress);
             AndyDeLa = Promote(AndyDeLa);
             int a4 = ((Teacher)AndyDeLa).Wage + 1;
+            Console.ReadLine();
+        }
+
+        private static void RunCurrentTest()
+        {
+            RunDoorExample();
+        }
+        private static void RunDoorExample()
+        {
+            Door d = new Door();
+            d.SetState(new Closed());
             Console.ReadLine();
         }
 
