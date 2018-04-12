@@ -32,8 +32,8 @@ namespace GeometryOana
             get
             {
                 // Heron formula
-                semiperimeter = (points[0].Length + points[1].Length + points[2].Length) / 2;
-                return Math.Sqrt(semiperimeter * (semiperimeter - points[0]) * (semiperimeter - points[1]) * (semiperimeter - points[2])); 
+                semiperimeter = (edges[0].Length + edges[1].Length + edges[2].Length) / 2;
+                return Math.Sqrt(semiperimeter * (semiperimeter - edges[0]) * (semiperimeter - edges[1]) * (semiperimeter - edges[2])); 
             }
         }
 
