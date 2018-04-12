@@ -67,7 +67,6 @@
     <Compile Include="Strategy\IMove.cs" />
     <Compile Include="Strategy\World.cs" />
     <Compile Include="Copy.cs" />
-    <Compile Include="DanasWrite.cs" />
     <Compile Include="Game\AbstractUnit.cs" />
     <Compile Include="Game\GamePlay.cs" />
     <Compile Include="Game\Helicopter.cs" />
@@ -76,8 +75,10 @@
     <Compile Include="Game\ModernTank.cs" />
     <Compile Include="Game\Point.cs" />
     <Compile Include="Game\Tank.cs" />
-    <Compile Include="IRead.cs" />
-    <Compile Include="IWrite.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Point.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Segment.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Square.cs" />
+    <Compile Include="GeometryOana\GeometryOana\Triangle.cs" />
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,10 +86,13 @@
     <Compile Include="SquareGaby.cs" />
     <Compile Include="SquareDan.cs" />
     <Compile Include="SquareLuana.cs" />
+    <Compile Include="States\Context.cs" />
+    <Compile Include="States\State.cs" />
+    <Compile Include="States\StateOne.cs" />
+    <Compile Include="States\StateThree.cs" />
+    <Compile Include="States\StateTwo.cs" />
     <Compile Include="WriteAndreiR.cs" />
-    <Compile Include="WriteCristi.cs" />
     <Compile Include="WriteDaniel.cs" />
-    <Compile Include="WriteLuana.cs" />
     <Compile Include="WriteScreen.cs" />
     <Compile Include="WriteOana.cs" />
   </ItemGroup>

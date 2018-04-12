@@ -1,28 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace GeometryOana
+namespace Solid_Examples.GeometryOana.GeometryOana
 {
     class Square
     {
-        private Point[] points;
-
-        public Point[] Points
-        {
-            set
-            {
-                points = value;
-            }
-            get
-            {
-                return points;
-            }
-        }
-        public Segment[] Edges
-        {
-            get
-            {
-
-            }
-        }
+    }
+}
