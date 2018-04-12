@@ -56,6 +56,8 @@
     <Compile Include="CoR\Request.cs" />
     <Compile Include="cristi\dictionary parse OK.cs" />
     <Compile Include="cristi\dictionary parse.cs" />
+    <Compile Include="IRead.cs" />
+    <Compile Include="IWrite.cs" />
     <Compile Include="Strategy\AbstractEntity.cs" />
     <Compile Include="Strategy\Drone.cs" />
     <Compile Include="Strategy\Flying.cs" />
