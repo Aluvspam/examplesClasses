@@ -10,14 +10,14 @@ namespace Solid_Examples.Game
         public int Damage;
         public int RateOfFire;//time between 2 consecutive hits in miliseconds
         public Point[] Location;
-        public List<Person> crew;
+        public List<Person> Crew;
 
         public AbstractUnit(Point[] location, int hp, int dmg, int deprecatedParam = -1)
         {
             Location = location;
             HitPoint = hp;
             Damage = dmg;
-            crew = new List<Person>();
+            Crew = new List<Person>();
         }
         public abstract void InitCrew();
     }
