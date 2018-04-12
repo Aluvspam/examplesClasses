@@ -75,6 +75,12 @@
     <Compile Include="StateDaniel\StateOne.cs" />
     <Compile Include="StateDaniel\StateThree.cs" />
     <Compile Include="StateDaniel\StateTwo.cs" />
+    <Compile Include="StateDoor\AbstractState.cs" />
+    <Compile Include="StateDoor\Closed.cs" />
+    <Compile Include="StateDoor\Closing.cs" />
+    <Compile Include="StateDoor\Door.cs" />
+    <Compile Include="StateDoor\Open.cs" />
+    <Compile Include="StateDoor\Opening.cs" />
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteDaniel.cs" />
     <Compile Include="WriteScreen.cs" />
