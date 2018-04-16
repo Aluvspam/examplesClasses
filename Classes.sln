@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2005
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{774990CE-33C3-4187-9211-4A5171CC190E}"
 EndProject
@@ -34,8 +34,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "EventsAndDelegates\EventsAndDelegates.csproj", "{BB729763-9E2C-401A-B7ED-118491CE69DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "..\..\Cursuri Programare\DesignPatterns\DesignPatterns.csproj", "{FA4C10BA-ED75-446F-90A4-CA8131967B9B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "..\..\..\Desktop\Cursuri Programare\DesignPatterns\DesignPatterns.csproj", "{FA4C10BA-ED75-446F-90A4-CA8131967B9B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs17", "Curs17\Curs17.csproj", "{21454130-F2AE-454F-954A-67FC94EC4859}"
 EndProject
