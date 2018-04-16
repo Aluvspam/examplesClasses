@@ -10,7 +10,7 @@ namespace FactoryMethod
     {
         public abstract AbstractGameMap LoadEnviroment();
         protected AbstractGameMap map;
-        protected virtual void PrintDetails()
+        public virtual void PrintDetails()
         {
             Console.WriteLine(map.details);
         }

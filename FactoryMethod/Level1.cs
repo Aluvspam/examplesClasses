@@ -16,5 +16,10 @@ namespace FactoryMethod
         {
             return new EmptyMap();
         }
+        public override void PrintDetails()
+        {
+            var level1 = new EmptyMap().details;
+            Console.WriteLine(level1);
+        }
     }
 }

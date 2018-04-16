@@ -16,5 +16,10 @@ namespace FactoryMethod
         {
             return new SimpleMap();
         }
+        public override void PrintDetails()
+        {
+            var level2 = new SimpleMap().details;
+            Console.WriteLine(level2);
+        }
     }
 }

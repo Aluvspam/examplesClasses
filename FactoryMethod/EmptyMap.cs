@@ -21,7 +21,7 @@ namespace FactoryMethod
         }
         public EmptyMap()
         {
-            Console.WriteLine(details);
+           
         } 
     }
 }

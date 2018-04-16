@@ -23,7 +23,6 @@ namespace FactoryMethod
         public SimpleMap()
         {
            
-            Console.WriteLine(details);
         }
     }
 }
