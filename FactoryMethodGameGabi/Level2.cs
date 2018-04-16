@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodGameGabi
 {
-    class Level2 : IGame
+    public interface Level2 : IGame
     {
 
     }

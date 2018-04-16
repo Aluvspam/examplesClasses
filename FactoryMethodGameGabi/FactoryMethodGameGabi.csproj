@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="AbstractGameMap.cs" />
     <Compile Include="EmptyMap.cs" />
-    <Compile Include="Game.cs" />
+    <Compile Include="IGame.cs" />
     <Compile Include="Level1.cs" />
     <Compile Include="Level2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodGameGabi
 {
-    public class Level1 : IGame
+    public interface Level1 : IGame
     {
-       LoadEnvironment(Product);
+         LoadEnvironment(Product);
     }
 }
