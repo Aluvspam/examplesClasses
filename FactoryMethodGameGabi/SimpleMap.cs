@@ -14,6 +14,5 @@ namespace FactoryMethodGameGabi
              Console.WriteLine(details);
         }
     }
-
 }
 

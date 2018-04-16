@@ -15,7 +15,7 @@ namespace FactoryMethodGameGabi
 
         public void PrintMapDetails()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
