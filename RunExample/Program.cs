@@ -20,6 +20,7 @@ namespace RunExample
             List<IWrite> writers = new List<IWrite>();
             IRead ir = new ReadKeyboard();
             writers.AddRange(new IWrite[] { new WriteAndreiR(), new WriteCristi(), new WriteOana(), new WriteScreen(), new WriteDaniel(), new DanasWrite() });
+            var ceva = new List<int>[writers.Count];
             foreach (var writer in writers)
             {
                 new Copy().CopyIt(ir, writer);
@@ -80,6 +81,7 @@ namespace RunExample
 
         private static void RunEventsAndDelegates()
         {
+            (new EventSubscriber()).XeventSubscriber();
             ExampleEvent.Main(new string[0]);
         }
 
@@ -88,7 +90,6 @@ namespace RunExample
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
 
-        
-         
+
     }
 }
