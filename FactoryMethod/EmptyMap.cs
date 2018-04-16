@@ -6,8 +6,22 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public abstract class EmptyMap: AbstractGameMap
+    public class EmptyMap: AbstractGameMap
     {
-        
+        public override string details
+        {
+            get
+            {
+                return "no walls";
+            }
+            set
+            {
+                details = value;
+            }
+        }
+        public EmptyMap()
+        {
+            Console.WriteLine(details);
+        } 
     }
 }

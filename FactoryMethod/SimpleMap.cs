@@ -6,8 +6,24 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public abstract class SimpleMap: AbstractGameMap
+     public class SimpleMap: AbstractGameMap
     {
-        
+        public override string details
+        {
+            get
+            {
+                return "outside walls";
+            }
+
+            set
+            {
+                details = value;
+            }
+        }
+        public SimpleMap()
+        {
+           
+            Console.WriteLine(details);
+        }
     }
 }
