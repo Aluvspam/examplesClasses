@@ -10,7 +10,7 @@ namespace FactoryMethod
     {
         public Level2()
         {
-               
+            LoadEnviroment();
         }
         public override AbstractGameMap LoadEnviroment()
         {

@@ -16,7 +16,7 @@ namespace FactoryMethod
             }
             set
             {
-                details = value;
+                details = value;//to do: sa vad daca da peste cap 
             }
         }
         public EmptyMap()

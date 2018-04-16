@@ -10,12 +10,11 @@ namespace FactoryMethod
     {
         public Level1()
         {
-
+            LoadEnviroment();
         }
         public override AbstractGameMap LoadEnviroment()
         {
             return new EmptyMap();
         }
-       
     }
 }

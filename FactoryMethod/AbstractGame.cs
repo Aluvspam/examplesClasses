@@ -9,10 +9,10 @@ namespace FactoryMethod
     public abstract class AbstractGame : IGame
     {
         public abstract AbstractGameMap LoadEnviroment();
-        AbstractGameMap map;
-        void PrintDetails()
+        protected AbstractGameMap map;
+        protected virtual void PrintDetails()
         {
-
+            Console.WriteLine(map.details);
         }
     }
 }
