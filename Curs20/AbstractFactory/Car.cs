@@ -9,7 +9,17 @@ namespace Curs20.AbstractFactory
 
         private List<Option> options;
 
-        internal AbstractEngine Engine { get; set; }
+        internal AbstractEngine Engine
+        {
+            get
+            {
+                return engine;
+            }
+            set
+            {
+                engine = value;
+            }
+        }
         internal AbstractWheels Wheels { get; set; }
 
         public void AddOption(Option option)
