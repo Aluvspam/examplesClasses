@@ -11,6 +11,7 @@ namespace FactoryMethodGameGabi
         public EmptyMap()
         {
             details = "no walls";
+            Console.WriteLine(details);
         }
     }
 }
