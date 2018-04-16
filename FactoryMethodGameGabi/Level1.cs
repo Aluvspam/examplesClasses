@@ -8,6 +8,6 @@ namespace FactoryMethodGameGabi
 {
     public interface Level1 : IGame
     {
-         LoadEnvironment(Product);
+         AbstractGameMap LoadEnvironment(Product);
     }
 }
