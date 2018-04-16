@@ -31,9 +31,6 @@ namespace WPFEvent
             myOtherLabel.Content = "Hello again!";
 
         }
-
-        
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
             MyLabel.Content = "Hello World";

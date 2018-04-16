@@ -11,11 +11,10 @@ namespace Solid_Examples.CoR
         AbstractHandler handler;
         public FizzBuzz()
         {
-            handler = new Handler3();
-            handler.AddHandler(new Handler5());
-            handler.AddHandler(new HandlerMix());
+            handler = new HandlerDana(3);
+            handler.AddHandler(new HandlerDana(5));
+           // handler.AddHandler(new HandlerMixAndreiR());
             handler.AddHandler(new FinalHandle());
-            handler.AddHandler(new HandlerDana());
         }
         public FizzBuzz(int a, int b)
         {

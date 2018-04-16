@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.CoR
 {
-    public class HandlerMix : AbstractHandler
+    public class HandlerMixAndreiR : AbstractHandler
     {
         public override void Handle(Request r)
         {

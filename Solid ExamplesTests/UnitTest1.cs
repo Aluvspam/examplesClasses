@@ -14,14 +14,14 @@ namespace Solid_ExamplesTests
             r.Width = 5;
             Assert.IsTrue((r.Width * r.Height) == 20);
         }
-        [TestMethod]
-        public void TestArea2()
-        {
-            SquareGaby s = new SquareGaby();
+        //[TestMethod]
+        //public void TestArea2()
+        //{
+        //    SquareGaby s = new SquareGaby();
 
-            s.Height = 4;
-            s.Width = 5;
-            Assert.IsTrue((s.Width * s.Height) == 20);
-        }
+        //    s.Height = 4;
+        //    s.Width = 5;
+        //    Assert.IsTrue((s.Width * s.Height) == 20);
+        //}
     }
 }

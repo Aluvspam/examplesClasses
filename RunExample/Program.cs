@@ -17,7 +17,7 @@ namespace RunExample
           
            
             FizzBuzz fb = new FizzBuzz();
-            fb.Run(16);
+            fb.Run(23);
             Console.ReadLine();
             RunEventsAndDelegates();
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example

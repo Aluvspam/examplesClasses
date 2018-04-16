@@ -71,10 +71,6 @@
       <Project>{8c5f9e1b-cd80-4dd4-a5ec-3653918738b7}</Project>
       <Name>PatternDecoratorDana</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj">
-      <Project>{bb729763-9e2c-401a-b7ed-118491ce69df}</Project>
-      <Name>EventsAndDelegates</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EventsAndDelegations\EventsAndDelegatesDana.csproj">
       <Project>{34841e1d-1e30-49e0-b2d2-2204b9d91065}</Project>
       <Name>EventsAndDelegatesDana</Name>
