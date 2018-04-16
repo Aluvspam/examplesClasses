@@ -6,12 +6,30 @@ namespace WeatherStation
 {
     class PhoneDisplay : IObserver, IDisplay
     {
-        public void Display()
+        WeatherStation station;
+        public WeatherStation Station
         {
-            throw new NotImplementedException();
+            get
+            {
+                return station;
+            }
+            set
+            {
+                value = station;
+            }
+        }
+
+        public PhoneDisplay( WeatherStation station)
+        {
+            Station = station;
         }
 
         public void Update()
+        {
+            station.GetTemperature();
+        }
+
+        public void Display()
         {
             throw new NotImplementedException();
         }

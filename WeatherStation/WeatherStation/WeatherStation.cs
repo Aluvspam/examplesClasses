@@ -46,7 +46,7 @@ namespace WeatherStation
 
         public int GetTemperature()
         {
-            return this.temperature;
+            return temperature;
         }
 
     }

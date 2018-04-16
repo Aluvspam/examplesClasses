@@ -6,18 +6,30 @@ namespace WeatherStation
 {
     class DesktopDisplay : IObserver, IDisplay
     {
-
-        public DesktopDisplay( WeatherStation station )
+        WeatherStation station;
+        public WeatherStation Station
         {
-
+            get
+            {
+                return station;
+            }
+            set
+            {
+                value = station;
+            }
         }
 
-        public void Display()
+        public DesktopDisplay(WeatherStation station)
         {
-            throw new NotImplementedException();
+            Station = station;
         }
 
         public void Update()
+        {
+            station.GetTemperature();
+        }
+
+        public void Display()
         {
             throw new NotImplementedException();
         }
