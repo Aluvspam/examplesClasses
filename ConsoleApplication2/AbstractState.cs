@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-   public  interface IState
+    public abstract class AbstractState
     {
-        void Execute();
-        void goNext(Door door);
+        public abstract void Execute(Door door);
+        public abstract void goNext(Door door);
     }
 }

@@ -8,18 +8,25 @@ namespace ConsoleApplication2
 {
     public class Door
     {
-        IState currentState;
-        //IState NextState;
+        AbstractState currentState;
+        //AbstractState NextState;
 
         public void goNext()
         {
             currentState.goNext(this);
         }
-        public void SetState(IState state)
+        public void SetState(AbstractState state)
         {
-            currentState = state;
+            Console.WriteLine("new state: {0}", state.GetType());
+            state.Execute(this);
         }
-        public void SetNext(AbstracteState )
+        public void SetNext(AbstractState state)
+        {
+            if (state != null)
+            {
+                //next state = state;
+            }
+        }
 
     }
 }
