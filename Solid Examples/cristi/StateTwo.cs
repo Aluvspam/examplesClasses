@@ -16,5 +16,9 @@ namespace Solid_Examples.cristi
 
         }
 
+        public override void goNext(Context context)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

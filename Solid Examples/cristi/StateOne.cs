@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples.cristi
 {
-      class StateOne : State
+    class StateOne : State
     {
-
+        public override void goNext(Context context)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
