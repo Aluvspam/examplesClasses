@@ -8,9 +8,10 @@ namespace Solid_Examples.FactoryMethod
 {
 	class EmptyMap : AbstractGameMap
 	{
-		new string details = "No walls";
+		
 		public EmptyMap()
 		{
+			details = "No walls";
 			Console.WriteLine(details);
 		}
 	}
