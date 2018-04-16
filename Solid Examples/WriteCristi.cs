@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace Solid_Examples
 {
-    class WriteCristi
+    public class WriteCristi : IWrite
     {
-        static void Main(string[] args)
+        public void WriteIt(string text)
         {
-            while (true)
-            {
                 string before = "-=";
                 string after = "=-";
                 Console.WriteLine("Please enter yout text here...");
@@ -21,4 +19,3 @@ namespace Solid_Examples
             }
         }
     }
-}
