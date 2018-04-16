@@ -8,6 +8,6 @@ namespace FactoryMethodGameGabi
 {
     class SimpleMap : AbstractGameMap
     {
-        public string details = "outside walls";
+        public new string details = "outside walls";
     }
 }
