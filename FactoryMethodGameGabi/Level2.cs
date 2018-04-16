@@ -10,7 +10,7 @@ namespace FactoryMethodGameGabi
     {
         public AbstractGameMap LoadEnvironment()
         {
-            throw new NotImplementedException();
+            return new EmptyMap();
         }
 
         public void PrintMapDetails()
