@@ -21,31 +21,17 @@ namespace EventsAndDelegates
                     Xevent.Invoke(r.Next(10) + 1);
                 }
             }
-
-            var exampleEvent = new ExampleEvent();
-            var eventSubscriber = new EventSubscriber();  //aici creez o instanta
-
-            exampleEvent.Xevent += EventSubscriber.OnXevent; //aici observ ca nu se folosesc paranteze pentru ca
-                                                             //nu se apeleaza metoda, ci se foloseste numai numele ei
-                                                             //ca referinta
-                                                             
-
-
         }
-
-        protected virtual void OnXevent()
-        {
-            if (Xevent != null)
-            {
-                Xevent(10);
-            }
-        }
-
         public class EventSubscriber
         {
             public void OnXevent(int x)
             {
-                Console.WriteLine(x);
+                Console.WriteLine("gaby" + x);
+            }
+
+            protected virtual void XeventSubscriber()
+            {
+                ExampleEvent.Xevent += OnXevent;
             }
         }
         
