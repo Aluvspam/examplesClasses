@@ -16,12 +16,7 @@ namespace Solid_Examples.CoR
             x = numarul;
         }
         public override void Handle(Request r)
-        {//TEma - un handler al carui constructor sa primeasca un 
-         //integer si pe baza lui sa dea rapunsuri
-         // ctr handle mix sa primeasca un integer ca sa stie el...handlerii sa faca acelasi lucru 
-         //o clasa constructor de handlere
-         // Ma uit la handler 3 si 5, au cod comun, si vreau o clasa ca sa fie handler ca sa fie comun pt toate iar constr ei sa primeasca ca parametru un integer
-         //un handler comun ca sa functioneze pt toate
+        {
             if (CanHandle(r))
             {
                 {
@@ -37,3 +32,9 @@ namespace Solid_Examples.CoR
         }
     }
 }
+//TEma - un handler al carui constructor sa primeasca un 
+//integer si pe baza lui sa dea rapunsuri
+// ctr handle mix sa primeasca un integer ca sa stie el...handlerii sa faca acelasi lucru 
+//o clasa constructor de handlere
+// Ma uit la handler 3 si 5, au cod comun, si vreau o clasa ca sa fie handler ca sa fie comun pt toate iar constr ei sa primeasca ca parametru un integer
+//un handler comun ca sa functioneze pt toate
