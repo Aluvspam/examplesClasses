@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodGameGabi
 {
-    public abstract class Level2 : IGame
+    public abstract class AbstractGame
     {
-        public AbstractGameMap LoadEnvironment()
-        {
-            return new EmptyMap();
-        }
+        public AbstractGameMap map;
+
+        public AbstractGameMap printDetails;
 
         public void PrintMapDetails()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

@@ -9,7 +9,6 @@ namespace FactoryMethodGameGabi
     public interface IGame
     {
         AbstractGameMap LoadEnvironment();
-
-        void PrintMapDetails();
+        
     }
 }
