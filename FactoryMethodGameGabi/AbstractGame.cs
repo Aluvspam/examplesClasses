@@ -10,11 +10,9 @@ namespace FactoryMethodGameGabi
     {
         public AbstractGameMap map;
 
-        public AbstractGameMap printDetails;
-
         public void PrintMapDetails()
         {
-
+            
         }
     }
 }
