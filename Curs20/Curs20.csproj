@@ -52,6 +52,12 @@
     <Compile Include="Builder\OptionBuilder.cs" />
     <Compile Include="Builder\OptionBuilder2.cs" />
     <Compile Include="Builder\RunExamples.cs" />
+    <Compile Include="cristi\AbstractGame.cs" />
+    <Compile Include="cristi\AbstractGameMap.cs" />
+    <Compile Include="cristi\EmptyMap.cs" />
+    <Compile Include="cristi\Igame.cs" />
+    <Compile Include="cristi\Lvl1.cs" />
+    <Compile Include="cristi\Lvl2.cs" />
     <Compile Include="FactoryMethod\FactoryMethod.cs" />
     <Compile Include="Builder\Option.cs" />
     <Compile Include="Builder\Xenon.cs" />
