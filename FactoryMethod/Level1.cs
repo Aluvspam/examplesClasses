@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public class Level1 : IGame
+    public class Level1 : AbstractGame
     {
-        
-        AbstractGameMap IGame.LoadEnviroment()
+        public Level1()
+        {
+
+        }
+        public override AbstractGameMap LoadEnviroment()
         {
             return new EmptyMap();
         }
-
-        void IGame.PrintMyDetails()
-        {
-            Console.WriteLine();
-        }
+       
     }
 }

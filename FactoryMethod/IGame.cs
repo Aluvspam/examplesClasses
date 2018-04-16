@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-    public interface IGame
+    interface IGame
     {
-         AbstractGameMap LoadEnviroment();
-         void PrintMyDetails();
+        AbstractGameMap LoadEnviroment();
     }
 }
