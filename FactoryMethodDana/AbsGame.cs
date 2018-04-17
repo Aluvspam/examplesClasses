@@ -9,16 +9,13 @@ namespace FactoryMethodDana
     public abstract class AbsGame: IGame
     {
         public  AbstractGameMap Map;
+        //public printDetails;
 
-        public AbstractGameMap LandEnvironment()
+        public virtual AbstractGameMap LandEnvironment()
         {
             throw new NotImplementedException();
         }
 
-        public virtual void PrintDetails()
-        {
-
-        }
-        
+      
     }
 }

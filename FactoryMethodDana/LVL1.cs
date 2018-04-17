@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodDana
 {
-    public class LVL1: AbsGame
+    public class LVL1 : AbsGame
     {
-        public LVL1()
+        
+        public override AbstractGameMap LandEnvironment()
         {
-            Map = LandEnvironment;
-        }
-        public override AbstractGameMap LandEnvironment();
-        {
-       return new EmptyMap();
-        }
-      
+         return  new EmptyMap();
+    }
+
+
     }
 }
