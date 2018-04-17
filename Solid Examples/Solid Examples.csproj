@@ -51,18 +51,12 @@
     <Compile Include="CoR\AbstractHandler.cs" />
     <Compile Include="CoR\Handler3.cs" />
     <Compile Include="CoR\Handler5.cs" />
-    <Compile Include="CoR\HandlerDana.cs" />
-    <Compile Include="CoR\HandlerMixAndreiR.cs" />
+    <Compile Include="CoR\HandlerMix.cs" />
+    <Compile Include="CoR\HandleUniversal.cs" />
     <Compile Include="CoR\Request.cs" />
-    <Compile Include="Decorator\ArtificialScentDecorator.cs" />
-    <Compile Include="Decorator\BakeryComponent.cs" />
-    <Compile Include="Decorator\CakeBase.cs" />
-    <Compile Include="Decorator\CherryDecorator.cs" />
-    <Compile Include="Decorator\CreamDecorator.cs" />
-    <Compile Include="Decorator\Decorator.cs" />
-    <Compile Include="Decorator\NameCardDecorator.cs" />
-    <Compile Include="Decorator\PastryBase.cs" />
-    <Compile Include="Decorator\Run.cs" />
+    <Compile Include="cristi\dictionary parse OK.cs" />
+    <Compile Include="cristi\dictionary parse.cs" />
+    <Compile Include="Point.cs" />
     <Compile Include="Strategy\AbstractEntity.cs" />
     <Compile Include="Strategy\Drone.cs" />
     <Compile Include="Strategy\Flying.cs" />
@@ -88,6 +82,10 @@
     <Compile Include="ReadKeyboard.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SquareCristi.cs" />
+    <Compile Include="SquareGaby.cs" />
+    <Compile Include="SquareDan.cs" />
+    <Compile Include="SquareLuana.cs" />
     <Compile Include="WriteAndreiR.cs" />
     <Compile Include="WriteCristi.cs" />
     <Compile Include="WriteDaniel.cs" />
@@ -100,6 +98,10 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj">
+      <Project>{bb729763-9e2c-401a-b7ed-118491ce69df}</Project>
+      <Name>EventsAndDelegates</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WinformWriteDana\WinformWriteDana.csproj">
       <Project>{def701e6-067f-4326-9070-0508bba9321b}</Project>
       <Name>WinformWriteDana</Name>
@@ -109,7 +111,9 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="CoR\ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Decorator\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
