@@ -10,7 +10,11 @@ namespace FactoryMethodDana
     {
         public LVL2()
         {
-            Map = LandEnvironment;
+            Map = LandEnvironment();
+        }
+        public override AbstractGameMap LandEnvironment()
+        {
+            return new EmptyMap();
         }
     }
 }

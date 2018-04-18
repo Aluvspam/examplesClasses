@@ -8,11 +8,11 @@ namespace FactoryMethodDana
 {
     public class LVL1 : AbsGame
     {
-        
+
         public override AbstractGameMap LandEnvironment()
         {
-         return  new EmptyMap();
-    }
+            return new EmptyMap();
+        }
 
 
     }
