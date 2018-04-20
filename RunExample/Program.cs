@@ -4,10 +4,10 @@ using ClassLibrary1;
 using Solid_Examples;
 using Solid_Examples.AndreiR;
 using EventsAndDelegates;
-using Curs17;
 using Decorator;
 using Geometry;
 using Solid_Examples.StateDoor;
+
 
 namespace RunExample
 {
@@ -15,7 +15,7 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
-            RunCurrentTest();
+            RunEventsAndDelegates();
             Segment seg = new Segment(-1, -2, 4, 2);
             var lungSeg = seg.Length;
             Console.WriteLine("lungimea segmentului este: " + lungSeg.ToString());
@@ -29,9 +29,6 @@ namespace RunExample
             return;//we know code above this is no longer executed, we can comment or delete this if we want to try that old example
                    //my Shaorma a la Andrei
                    //  AndreiShaormaDecoratorPattern.ComandaRun.Execute(); 
-            Console.ReadLine();
-            Decorator.Run.Execute();
-            Run.Execute();
             var world = new World();
             world.execute();
             Console.ReadLine();
@@ -113,6 +110,10 @@ namespace RunExample
             (new EventSubscriber()).XeventSubscriber();
             new RocaEventSubscriber().ReventSubscriber();
             ExampleEvent.Main(new string[0]);
+            (new NewEventSubs()).NewEventSubscriber();
+
+            NewClassExempleEvents.NewMain();
+            Console.ReadKey();
         }
 
         private static Person Promote(Person pupil)

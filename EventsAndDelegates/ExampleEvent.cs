@@ -9,10 +9,6 @@ namespace EventsAndDelegates
     public delegate void AndreisDelegate(int x);
     public class ExampleEvent
     {
-        private ExampleEvent()
-        {
-
-        }
         private static ExampleEvent instance;
         public static ExampleEvent Instance
         {
@@ -25,55 +21,22 @@ namespace EventsAndDelegates
                 return instance;
             }
         }
+
         public static event AndreisDelegate Xevent;
-        public static event EventHandler Xevent2;
-        public event EventHandler Xevent3;
+
         public static void Main(string[] args)
         {
-            AndreisArgs objAnd = new AndreisArgs(4.67);
-            EventArgs objEv = new EventArgs();
-            var r = new Random();
-            int i = 0;
+            var r = 2;
+            int i = 2;
 
-            while (true)
+            if (i == r)
             {
-                if (i == r.Next(1000))
+                if (Xevent != null)
                 {
-                    if (Xevent != null)
-                    {
-                        Xevent.Invoke(r.Next(10) + 1);
-                    }
+                    Xevent.Invoke(r + 1);
                 }
-                else if (i / 2 == r.Next(1000))
-                {
-                    if (Xevent2 != null)
-                    {
-                        Xevent2.Invoke(Instance, objEv);
-                    }
-                }
-                else
-                {
-                    if (Xevent2 != null)
-                    {
-                        Xevent2.Invoke(Instance, objAnd);
-                    }
-                }
-                i++;
             }
-
         }
-        public void MoreEvents()
-        {
-            Xevent3.Invoke(this, new AndreisArgs(3.3));
-        }
-    }
-    public class AndreisArgs : EventArgs
-    {
-        public AndreisArgs(double d)
-        {
-            score = d;
-        }
-        double score;
     }
     public class EventSubscriber
     {
@@ -85,7 +48,6 @@ namespace EventsAndDelegates
         {
             ExampleEvent.Xevent += OnXevent;
             ExampleEvent.Xevent += AndreiRCalc;
-            //EventRoca.Revent += AndreiRCalc;
         }
         public static void AndreiRCalc(int x)
         {
@@ -94,14 +56,9 @@ namespace EventsAndDelegates
         }
     }
     #region TEMA AR
-    public delegate void RocaDelegate(int a);//delegate-ul meu
+    public delegate void RocaDelegate(int a);
     public class EventRoca
     {
-      
-        public EventRoca()
-        {
-
-        }
         private static EventRoca instance;
         public static EventRoca Instance
         {
@@ -114,26 +71,22 @@ namespace EventsAndDelegates
                 return instance;
             }
         }
-        public static event RocaDelegate Revent;//nu stiu cum sa leg event-ul asta sa se bazeze pe eventu-ul lui Andrei
+        public static event RocaDelegate Revent;
         public void TriggerEvent(int x)
         {
             Revent.Invoke(x);
         }
-
     }
     public class RocaEventSubscriber
     {
-
         public void OnRevent(int a)
         {
             Console.WriteLine("RocaEvent (bazat pe eventul anterior): " + a);
-            
         }
         public void ReventSubscriber()
         {
             EventRoca.Revent += OnRevent;
         }
     }
-
     #endregion
 }
