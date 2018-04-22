@@ -31,6 +31,10 @@ namespace TFT
             {
                 myLastMove = Moves.C;
             }
+            else
+            {
+                myLastMove = Moves.D;
+            }
         }
 
     }
