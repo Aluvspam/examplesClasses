@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    enum Moves
+    public enum Moves
     {
         B,
         C,

@@ -13,7 +13,7 @@ namespace TFT
         private IPlayer player2;
         private int score1;
         private int score2;
-        int currentMove;
+        //int currentMove;
         private Moves lastMove1;
         private Moves lastMove2;
         private int gameLength;
@@ -25,7 +25,7 @@ namespace TFT
             player2 = p2;
             score1 = 0;
             score2 = 0;
-            currentMove = 0;
+            //currentMove = 0;
             gameLength = 100;
         }
         #endregion
@@ -37,7 +37,8 @@ namespace TFT
             updateScores(m1, m2);
             lastMove1 = m1;
             lastMove2 = m2;
-            for (int i = 1; i <= gameLength; i++)
+            Console.WriteLine("{0} - {1} score {2} - {3}", lastMove1.ToString(), lastMove2.ToString(), score1, score2);
+            for (int i = 1; i < gameLength; i++)
             {
                 var cm1 = GetMovePlayer1();
                 var cm2 = GetMovePlayer2();

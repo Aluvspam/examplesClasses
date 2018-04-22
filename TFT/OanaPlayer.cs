@@ -35,6 +35,7 @@ namespace TFT
             {
                 myLastMove = Moves.D;
             }
+            return myLastMove;
         }
 
     }
