@@ -52,6 +52,7 @@
     <Compile Include="DingleMouseByOana.cs" />
     <Compile Include="ScrambleProblem.cs" />
     <Compile Include="CenturyFromYear.cs" />
+    <Compile Include="OddInts.cs" />
     <Compile Include="ShortestWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

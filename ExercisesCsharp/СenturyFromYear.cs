@@ -1,18 +1,21 @@
 ﻿using System;
 
-public static class Kata
+namespace ExercisesCsharp
 {
-    public static int СenturyFromYear(int year)
+    public static class Kata
     {
-        int rest = year % 100;
-        int century = year / 100;
-        if (rest >= 1)
+        public static int СenturyFromYear(int year)
         {
-            return century + 1;
-        }
-        else
-        {
-            return century;
+            int rest = year % 100;
+            int century = year / 100;
+            if (rest >= 1)
+            {
+                return century + 1;
+            }
+            else
+            {
+                return century;
+            }
         }
     }
 }
