@@ -47,6 +47,16 @@ namespace TFT
                 lastMove2 = cm2;
                 Console.WriteLine("{0} - {1} score {2} - {3}", lastMove1.ToString(), lastMove2.ToString(), score1, score2);
             }
+            var v = player1 as IScore;
+            if (v != null)
+            {
+                Console.WriteLine("player1 thinks after 99 moves it has {0} points", v.Score);
+            }
+            v = player2 as IScore; // v = (IScore)player2
+            if (v != null)
+            {
+                Console.WriteLine("player2 thinks after 99 moves it has {0} points", v.Score);
+            }
         }
         private void updateScores(Moves m1, Moves m2)
         {

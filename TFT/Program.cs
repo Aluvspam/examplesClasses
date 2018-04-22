@@ -20,8 +20,9 @@ namespace TFT
             IPlayer random = new RandomPlayer();
             IPlayer oana = new OanaPlayer();
             IPlayer random2 = new RandomPlayer2();
-            IPlayer tftnice = new TFTPlayer();
-            //var game = new Game(luana, andrei);
+            IPlayer tftnice = new TFTPlayernice();
+            IPlayer meanTFT = new TFTPlayerMean();
+            var game = new Game(luana, andrei);
             //var game = new Game(random, andrei);
             //var game = new Game(random, luana);
             //var game = new Game(random2, luana);
@@ -31,7 +32,11 @@ namespace TFT
             //var game = new Game(tftnice, random);
             //var game = new Game(tftnice, random2);
             //var game = new Game(tftnice, andrei);
-            var game = new Game(oana, andrei);
+            //var game = new Game(oana, andrei);
+            //var game = new Game(oana, luana);
+            //var game = new Game(oana, random);
+            //var game = new Game(oana, random2);
+            //var game = new Game(oana, tftnice);
 
             game.RunGame();
             Console.ReadLine();

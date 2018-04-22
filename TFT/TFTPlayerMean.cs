@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class TFTPlayernice : AbstractTFTPlayer
+    class TFTPlayerMean : AbstractTFTPlayer
     {
-
+        public override Moves FirstMove()
+        {
+            return Moves.D;
+        }
     }
 }

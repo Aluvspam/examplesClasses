@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractTFTPlayer.cs" />
     <Compile Include="AndreiPlayer.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="LuanaPlayer.cs" />
-    <Compile Include="OanaPlayer.cs" />
     <Compile Include="IScore.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
@@ -55,6 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="random2.cs" />
     <Compile Include="RandomPlayer.cs" />
+    <Compile Include="TFTPlayerMean.cs" />
     <Compile Include="TFTPlayernice.cs" />
   </ItemGroup>
   <ItemGroup>

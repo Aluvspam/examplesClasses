@@ -15,22 +15,24 @@ namespace TFT
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if(myLastMove == Moves.C && othersLastMove == Moves.C)
-           {
-               return Moves.C;
-           }else (myLastMove == Moves.C && othersLastMove == Moves.D)
-                {
-                
+            if (myLastMove == Moves.C && othersLastMove == Moves.C)
+            {
+                return Moves.C;
+            }
+            else if (myLastMove == Moves.C && othersLastMove == Moves.D)
+            {
+
                 return Moves.D;
-                }
+            }
+            return Moves.B;
         }
 
         private Moves LuanaMove()
         {
-            
+
             return ((new Random()).Next(2) == 0) ? Moves.C : Moves.C;
         }
 
-        
+
     }
 }
