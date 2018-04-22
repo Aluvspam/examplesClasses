@@ -24,7 +24,7 @@ namespace TFT
                 {
                 myLastMove = Moves.C;
                 othersLastMove = Moves.D;
-                return Moves.C;
+                return Moves.D;
                 }
         }
 
