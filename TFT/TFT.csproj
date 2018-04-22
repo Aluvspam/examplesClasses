@@ -47,6 +47,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="LuanaPlayer.cs" />
+    <Compile Include="OanaPlayer.cs" />
     <Compile Include="IScore.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
