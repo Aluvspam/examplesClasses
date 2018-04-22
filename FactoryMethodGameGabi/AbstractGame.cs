@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodGameGabi
 {
-    public abstract class AbstractGame
+    public abstract class AbstractGame : IGame
     {
-        public AbstractGameMap map;
+        AbstractGameMap map;
 
-        public void PrintMapDetails()
+        void PrintMapDetails()
         {
-            
+
         }
+        
     }
 }
