@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class AndreiPlayer : IPlayer
+    class AndreiPlayer : IPlayer, IScore
     {
-        private int score; 
+        private int score;
+        public int Score
+        {
+            get
+            {
+               return score;
+            }
+        }
         public Moves FirstMove()
         {
             return Moves.D;
