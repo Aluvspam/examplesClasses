@@ -21,7 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <IntermediateOutputPath>C:\Users\tony\AppData\Local\Temp\vs2497.tmp\Debug\</IntermediateOutputPath>
-    <IntermediateOutputPath>C:\Users\Flux\AppData\Local\Temp\vs6B04.tmp\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\tony\AppData\Local\Temp\vsDDD.tmp\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,7 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <IntermediateOutputPath>C:\Users\Flux\AppData\Local\Temp\vs6B04.tmp\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\tony\AppData\Local\Temp\vsDDD.tmp\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">

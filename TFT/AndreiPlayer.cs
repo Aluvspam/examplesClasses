@@ -8,6 +8,7 @@ namespace TFT
 {
     class AndreiPlayer : IPlayer
     {
+        private int score; 
         public Moves FirstMove()
         {
             return Moves.C;
@@ -23,15 +24,19 @@ namespace TFT
             {
                 case Moves.B:
                     myMove = Moves.C;
+                    score += 3;
                     break;
                 case Moves.C:
                     myMove = Moves.D;
+                    score += 4;
                     break;
                 case Moves.D:
                     myMove = Moves.D;
+                    score += 2;
                     break;
                 default:
-                    myMove = Moves.C;
+                    myMove = Moves.B;
+                    score += 0;
                     break;
             }
             return myMove;
