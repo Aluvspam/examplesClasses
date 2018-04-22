@@ -43,7 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndreiPlayer.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
+    <Compile Include="LuanaPlayer.cs" />
+    <Compile Include="IScore.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

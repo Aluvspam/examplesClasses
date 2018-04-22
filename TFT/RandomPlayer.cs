@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class RandomPlayer : IPlayer
+    class RandomPlayer : IPlayer, IScore
     {
+        public int Score
+        {
+            get
+            {
+                return 0;
+            }
+        }
+
         public Moves FirstMove()
         {
             return RandomMove();
