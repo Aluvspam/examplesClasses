@@ -24,5 +24,18 @@ namespace ExercisesCsharp
                 return biggestOdd;
             }
         }
+
+        public int BiggestOddArr(int[] num)
+        {
+            int biggestOdd = int.MinValue;
+            for (int i = 0; i < num.Length; i++)
+            {
+                if (num[i] % 2 != 0 && num[i] > biggestOdd)
+                {
+                    biggestOdd = num[i];
+                }
+            }
+            return biggestOdd;
+        }
     }
 }
