@@ -35,9 +35,16 @@ namespace TFT
             Moves m1 = player1.FirstMove();
             var m2 = player2.FirstMove();
             updateScores(m1, m2);
+            lastMove1 = m1;
+            lastMove2 = m2;
             for (int i = 1; i <= gameLength; i++)
             {
-
+                var cm1 = GetMovePlayer1();
+                var cm2 = GetMovePlayer2();
+                updateScores(cm1, cm2);
+                lastMove1 = cm1;
+                lastMove2 = cm2;
+                Console.WriteLine("{0} - {1} score {2} - {3}", lastMove1.ToString(), lastMove2.ToString(), score1, score2);
             }
         }
         private void updateScores(Moves m1, Moves m2)
