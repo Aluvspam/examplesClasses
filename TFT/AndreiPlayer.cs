@@ -11,9 +11,8 @@ namespace TFT
         private int score; 
         public Moves FirstMove()
         {
-            return Moves.C;
+            return Moves.D;
         }
-
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
             return MyStyle(myLastMove, othersLastMove);
@@ -40,8 +39,6 @@ namespace TFT
                     break;
             }
             return myMove;
-           
-           
         }
     }
 }
