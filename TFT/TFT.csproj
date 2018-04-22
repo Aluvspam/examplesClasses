@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AndreiPlayer.cs" />
     <Compile Include="IPlayer.cs" />
+    <Compile Include="LuanaPlayer.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
