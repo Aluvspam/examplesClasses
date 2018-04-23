@@ -49,6 +49,7 @@
     <Compile Include="IPlayer.cs" />
     <Compile Include="LuanaPlayer.cs" />
     <Compile Include="IScore.cs" />
+    <Compile Include="LuanaSecondPlayer.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
     <Compile Include="Program.cs" />
