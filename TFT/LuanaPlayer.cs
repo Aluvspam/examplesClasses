@@ -10,21 +10,34 @@ namespace TFT
     {
         public Moves FirstMove()
         {
-            return Moves.C;
+            return Moves.D;
         }
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if (myLastMove == Moves.C && othersLastMove == Moves.C)
+            if (myLastMove == Moves.D && othersLastMove == Moves.C)
             {
+                return Moves.D;
+            }
+            else if (myLastMove == Moves.D && othersLastMove == Moves.D)
+            {
+
                 return Moves.C;
+            }
+            else if (myLastMove == Moves.C && othersLastMove == Moves.C)
+            {
+                return Moves.D;
             }
             else if (myLastMove == Moves.C && othersLastMove == Moves.D)
             {
-
                 return Moves.D;
             }
-            return Moves.B;
+            else
+            {
+                myLastMove = Moves.C;
+            }
+            return myLastMove;
+
         }
 
         private Moves LuanaMove()
