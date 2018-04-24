@@ -8,6 +8,7 @@ namespace TFT
 {
     abstract class AbstractTFTPlayer : IPlayer
     {
+        protected AbstractStrategy strategy;
         public virtual Moves FirstMove()
         {
             return Moves.C;
