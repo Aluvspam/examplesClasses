@@ -23,8 +23,8 @@ namespace TFT
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
-
-            //var game = new Game(dana, oana);
+            IPlayer andreiMF = new AndreiMFPlayer();
+            var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);
             //var game = new Game(dana, random);
             //var game = new Game(dana, random2);

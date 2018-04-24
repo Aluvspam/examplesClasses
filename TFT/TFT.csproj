@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractTFTPlayer.cs" />
+    <Compile Include="AndreiMFPlayer.cs" />
     <Compile Include="AndreiPlayer.cs" />
     <Compile Include="DanaPlayer.cs" />
     <Compile Include="Game.cs" />
