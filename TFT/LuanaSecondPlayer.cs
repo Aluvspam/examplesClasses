@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class LuanaPlayer : IPlayer
+    class LuanaSecondPlayer : IPlayer
     {
         public Moves FirstMove()
         {
@@ -15,7 +15,7 @@ namespace TFT
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if (myLastMove == Moves.D && othersLastMove == Moves.C)
+            if (myLastMove == Moves.C && othersLastMove == Moves.C)
             {
                 return Moves.D;
             }
@@ -34,18 +34,10 @@ namespace TFT
             }
             else
             {
-                myLastMove = Moves.C;
+                myLastMove = Moves.D;
             }
             return myLastMove;
 
         }
-
-        private Moves LuanaMove()
-        {
-
-            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.C;
-        }
-
-
     }
 }
