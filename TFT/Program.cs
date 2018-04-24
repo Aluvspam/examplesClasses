@@ -19,10 +19,18 @@ namespace TFT
             IPlayer andrei = new AndreiPlayer();
             //IPlayer random = new RandomPlayer();
             IPlayer oana = new OanaPlayer();
+            IPlayer dana = new DanaPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
-            var game = new Game(luana, andrei);
+
+            //var game = new Game(dana, oana);
+            //var game = new Game(dana, andrei);
+            //var game = new Game(dana, random);
+            //var game = new Game(dana, random2);
+            //var game = new Game(dana, tftnice);
+
+            //var game = new Game(luana, andrei);
             //var game = new Game(random, andrei);
             //var game = new Game(random, luana);
             //var game = new Game(random2, luana);
