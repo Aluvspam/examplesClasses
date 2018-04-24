@@ -17,7 +17,7 @@ namespace TFT
         {
             IPlayer luana = new LuanaPlayer();
             IPlayer andrei = new AndreiPlayer();
-            IPlayer random = new RandomPlayer();
+            //IPlayer random = new RandomPlayer();
             IPlayer oana = new OanaPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
