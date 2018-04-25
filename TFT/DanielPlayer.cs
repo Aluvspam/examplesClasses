@@ -10,21 +10,21 @@ namespace TFT
     {
         public Moves FirstMove()
         {
-            return Moves.C;
+            return Moves.B;
         }
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if (myLastMove == Moves.D && othersLastMove == Moves.C)
+            if (myLastMove == Moves.C && othersLastMove == Moves.B)
             {
                 return Moves.D;
             }
-            else if (myLastMove == Moves.C && othersLastMove == Moves.D)
+            else if (myLastMove == Moves.B && othersLastMove == Moves.C)
             {
                 return Moves.C;
             }
-            else if (myLastMove == Moves.D && othersLastMove == Moves.D)
+            else if (myLastMove == Moves.C && othersLastMove == Moves.D)
             {
-                return Moves.C;
+                return Moves.D;
             }
             else myLastMove = Moves.C;
             {
@@ -33,7 +33,7 @@ namespace TFT
         }
         private Moves DanielMove()
         {
-            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.C;
+            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.D;
         }
     }
 }
