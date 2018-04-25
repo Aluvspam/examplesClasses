@@ -12,9 +12,19 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             TamplateDesign.Program.Main();
+          
+            List<string> catalog = new List<string>()
+            {
+                "andrei", "ana", "cristi", "elena"
+            };
+            catalog.ForEach(w => Console.Write(" " + w));
+            Console.WriteLine();
+            foreach( var i in catalog)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine(string.Join(" ", catalog));
             Console.ReadLine();
         }
-
-       
     }
 }
