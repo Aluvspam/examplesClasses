@@ -50,6 +50,7 @@
     <Compile Include="DanProblem.cs" />
     <Compile Include="Dinglemouse.cs" />
     <Compile Include="DingleMouseByOana.cs" />
+    <Compile Include="Impar.cs" />
     <Compile Include="ScrambleProblem.cs" />
     <Compile Include="ShortestWord.cs" />
     <Compile Include="Program.cs" />

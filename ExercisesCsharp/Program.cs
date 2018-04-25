@@ -8,6 +8,10 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+            int[] num = { 71, 83, 52, 40 };
+            Impar.maxOfArray(num);
+            Console.WriteLine(Impar.maxof(75,3,35));
+            //Console.WriteLine(Impar.maxof(70, 80, 30));
             //DanProblem.Execute();
             //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
             //Console.ReadLine();
@@ -15,7 +19,7 @@ namespace ExercisesCsharp
             //var s = ExampleSum(7, 5);
             //var s3 = ExampleSum(14, 11, 9);
             //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
-            Console.WriteLine(string.Join(" ", Wave("Andrei")));
+            //Console.WriteLine(string.Join(" ", Wave("Andrei")));
             Console.ReadLine();
         }
         public static List<string> Wave(string str)
