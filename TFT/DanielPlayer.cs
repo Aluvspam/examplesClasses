@@ -33,7 +33,7 @@ namespace TFT
         }
         private Moves DanielMove()
         {
-            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.D;
+            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.C;
         }
     }
 }
