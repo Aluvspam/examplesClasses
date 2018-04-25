@@ -15,6 +15,7 @@ namespace TFT
 
         private static void RunTFT()
         {
+            IPlayer daniel = new DanielPlayer();
             IPlayer luana = new LuanaPlayer();
             IPlayer andrei = new AndreiPlayer();
             //IPlayer random = new RandomPlayer();
