@@ -6,46 +6,34 @@ using System.Threading.Tasks;
 
 namespace TFT
 {
-    class LuanaPlayer : IPlayer
+    class DanielPlayer: IPlayer
     {
         public Moves FirstMove()
         {
-            return Moves.D;
+            return Moves.B;
         }
-
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if (myLastMove == Moves.D && othersLastMove == Moves.C)
+            if (myLastMove == Moves.C && othersLastMove == Moves.B)
             {
                 return Moves.D;
             }
-            else if (myLastMove == Moves.D && othersLastMove == Moves.D)
+            else if (myLastMove == Moves.B && othersLastMove == Moves.C)
             {
-
                 return Moves.C;
-            }
-            else if (myLastMove == Moves.C && othersLastMove == Moves.C)
-            {
-                return Moves.D;
             }
             else if (myLastMove == Moves.C && othersLastMove == Moves.D)
             {
                 return Moves.D;
             }
-            else
+            else myLastMove = Moves.C;
             {
-                myLastMove = Moves.C;
+                return Moves.D;
             }
-            return myLastMove;
-
         }
-
-        private Moves LuanaMove()
+        private Moves DanielMove()
         {
-
-            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.C;
+            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.D;
         }
-
-
     }
 }
