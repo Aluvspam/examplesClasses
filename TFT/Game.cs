@@ -110,7 +110,7 @@ namespace TFT
             }
             catch (Exception)
             {
-                r = Moves.B;
+                r = Moves.B;//solutie de avarie
             }
             return r;
         }
