@@ -69,6 +69,10 @@
       <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
       <Name>ClassLibrary1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TamplateDesign\TamplateDesign.csproj">
+      <Project>{a80e9804-ac40-46cd-9694-871ad598eb23}</Project>
+      <Name>TamplateDesign</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

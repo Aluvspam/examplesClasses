@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs17", "Curs17\Curs17.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{C151F0E6-8E2F-42AB-A483-9290A26F7294}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamplateDesign", "TamplateDesign\TamplateDesign.csproj", "{A80E9804-AC40-46CD-9694-871AD598EB23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{C151F0E6-8E2F-42AB-A483-9290A26F7294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C151F0E6-8E2F-42AB-A483-9290A26F7294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C151F0E6-8E2F-42AB-A483-9290A26F7294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80E9804-AC40-46CD-9694-871AD598EB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80E9804-AC40-46CD-9694-871AD598EB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80E9804-AC40-46CD-9694-871AD598EB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80E9804-AC40-46CD-9694-871AD598EB23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
