@@ -85,5 +85,10 @@ namespace EventsAndDelegates
             ExampleEvent.Xevent += OnXevent;
             ExampleEvent.Xevent += OnOanaXevent;
         }
+
+        public void OnDanielXevent(int d)
+        {
+            Console.WriteLine("Daniel " + d);
+        }
     }
 }
