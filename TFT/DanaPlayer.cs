@@ -10,23 +10,23 @@ namespace TFT
     {
         public Moves FirstMove()
         {
-            return Moves.C;
+            return Moves.D;
         }
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if (myLastMove == Moves.B && othersLastMove == Moves.B)
+            if (myLastMove == Moves.C && othersLastMove == Moves.B)
             {
-                return Moves.B;
+                return Moves.C;
             }
-            else if (myLastMove == Moves.C && othersLastMove != Moves.D || othersLastMove != Moves.C)
+            else if (myLastMove == Moves.D && othersLastMove == Moves.C )
             {
 
-                return Moves.C;
+                return Moves.D;
             }
             else
             {
-                myLastMove = Moves.C;
+                myLastMove = Moves.D;
             }
             return myLastMove;
         }

@@ -18,6 +18,7 @@ namespace TFT
         private Moves lastMove2;
         private int gameLength;
         #endregion
+
         #region contructors
         public Game(IPlayer p1, IPlayer p2)
         {
@@ -29,6 +30,7 @@ namespace TFT
             gameLength = 100;
         }
         #endregion
+
         #region methods
         public void RunGame()
         {
@@ -108,7 +110,7 @@ namespace TFT
             }
             catch (Exception)
             {
-                r = Moves.B;
+                r = Moves.B;//solutie de avarie
             }
             return r;
         }
