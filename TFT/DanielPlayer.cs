@@ -10,7 +10,7 @@ namespace TFT
     {
         public Moves FirstMove()
         {
-            return Moves.B;
+            return Moves.C;
         }
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {

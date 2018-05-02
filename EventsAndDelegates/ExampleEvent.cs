@@ -84,6 +84,7 @@ namespace EventsAndDelegates
         {
             ExampleEvent.Xevent += OnXevent;
             ExampleEvent.Xevent += OnOanaXevent;
+            ExampleEvent.Xevent += OnDanielXevent;
         }
 
         public void OnDanielXevent(int d)
