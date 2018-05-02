@@ -108,6 +108,16 @@ namespace TFT
             {
                 r = player1.MyMove(lastMove1, lastMove2);
             }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+                r = Moves.B;//solutie de avarie
+            }
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("atentie la index!!!");
+                r = Moves.B;//solutie de avarie
+            }
             catch (Exception)
             {
                 r = Moves.B;//solutie de avarie
