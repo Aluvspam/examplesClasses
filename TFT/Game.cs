@@ -118,6 +118,11 @@ namespace TFT
                 Console.WriteLine("atentie la index!!!");
                 r = Moves.B;//solutie de avarie
             }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("Atentie la referinta! Nu exista o instanta a obiectului!");
+                r = Moves.B;
+            }
             catch (Exception)
             {
                 r = Moves.B;//solutie de avarie
