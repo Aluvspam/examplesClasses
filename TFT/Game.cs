@@ -113,6 +113,7 @@ namespace TFT
                 Console.WriteLine(e.Message);
                 r = Moves.B;//solutie de avarie
             }
+         
             catch (IndexOutOfRangeException)
             {
                 Console.WriteLine("atentie la index!!!");
@@ -123,10 +124,18 @@ namespace TFT
                 Console.WriteLine("Atentie la referinta! Nu exista o instanta a obiectului!");
                 r = Moves.B;
             }
+
+            catch (TimeoutException)
+            {
+                Console.WriteLine("(Dana) Timpul tau a expirat :) Exceptia de mai jos le-a prins deja pe toate.");
+                r = Moves.B;
+            }
             catch (Exception)
             {
                 r = Moves.B;//solutie de avarie
             }
+
+           
             return r;
         }
         private Moves GetMovePlayer2()
