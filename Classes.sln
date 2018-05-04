@@ -60,6 +60,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "Event
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodDana", "FactoryMethodDana\FactoryMethodDana.csproj", "{005E545E-6034-4217-98C4-8F230B37106D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception_Handling", "Exception_Handling\Exception_Handling.csproj", "{4F713340-1365-4FCF-8AE7-A6C181C2AC03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User_defined_exception", "user_defined_exception\User_defined_exception.csproj", "{5F7F3991-4446-4341-9833-F751C263FA85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exception", "Exception", "{52862301-04EF-4F90-955E-BD031C8BC10A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -166,6 +172,14 @@ Global
 		{005E545E-6034-4217-98C4-8F230B37106D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{005E545E-6034-4217-98C4-8F230B37106D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{005E545E-6034-4217-98C4-8F230B37106D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F713340-1365-4FCF-8AE7-A6C181C2AC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F713340-1365-4FCF-8AE7-A6C181C2AC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F713340-1365-4FCF-8AE7-A6C181C2AC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F713340-1365-4FCF-8AE7-A6C181C2AC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F7F3991-4446-4341-9833-F751C263FA85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F7F3991-4446-4341-9833-F751C263FA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F7F3991-4446-4341-9833-F751C263FA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F7F3991-4446-4341-9833-F751C263FA85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,5 +188,7 @@ Global
 		{61C7915B-3F63-4BD9-B65B-6B88EC9A5D47} = {105B527E-BF2B-4088-9922-7D9C6DECA2CF}
 		{EFCFBCBB-ADF2-4893-B1DD-456C1889FBD1} = {0A6E6FBA-301A-46DA-BF64-09C6D62B0E76}
 		{22BBEABD-EA16-49F1-BB4C-F1D2DBCDF3AF} = {0A6E6FBA-301A-46DA-BF64-09C6D62B0E76}
+		{4F713340-1365-4FCF-8AE7-A6C181C2AC03} = {52862301-04EF-4F90-955E-BD031C8BC10A}
+		{5F7F3991-4446-4341-9833-F751C263FA85} = {52862301-04EF-4F90-955E-BD031C8BC10A}
 	EndGlobalSection
 EndGlobal
