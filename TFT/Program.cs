@@ -15,6 +15,7 @@ namespace TFT
 
         private static void RunTFT()
         {
+            IPlayer daniel = new DanielPlayer();
             IPlayer luana = new LuanaPlayer();
             IPlayer andrei = new AndreiPlayer();
             //IPlayer random = new RandomPlayer();
@@ -24,9 +25,8 @@ namespace TFT
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
             IPlayer andreiMF = new AndreiMFPlayer();
-            IPlayer cheater1 = new Player2();
-            IPlayer cheater2 = new PlayLikeABoss();
-            var game = new Game(cheater1, cheater2);
+            IPlayer error = new PlayerWithError();
+            var game = new Game(error, daniel);
             //var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);
             //var game = new Game(dana, random);
