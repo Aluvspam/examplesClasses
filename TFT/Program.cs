@@ -47,8 +47,14 @@ namespace TFT
             //var game = new Game(oana, random);
             //var game = new Game(oana, random2);
             //var game = new Game(oana, tftnice);
-
-            game.RunGame();
+            try
+            {
+                game.RunGame();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Ai gresit jocu' baiatu meu!");
+            }
             Console.ReadLine();
         }
     }

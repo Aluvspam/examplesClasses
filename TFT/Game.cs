@@ -114,6 +114,19 @@ namespace TFT
             }
             return r;
         }
+        private Moves GetMove(IPlayer mov)
+        {
+            Moves a;
+            try
+            {
+                a = mov.MyMove(lastMove1, lastMove2);
+            }
+            catch (Exception)
+            {
+                a = Moves.B;
+            }
+            return a;
+        }
         private Moves GetMovePlayer2()
         {
             Moves r;
