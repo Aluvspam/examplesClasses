@@ -108,11 +108,48 @@ namespace TFT
             {
                 r = player1.MyMove(lastMove1, lastMove2);
             }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+                r = Moves.B;//solutie de avarie
+            }
+         
+            catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("atentie la index!!!");
+                r = Moves.B;//solutie de avarie
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("Atentie la referinta! Nu exista o instanta a obiectului!");
+                r = Moves.B;
+            }
+
+            catch (TimeoutException)
+            {
+                Console.WriteLine("(Dana) Timpul tau a expirat :) Exceptia de mai jos le-a prins deja pe toate.");
+                r = Moves.B;
+            }
             catch (Exception)
             {
                 r = Moves.B;//solutie de avarie
             }
+
+           
             return r;
+        }
+        private Moves GetMove(IPlayer mov)
+        {
+            Moves a;
+            try
+            {
+                a = mov.MyMove(lastMove1, lastMove2);
+            }
+            catch (Exception)
+            {
+                a = Moves.B;
+            }
+            return a;
         }
         private Moves GetMovePlayer2()
         {

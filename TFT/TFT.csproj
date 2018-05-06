@@ -60,6 +60,7 @@
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
     <Compile Include="player2.cs" />
+    <Compile Include="PlayerWithError.cs" />
     <Compile Include="PlayLikeABoss.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
