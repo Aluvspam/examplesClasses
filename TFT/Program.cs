@@ -26,7 +26,9 @@ namespace TFT
             IPlayer meanTFT = new TFTPlayerMean();
             IPlayer andreiMF = new AndreiMFPlayer();
             IPlayer error = new PlayerWithError();
-            var game = new Game(error, daniel);
+            IPlayer cristi = new CristiPlayer();
+            IPlayer cristi2 = new CristiSecondPlayer();
+            var game = new Game(cristi, cristi2);
             //var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);
             //var game = new Game(dana, random);
