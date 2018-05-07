@@ -20,6 +20,7 @@ namespace TFT
             IPlayer andrei = new AndreiPlayer();
             //IPlayer random = new RandomPlayer();
             IPlayer oana = new OanaPlayer();
+            IPlayer oana2 = new OanaPlayer2();
             IPlayer dana = new DanaPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();

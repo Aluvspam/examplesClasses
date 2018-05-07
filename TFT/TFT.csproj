@@ -61,6 +61,7 @@
     <Compile Include="LuanaSecondPlayer.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
+    <Compile Include="OanaPlayer2.cs" />
     <Compile Include="player2.cs" />
     <Compile Include="PlayerWithError.cs" />
     <Compile Include="PlayLikeABoss.cs" />
