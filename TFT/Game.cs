@@ -116,7 +116,7 @@ namespace TFT
                 logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
-
+         
             catch (IndexOutOfRangeException e)
             {
                 Console.WriteLine("atentie la index!!!");
@@ -142,21 +142,38 @@ namespace TFT
                 r = Moves.B;//solutie de avarie
             }
 
-
+           
             return r;
         }
-        private Moves GetMove(IPlayer mov)
+        //added GetMove() method
+        private Moves GetMove()
         {
             Moves a;
+            if (player1 != null)
+            {
             try
             {
-                a = mov.MyMove(lastMove1, lastMove2);
+                    a = player1.MyMove(lastMove1, lastMove2);
             }
             catch (Exception)
             {
                 a = Moves.B;
+                    return a;
+                }
             }
+            if (player2 != null)
+            {
+                try
+                {
+                    a = player2.MyMove(lastMove2, lastMove1);
+                }
+                catch (Exception)
+                {
+                    a = Moves.B;
             return a;
+        }
+            }
+            return Moves.B;
         }
         private Moves GetMovePlayer2()
         {
