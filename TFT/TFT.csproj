@@ -50,6 +50,9 @@
     <Compile Include="Atac.cs" />
     <Compile Include="Capra.cs" />
     <Compile Include="BStartMovePlayer.cs" />
+    <Compile Include="CorlyPlayerOne.cs" />
+    <Compile Include="CristiPlayer.cs" />
+    <Compile Include="CristiSecondPlayer.cs" />
     <Compile Include="DanaPlayer.cs" />
     <Compile Include="DanielPlayer.cs" />
     <Compile Include="Game.cs" />
@@ -59,6 +62,7 @@
     <Compile Include="LuanaSecondPlayer.cs" />
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
+    <Compile Include="OanaPlayer2.cs" />
     <Compile Include="player2.cs" />
     <Compile Include="PlayerWithError.cs" />
     <Compile Include="PlayLikeABoss.cs" />
