@@ -14,14 +14,14 @@ namespace TFT
 
         public Moves FirstMove()
         {
-            return Moves.D;
+            return Moves.C;
         }
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
             if (myLastMove == Moves.C && othersLastMove == Moves.C || othersLastMove == Moves.B)
             {
-                myLastMove = Moves.D;
+                myLastMove = Moves.C;
             }
             else if (myLastMove == Moves.D && othersLastMove == Moves.C)
             {
