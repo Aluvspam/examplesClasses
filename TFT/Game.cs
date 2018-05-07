@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NLog;
 
 namespace TFT
 {
@@ -17,6 +18,7 @@ namespace TFT
         private Moves lastMove1;
         private Moves lastMove2;
         private int gameLength;
+        private static Logger logger;
         #endregion
 
         #region contructors
@@ -111,31 +113,36 @@ namespace TFT
             catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message);
+                logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
-         
-            catch (IndexOutOfRangeException)
+
+            catch (IndexOutOfRangeException e)
             {
                 Console.WriteLine("atentie la index!!!");
+                logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
-            catch (NullReferenceException)
+            catch (NullReferenceException e)
             {
                 Console.WriteLine("Atentie la referinta! Nu exista o instanta a obiectului!");
+                logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;
             }
 
-            catch (TimeoutException)
+            catch (TimeoutException e)
             {
                 Console.WriteLine("(Dana) Timpul tau a expirat :) Exceptia de mai jos le-a prins deja pe toate.");
+                logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                logger.Warn("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
 
-           
+
             return r;
         }
         private Moves GetMove(IPlayer mov)

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using NLog;
 namespace TFT
 {
     class Program
     {
+        private static Logger logger;
         static void Main(string[] args)
         {
             RunTFT();
@@ -29,7 +30,7 @@ namespace TFT
             IPlayer error = new PlayerWithError();
             IPlayer cristi = new CristiPlayer();
             IPlayer cristi2 = new CristiSecondPlayer();
-            var game = new Game(cristi, cristi2);
+            var game = new Game(andreiMF, andrei);
             //var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);
             //var game = new Game(dana, random);
@@ -54,8 +55,9 @@ namespace TFT
             {
                 game.RunGame();
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }
             Console.ReadLine();
