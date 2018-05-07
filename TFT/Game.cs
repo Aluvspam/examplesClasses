@@ -19,6 +19,7 @@ namespace TFT
         private Moves lastMove2;
         private int gameLength;
         private static Logger logger;
+        private static ALog aLogger;
         #endregion
 
         #region contructors
@@ -114,9 +115,10 @@ namespace TFT
             {
                 Console.WriteLine(e.Message);
                 logger.Warn("error message: " + e.Message + ";source: " + e.Source);
+                aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
-         
+
             catch (IndexOutOfRangeException e)
             {
                 Console.WriteLine("atentie la index!!!");
@@ -142,7 +144,7 @@ namespace TFT
                 r = Moves.B;//solutie de avarie
             }
 
-           
+
             return r;
         }
         //added GetMove() method
@@ -151,13 +153,13 @@ namespace TFT
             Moves a;
             if (player1 != null)
             {
-            try
-            {
+                try
+                {
                     a = player1.MyMove(lastMove1, lastMove2);
-            }
-            catch (Exception)
-            {
-                a = Moves.B;
+                }
+                catch (Exception)
+                {
+                    a = Moves.B;
                     return a;
                 }
             }
@@ -170,8 +172,8 @@ namespace TFT
                 catch (Exception)
                 {
                     a = Moves.B;
-            return a;
-        }
+                    return a;
+                }
             }
             return Moves.B;
         }
