@@ -138,7 +138,7 @@ namespace TFT
 
             return r;
         }
-        //
+        //added GetMove() method
         private Moves GetMove()
         {
             Moves a;
@@ -151,6 +151,7 @@ namespace TFT
                 catch (Exception)
                 {
                     a = Moves.B;
+                    return a;
                 }
             }
             if (player2 != null)
@@ -162,9 +163,10 @@ namespace TFT
                 catch (Exception)
                 {
                     a = Moves.B;
+                    return a;
                 }
             }
-            return a;
+            return Moves.B;
         }
         private Moves GetMovePlayer2()
         {
