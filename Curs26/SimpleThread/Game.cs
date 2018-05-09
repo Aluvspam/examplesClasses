@@ -94,7 +94,7 @@ namespace Curs26.SimpleThread
             if (started)
             {
                 player1Thread.Abort();
-                player2Thread.Start();
+                player2Thread.Abort();
                 started = false;
                 running = false;
             }

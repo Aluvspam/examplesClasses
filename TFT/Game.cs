@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
+using System.Threading;
 
 namespace TFT
 {
@@ -51,6 +52,7 @@ namespace TFT
                 lastMove1 = cm1;
                 lastMove2 = cm2;
                 Console.WriteLine("{0} - {1} score {2} - {3}", lastMove1.ToString(), lastMove2.ToString(), score1, score2);
+                //Thread.Sleep(1);
             }
             var v = player1 as IScore;
             if (v != null)
