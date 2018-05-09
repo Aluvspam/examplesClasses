@@ -6,6 +6,8 @@ namespace Curs26.SimpleThread
     {
         public static void Run()
         {
+            Game2.Run();
+            Console.ReadLine();
             Game game = new Game("First game", 333);
 
             while (true)
