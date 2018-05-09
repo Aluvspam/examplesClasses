@@ -8,6 +8,7 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+            Threads.Run();
             //DanProblem.Execute();
             //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
             //Console.ReadLine();
@@ -15,8 +16,8 @@ namespace ExercisesCsharp
             //var s = ExampleSum(7, 5);
             //var s3 = ExampleSum(14, 11, 9);
             //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
-            Console.WriteLine(string.Join(" ", Wave("Andrei")));
-            Console.ReadLine();
+           // Console.WriteLine(string.Join(" ", Wave("Andrei")));
+            //Console.ReadLine();
         }
         public static List<string> Wave(string str)
         {
