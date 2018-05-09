@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A761CE25-E5D1-4805-A5AF-BF3CE5D23DD4}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{F1A6429F-AEFB-4985-B401-38EA526DADC8}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RunExample</RootNamespace>
-    <AssemblyName>RunExample</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>Curs26</RootNamespace>
+    <AssemblyName>Curs26</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,17 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,38 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="BQ2\BlockingQueue.cs" />
+    <Compile Include="BQ2\RunExamples.cs" />
+    <Compile Include="BQ\BlockingQueue.cs" />
+    <Compile Include="BQ\RunExamples.cs" />
+    <Compile Include="CommandSample\Command.cs" />
+    <Compile Include="CommandSample\CommandExecutor.cs" />
+    <Compile Include="CommandSample\ExecuteHandle.cs" />
+    <Compile Include="CommandSample\ICommand.cs" />
+    <Compile Include="CommandSample\ICommandExecutor.cs" />
+    <Compile Include="CommandSample\RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleThread\Game.cs" />
+    <Compile Include="SimpleThread\Game2.cs" />
+    <Compile Include="SimpleThread\RunExamples.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{774990ce-33c3-4187-9211-4a5171cc190e}</Project>
-      <Name>ClassLibrary1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Curs26\Curs26.csproj">
-      <Project>{f1a6429f-aefb-4985-b401-38ea526dadc8}</Project>
-      <Name>Curs26</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EventsAndDelegates\EventsAndDelegates.csproj">
-      <Project>{bb729763-9e2c-401a-b7ed-118491ce69df}</Project>
-      <Name>EventsAndDelegates</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Solid Examples\Decorator\Decorator\Decorator.csproj">
-      <Project>{6df09aed-4430-4550-80c4-3dae4157337a}</Project>
-      <Name>Decorator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Solid Examples\Solid Examples.csproj">
-      <Project>{4838f67c-047e-4659-b1bd-fbb48e324fa1}</Project>
-      <Name>Solid Examples</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

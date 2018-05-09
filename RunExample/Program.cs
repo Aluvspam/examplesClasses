@@ -13,6 +13,8 @@ namespace RunExample
     {
         static void Main(string[] args)
         {
+            RunThreadsExample();
+            Console.ReadLine();
             FizzBuzz fb = new FizzBuzz();
             fb.Run(23);
             Console.ReadLine();
@@ -96,7 +98,10 @@ namespace RunExample
         {
             return new Teacher(pupil.Name, pupil.DOB, pupil.Address, 0);
         }
-
+        private static void RunThreadsExample()
+        {
+            Curs26.SimpleThread.RunExamples.Run();
+        }
 
     }
 }
