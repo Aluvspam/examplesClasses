@@ -9,8 +9,8 @@ namespace TFT
 {
     class Capra : AbstractStrategy
     {
-        private static Logger logger;
-        private static ALog aLogger;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+        private static ALog aLogger = new ALog();
         public override Moves MoveLikeABoss(AbstractTFTPlayer player)
         {
             logger.Trace("Capra strategy called");

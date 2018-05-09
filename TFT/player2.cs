@@ -8,20 +8,19 @@ namespace TFT
 {
     class Player2 : AbstractTFTPlayer
     {
+        public Player2()
+        {
+            strategy = new Capra();
+            Subscribe(2, Event2Handler);
+        }
         public override Moves FirstMove()
         {
-            event2 += Event2Handler;
-            Invoke1();
             strategy = new Atac();
+            Invoke1();
             return base.FirstMove();
         }
 
         public override void Event2Handler()
-        {
-            strategy = new Capra();
-        }
-
-        public Player2()
         {
             strategy = new Capra();
         }

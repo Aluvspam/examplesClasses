@@ -18,8 +18,8 @@ namespace TFT
         private Moves lastMove1;
         private Moves lastMove2;
         private int gameLength;
-        private static Logger logger;
-        private static ALog aLogger;
+        private static Logger logger = LogManager.GetCurrentClassLogger();
+        private static ALog aLogger = new ALog();
         #endregion
 
         #region contructors
@@ -30,7 +30,7 @@ namespace TFT
             score1 = 0;
             score2 = 0;
             //currentMove = 0;
-            gameLength = 100;
+            gameLength = 200;
         }
         #endregion
 

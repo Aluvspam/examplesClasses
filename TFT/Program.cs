@@ -8,7 +8,7 @@ namespace TFT
 {
     class Program
     {
-        
+        private static Logger logger = LogManager.GetCurrentClassLogger();
         private static ALog aLogger = new ALog();
         static void Main(string[] args)
         {
@@ -32,7 +32,8 @@ namespace TFT
             IPlayer cristi = new CristiPlayer();
             IPlayer cristi2 = new CristiSecondPlayer();
             IPlayer player2 = new Player2();
-            var game = new Game(player2, error);
+            IPlayer boss = new PlayLikeABoss();
+            var game = new Game(player2, boss);
             //var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);
             //var game = new Game(dana, random);
@@ -60,8 +61,7 @@ namespace TFT
             catch (Exception e)
             {
                 aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
-                //Logger logger = new LogManager.GetCultureInfo();
-                //logger.Error("error message: " + e.Message + ";source: " + e.Source);
+                logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }
             Console.ReadLine();

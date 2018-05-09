@@ -8,17 +8,14 @@ namespace TFT
 {
     class PlayLikeABoss : AbstractTFTPlayer
     {
-        public override Moves FirstMove()
-        {
-            event1 += Event1Handler;
-            return base.FirstMove();
-        }
-
-
-
         public PlayLikeABoss()
         {
             strategy = new Capra();
+            Subscribe(1, Event1Handler);
+        }
+        public override Moves FirstMove()
+        {
+            return base.FirstMove();
         }
         public override Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
