@@ -8,7 +8,6 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            Threads.Run();
             //DanProblem.Execute();
             //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
             //Console.ReadLine();
@@ -16,8 +15,24 @@ namespace ExercisesCsharp
             //var s = ExampleSum(7, 5);
             //var s3 = ExampleSum(14, 11, 9);
             //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
-           // Console.WriteLine(string.Join(" ", Wave("Andrei")));
-            //Console.ReadLine();
+            try
+            {
+                Impartire(8, 4);
+                Impartire(9, 3);
+                Impartire(12, 5);
+                Impartire(7, 0);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("nu poti imparti la 0 ....ule");
+            }
+            Console.WriteLine(string.Join(" ", Wave("Andrei")));
+            Console.ReadLine();
+        }
+        public static double Impartire(int x, int y)
+        {
+            var b = new int[3];
+            return (x / b[3]);
         }
         public static List<string> Wave(string str)
         {
