@@ -8,7 +8,7 @@ namespace TFT
 {
     class Program
     {
-        private static Logger logger;
+        
         private static ALog aLogger = new ALog();
         static void Main(string[] args)
         {
@@ -60,6 +60,7 @@ namespace TFT
             catch (Exception e)
             {
                 aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
+                //Logger logger = new LogManager.GetCultureInfo();
                 //logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }

@@ -13,6 +13,7 @@ namespace TFT
         {
             var FileWriter = new StreamWriter("Log.txt");
             FileWriter.WriteLine(DateTime.Now + " " + txt);
+            FileWriter.Close();
         }
     }
 }
