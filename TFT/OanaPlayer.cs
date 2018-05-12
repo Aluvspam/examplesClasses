@@ -14,7 +14,7 @@ namespace TFT
 
         public Moves FirstMove()
         {
-            return Moves.C;
+            return Moves.D;
         }
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)

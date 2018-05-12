@@ -13,11 +13,11 @@ namespace TFT
         {
             if (myLastMove == Moves.D || myLastMove == Moves.C && othersLastMove == Moves.B)
             {
-                myLastMove = Moves.C;
+                myLastMove = Moves.D;
             }
             else if (myLastMove == Moves.C && othersLastMove == Moves.C)
             {
-                myLastMove = Moves.C;
+                myLastMove = Moves.D;
             }
             else if (myLastMove == Moves.D && othersLastMove == Moves.C || othersLastMove == Moves.D)
             {
