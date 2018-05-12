@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Singleton;
 
 namespace ExercisesCsharp
 {
@@ -8,15 +9,7 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            //DanProblem.Execute();
-            //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
-            //Console.ReadLine();
-            //Console.WriteLine("answer");
-            //var s = ExampleSum(7, 5);
-            //var s3 = ExampleSum(14, 11, 9);
-            //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
-            Console.WriteLine(string.Join(" ", Wave("Andrei")));
-            Console.ReadLine();
+            Singleton.Singleton.GetInstance();
         }
         public static List<string> Wave(string str)
         {
