@@ -2,16 +2,8 @@
 
 namespace TFT
 {
-    public class OanaPlayer : IPlayer
+    public class OanaPlayer3 : IPlayer
     {
-        //Dictionary<Moves, int[]> moves = new Dictionary<Moves, int[]>()
-        //{
-        //    { Moves.B = new int[] { 0, 0, 0 } },
-        //    { Moves.C = new int[] { 3, 3, 0 } },
-        //    { Moves.D = new int[] { 3, 4, 2 } }
-        //};
-        //public int score;
-
         public Moves FirstMove()
         {
             return Moves.D;
@@ -19,11 +11,11 @@ namespace TFT
 
         public Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
-            if (myLastMove == Moves.C && othersLastMove == Moves.C || othersLastMove == Moves.B)
+            if (myLastMove == Moves.D && othersLastMove == Moves.C)
             {
                 myLastMove = Moves.C;
             }
-            else if (myLastMove == Moves.D && othersLastMove == Moves.C)
+            else if (myLastMove == Moves.C && othersLastMove == Moves.C)
             {
                 myLastMove = Moves.D;
 
@@ -38,6 +30,5 @@ namespace TFT
             }
             return myLastMove;
         }
-
     }
 }

@@ -22,7 +22,7 @@ namespace TFT
             else if (myLastMove == Moves.D && othersLastMove == Moves.D)
             {
 
-                return Moves.C;
+                return Moves.D;
             }
             else if (myLastMove == Moves.C && othersLastMove == Moves.C)
             {
