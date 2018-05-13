@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
 
 namespace ExercisesCsharp
 {
@@ -7,10 +8,56 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("answer");
-            var s = ExampleSum(7, 5);
-            var s3 = ExampleSum(14, 11, 9);
-            Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+            exampleThreads.Run();
+            //DanProblem.Execute();
+            //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
+            //Console.ReadLine();
+            //Console.WriteLine("answer");
+            //var s = ExampleSum(7, 5);
+            //var s3 = ExampleSum(14, 11, 9);
+            //Console.WriteLine(string.Join(" ", Dinglemouse.humanYearsCatYearsDogYears(1)));
+            try
+            {
+                Impartire(8, 4);
+                Impartire(9, 3);
+                Impartire(12, 5);
+                Impartire(7, 0);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("nu poti imparti la 0 ....ule");
+            }
+            Console.WriteLine(string.Join(" ", Wave("Andrei")));
+            Console.ReadLine();
+        }
+        public static double Impartire(int x, int y)
+        {
+            var b = new int[3];
+            return (x / b[3]);
+        }
+        public static List<string> Wave(string str)
+        {
+            string Str = str.ToLower();
+            string[] arr = new string[Str.Length];
+            if (Str == string.Empty)
+            {
+                arr = new string[1];
+                arr[0] = "'";
+            }
+            else
+            {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    {
+                        char c = Str[i];
+                        string d = c.ToString().ToUpper();
+                        char e = char.Parse(d);
+                        arr[i] = Str.Replace(c, e);// imi schimba toate valorile din caracterul respectiv
+
+                    }
+                }
+            }
+            return arr.ToList();
         }
         public int AsciiSum(string S)
         {

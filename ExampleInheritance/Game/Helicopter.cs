@@ -5,10 +5,11 @@ namespace Solid_Examples.Game
 {
     public class Helicopter : AbstractUnit
     {
-        public int altitude;
+        public int Altitude;
+        public int Range;
         public Helicopter(Point[] location) : base(location, 100, 35, 4)
         {
-            altitude = 0;
+            Altitude = 0;
         }
 
         public override void InitCrew()
