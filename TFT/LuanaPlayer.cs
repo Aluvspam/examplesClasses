@@ -34,7 +34,7 @@ namespace TFT
             }
             else
             {
-                myLastMove = Moves.C;
+                myLastMove = Moves.D;
             }
             return myLastMove;
 
@@ -43,9 +43,8 @@ namespace TFT
         private Moves LuanaMove()
         {
 
-            return ((new Random()).Next(2) == 0) ? Moves.C : Moves.C;
+            return ((new Random()).Next(2) == 0) ? Moves.D : Moves.D;
         }
-
 
     }
 }
