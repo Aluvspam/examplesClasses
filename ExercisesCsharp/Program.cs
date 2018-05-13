@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Singleton;
+using System.Threading;
 
 namespace ExercisesCsharp
 {
@@ -9,7 +10,8 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            Singleton.Singleton.GetInstance();
+           var s = Singleton.Singleton.GetInstance();
+           
         }
         public static List<string> Wave(string str)
         {

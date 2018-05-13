@@ -15,41 +15,37 @@ namespace Singleton
         {
             while (true)
             {
-                Thread t = new Thread(Method1);
-                Thread tt = new Thread(Method2);
-                t.Start();
-                tt.Start();
+                Method1();
+                Method2(); 
             }
         }
         public static Singleton GetInstance()
         {
-            if (instance == null)
+            if (instance == null)// primul if verifica daca avem deja instanta creata
             {
-                instance = new Singleton();
+                lock (lacat)// lock-ul este pentru a economisi timp, in cazul in care instanta nu este creata thread-urile se opresc aici si creaza o instanta
+                {
+                    if (instance == null)
+                    {
+                        instance = new Singleton();
+                    }   
+                }
             }
             return instance;
         }
         static void Method1()
         {
-            lock (lacat)
-            {
                 for (int i = 0; i < 3; i++)
                 {
                     Console.WriteLine("Printing in method1: x");
                 }
-            }
-            Console.WriteLine("Exit lock1.");
         }
         static void Method2()
         {
-            lock (lacat)
-            {
                 for (int i = 0; i < 3; i++)
                 {
                     Console.WriteLine("Printing in method2: 0");
                 } 
-            }
-            Console.WriteLine("Exit lock2.");
         }
     }
 }
