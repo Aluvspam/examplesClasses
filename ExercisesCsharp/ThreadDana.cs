@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ExercisesCsharp
@@ -10,8 +11,9 @@ namespace ExercisesCsharp
     {
        static  int x = 0;
         static object lacat = new object();
+        static object lacat2 = new object();
+        static object lacat3 = new object();
 
-       
         public static void Run()
         {
            
@@ -23,16 +25,23 @@ namespace ExercisesCsharp
             t1.Start();
             while(true)
             {
-                ThreadDana.Sleep(20000);
+                Thread.Sleep(20000);
             }
         }
         public static void Method1()
         {
             while (true)
             {
-                //Console.WriteLine("Hello world");
-                //Thread.Sleep(1000);
-                x++;
+                lock (lacat)
+                {
+                    x++;
+                    for (int i = 0; i < 10; i++)
+                    {
+                        Console.WriteLine("M1 holds the key");
+                        Thread.Sleep(1);
+                    }
+                    Console.WriteLine("M1 releases the key"); 
+                }
             }
         }
         public static void Method2()
@@ -49,6 +58,12 @@ namespace ExercisesCsharp
                 lock(lacat)
                 {
                     x--;
+                    for (int i = 0; i < 10; i++)
+                    {
+                        Console.WriteLine("M2 holds the key");
+                        Thread.Sleep(1);
+                    }
+                    Console.WriteLine("M2 releases the key");
                 }
                     
             }
@@ -58,12 +73,13 @@ namespace ExercisesCsharp
             {
             while (true)
             {
-                lock (this)
+                lock (lacat)
                 {
-                    Console.WriteLine(x + "Paulo Coelho"); 
+                    Console.WriteLine(x + " razboinicul luminii vs Paulo Coelho ");
+                    Thread.Sleep(100);
                 }
-                ThreadDana.Sleep(166);
             }
         }
     }
 }
+

@@ -8,6 +8,7 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+         ThreadDana.Run();
             int[] num = { 71, 83, 52, 40 };
             Impar.maxOfArray(num);
             Console.WriteLine(Impar.maxof(75,3,35));
