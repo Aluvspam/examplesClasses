@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
+using Microsoft.Office.Interop;
 using Microsoft.Office.Interop.Excel;
 
 namespace TFT
@@ -14,7 +15,7 @@ namespace TFT
     class Program
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        private static ALog aLogger = new ALog();
+        // private static ALog aLogger = new ALog();
         static bool excelAvailable = false;
         static void Main(string[] args)
         {
@@ -45,7 +46,7 @@ namespace TFT
             IPlayer cristi2 = new CristiSecondPlayer();
             IPlayer player2 = new Player2();
             IPlayer boss = new PlayLikeABoss();
-          
+
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
             List<IPlayer> players = new List<TFT.IPlayer>();
@@ -102,7 +103,7 @@ namespace TFT
             }
             catch (Exception e)
             {
-                aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
+                //aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
                 logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }

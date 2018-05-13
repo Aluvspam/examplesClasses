@@ -39,6 +39,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFT", "TFT\TFT.csproj", "{2
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs26", "Curs26\Curs26.csproj", "{F1A6429F-AEFB-4985-B401-38EA526DADC8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE98E1EC-115F-493B-863E-D674BD462292}"
+	ProjectSection(SolutionItems) = preProject
+		TFT\DanaSecondPlayer.cs = TFT\DanaSecondPlayer.cs
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{C151F0E6-8E2F-42AB-A483-9290A26F7294}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamplateDesign", "TamplateDesign\TamplateDesign.csproj", "{A80E9804-AC40-46CD-9694-871AD598EB23}"

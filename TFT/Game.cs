@@ -20,7 +20,7 @@ namespace TFT
         private Moves lastMove2;
         private int gameLength;
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        private static ALog aLogger = new ALog();
+       // private static ALog aLogger = new ALog();
         #endregion
 
         #region contructors
@@ -118,7 +118,7 @@ namespace TFT
             {
                 Console.WriteLine(e.Message);
                 logger.Warn("error message: " + e.Message + ";source: " + e.Source);
-                aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
+                //aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
                 r = Moves.B;//solutie de avarie
             }
 
