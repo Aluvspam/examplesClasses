@@ -12,6 +12,8 @@ namespace TFT
     {
         public static event BossDelegate event1;
         public static event BossDelegate event2;
+        public Moves myLastMove;
+        public Moves hisLastMove;
 
         protected AbstractStrategy strategy;
 
@@ -50,6 +52,11 @@ namespace TFT
         {
 
         }
+        /// <summary>
+        /// method that helps classes that inherits this class to subscribe to events
+        /// </summary>
+        /// <param name="n">number of the event to subscribe to</param>
+        /// <param name="a">the delegate you wish to subscribe to the event</param>
         public void Subscribe(byte n, BossDelegate a)
         {
             if (n == 1)
