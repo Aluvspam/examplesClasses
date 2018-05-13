@@ -62,6 +62,7 @@
     <Compile Include="BStartMovePlayer.cs" />
     <Compile Include="CorlyPlayerOne.cs" />
     <Compile Include="CristiPlayer.cs" />
+    <Compile Include="CristiPlayer3.cs" />
     <Compile Include="CristiSecondPlayer.cs" />
     <Compile Include="DanaPlayer.cs" />
     <Compile Include="DanaSecondPlayer.cs" />
