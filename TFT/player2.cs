@@ -19,8 +19,12 @@ namespace TFT
             Invoke1();
             return base.FirstMove();
         }
+        //protected override void WhenIInvoke1()
+        //{
+        //    strategy = new Capra();
+        //}
 
-        public override void Event2Handler()
+        protected override void Event2Handler()
         {
             strategy = new Capra();
         }

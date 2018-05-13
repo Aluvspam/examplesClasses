@@ -38,6 +38,7 @@ namespace TFT
         #region methods
         public void RunGame()
         {
+            Console.WriteLine("mare meci mare intre {0} si {1}", player1.GetType().ToString().Substring(4), player2.GetType().ToString().Substring(4));
             Moves m1 = player1.FirstMove();
             var m2 = player2.FirstMove();
             updateScores(m1, m2);
@@ -57,12 +58,12 @@ namespace TFT
             var v = player1 as IScore;
             if (v != null)
             {
-                Console.WriteLine("player1 thinks after 99 moves it has {0} points", v.Score);
+                Console.WriteLine("player1 thinks after {0} moves it has {1} points", gameLength - 1, v.Score);
             }
             v = player2 as IScore; // v = (IScore)player2
             if (v != null)
             {
-                Console.WriteLine("player2 thinks after 99 moves it has {0} points", v.Score);
+                Console.WriteLine("player2 thinks after {0} moves it has {1} points", gameLength - 1, v.Score);
             }
         }
         private void updateScores(Moves m1, Moves m2)

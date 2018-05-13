@@ -24,26 +24,29 @@ namespace TFT
         {
             return Moves.C;
         }
-        protected void Invoke1()
+        protected bool Invoke1()
         {
             if (event1 != null)
             {
+                //WhenIInvoke1();
                 event1.Invoke();
+                return true;
             }
+            return false;
         }
         public virtual Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
             var result = (othersLastMove == Moves.B) ? Moves.D : othersLastMove;
             return result;
         }
-        public void Event1Handler()
+        protected virtual void Event1Handler()
         {
             if (event2 != null)
             {
                 event2.Invoke();
             }
         }
-        public virtual void Event2Handler()
+        protected virtual void Event2Handler()
         {
 
         }
@@ -58,5 +61,8 @@ namespace TFT
                 event2 += a;
             }
         }
+        //protected virtual void WhenIInvoke1()
+        //{
+        //}
     }
 }
