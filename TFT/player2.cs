@@ -19,7 +19,7 @@ namespace TFT
             Invoke1();
             return base.FirstMove();
         }
-        //protected override void WhenIInvoke1()
+        //protected override void WhenIInvoke1()//unde am override, va folosi aceasta metoda
         //{
         //    strategy = new Capra();
         //}

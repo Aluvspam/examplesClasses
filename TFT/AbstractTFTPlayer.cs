@@ -30,7 +30,7 @@ namespace TFT
             {
                 //WhenIInvoke1();
                 event1.Invoke();
-                return true;
+                return true;//returnez rezultatul actiunii
             }
             return false;
         }
@@ -39,7 +39,7 @@ namespace TFT
             var result = (othersLastMove == Moves.B) ? Moves.D : othersLastMove;
             return result;
         }
-        protected virtual void Event1Handler()
+        protected virtual void Event1Handler()//invoc daca nu e null
         {
             if (event2 != null)
             {

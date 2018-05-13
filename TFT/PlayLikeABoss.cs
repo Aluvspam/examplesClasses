@@ -27,7 +27,7 @@ namespace TFT
         }
         protected override void Event1Handler()
         {
-            strategy = new Atac();
+            strategy = new Atac();//aleg strategia
             base.Event1Handler();
         }
     }

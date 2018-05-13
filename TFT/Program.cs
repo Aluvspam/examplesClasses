@@ -48,7 +48,7 @@ namespace TFT
           
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
-            List<IPlayer> players = new List<TFT.IPlayer>();
+            List<IPlayer> players = new List<TFT.IPlayer>();//joaca fiecare cu fiecare
             players.Add(daniel);
             players.Add(luana);
             players.Add(andrei);
