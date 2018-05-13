@@ -67,6 +67,7 @@
     <Compile Include="DanaPlayer.cs" />
     <Compile Include="DanaSecondPlayer.cs" />
     <Compile Include="DanielPlayer.cs" />
+    <Compile Include="DanielPlayer2.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="LuanaPlayer.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
     <Compile Include="OanaPlayer2.cs" />
+    <Compile Include="OanaPlayer3.cs" />
     <Compile Include="player2.cs" />
     <Compile Include="PlayerWithError.cs" />
     <Compile Include="PlayLikeABoss.cs" />

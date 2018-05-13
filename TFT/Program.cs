@@ -29,22 +29,28 @@ namespace TFT
             //    excelAvailable = true;
             //}
             IPlayer daniel = new DanielPlayer();
+            IPlayer daniel2 = new DanielPlayer2();
             IPlayer luana = new LuanaPlayer();
+            IPlayer luana2 = new LuanaSecondPlayer();
             IPlayer andrei = new AndreiPlayer();
+            IPlayer andreiMF = new AndreiMFPlayer();
+            IPlayer andrei3 = new Andrei3Player();
             IPlayer oana = new OanaPlayer();
             IPlayer oana2 = new OanaPlayer2();
+            IPlayer oana3 = new OanaPlayer3();
             IPlayer dana = new DanaPlayer();
             IPlayer dana2 = new DanaSecondPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
-            IPlayer andreiMF = new AndreiMFPlayer();
             IPlayer error = new PlayerWithError();
             IPlayer cristi = new CristiPlayer();
             IPlayer cristi2 = new CristiSecondPlayer();
+            IPlayer cristi3 = new CristiPlayer3();
             IPlayer player2 = new Player2();
             IPlayer boss = new PlayLikeABoss();
-          
+            IPlayer gaby = new CorlyPlayerOne();
+
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
             List<IPlayer> players = new List<TFT.IPlayer>();
