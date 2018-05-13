@@ -15,7 +15,7 @@ namespace TFT
         }
         public override Moves FirstMove()
         {
-            return base.FirstMove();
+            return strategy.MoveLikeABoss(this);
         }
         public override Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
@@ -24,6 +24,11 @@ namespace TFT
                 strategy = new Atac();
             }
             return strategy.MoveLikeABoss(this);
+        }
+        protected override void Event1Handler()
+        {
+            strategy = new Atac();
+            base.Event1Handler();
         }
     }
 }
