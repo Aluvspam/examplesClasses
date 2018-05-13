@@ -35,6 +35,7 @@ namespace TFT
             IPlayer oana = new OanaPlayer();
             IPlayer oana2 = new OanaPlayer2();
             IPlayer dana = new DanaPlayer();
+            IPlayer dana2 = new DanaSecondPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
@@ -44,6 +45,7 @@ namespace TFT
             IPlayer cristi2 = new CristiSecondPlayer();
             IPlayer player2 = new Player2();
             IPlayer boss = new PlayLikeABoss();
+          
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
             List<IPlayer> players = new List<TFT.IPlayer>();
@@ -52,6 +54,7 @@ namespace TFT
             players.Add(andrei);
             players.Add(oana);
             players.Add(dana);
+            players.Add(dana2);
             players.Add(random2);
             players.Add(tftnice);
             players.Add(meanTFT);
@@ -76,7 +79,7 @@ namespace TFT
             //var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);
             //var game = new Game(dana, random);
-            //var game = new Game(dana, random2);
+            //var game = new Game(dana2, random2);
 
             //var game = new Game(luana, andrei);
             //var game = new Game(random, andrei);
