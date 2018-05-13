@@ -103,7 +103,7 @@ namespace TFT
             }
             catch (Exception e)
             {
-                //aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
+                aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
                 logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }
