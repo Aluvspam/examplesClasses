@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using NLog;
 using Microsoft.Office.Interop;
+using Microsoft.Office.Interop.Excel;
 
 namespace TFT
 {
     class Program
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-       // private static ALog aLogger = new ALog();
+        // private static ALog aLogger = new ALog();
         static bool excelAvailable = false;
         static void Main(string[] args)
         {
@@ -35,7 +36,7 @@ namespace TFT
             IPlayer oana = new OanaPlayer();
             IPlayer oana2 = new OanaPlayer2();
             IPlayer dana = new DanaPlayer();
-        //    IPlayer dana2 = new DanaSecondPlayer();
+            IPlayer dana2 = new DanaSecondPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
@@ -45,7 +46,7 @@ namespace TFT
             IPlayer cristi2 = new CristiSecondPlayer();
             IPlayer player2 = new Player2();
             IPlayer boss = new PlayLikeABoss();
-          
+
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
             List<IPlayer> players = new List<TFT.IPlayer>();
@@ -102,7 +103,7 @@ namespace TFT
             }
             catch (Exception e)
             {
-                aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
+                //aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
                 logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }
