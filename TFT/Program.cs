@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
-using Microsoft.Office.Interop.Excel;
+using Microsoft.Office.Interop;
 
 namespace TFT
 {
