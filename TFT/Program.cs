@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NLog;
-using Microsoft.Office.Interop.Excel;
+//using Microsoft.Office.Interop.Excel;
 
 namespace TFT
 {
@@ -23,15 +23,14 @@ namespace TFT
 
         private static void RunTFT()
         {
-            Microsoft.Office.Interop.Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
-            if (xlApp != null)
-            {
-                excelAvailable = true;
-            }
+            //Microsoft.Office.Interop.Excel.Application xlApp = new Microsoft.Office.Interop.Excel.Application();
+            //if (xlApp != null)
+            //{
+            //    excelAvailable = true;
+            //}
             IPlayer daniel = new DanielPlayer();
             IPlayer luana = new LuanaPlayer();
             IPlayer andrei = new AndreiPlayer();
-            //IPlayer random = new RandomPlayer();
             IPlayer oana = new OanaPlayer();
             IPlayer oana2 = new OanaPlayer2();
             IPlayer dana = new DanaPlayer();
@@ -45,7 +44,7 @@ namespace TFT
             IPlayer cristi2 = new CristiSecondPlayer();
             IPlayer player2 = new Player2();
             IPlayer boss = new PlayLikeABoss();
-          
+
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
             List<IPlayer> players = new List<TFT.IPlayer>();
@@ -66,15 +65,15 @@ namespace TFT
             players.Add(boss);
             if (excelAvailable)
             {
-                _Workbook xlWorkBook = xlApp.Workbooks.Add();
-                _Worksheet xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
-                xlWorkSheet.Cells[1, 1] = "ID";
-                xlWorkSheet.Cells[1, 2] = "Name";
-                xlWorkSheet.Cells[2, 1] = "1";
-                xlWorkSheet.Cells[2, 2] = "One";
-                xlWorkSheet.Cells[3, 1] = "2";
-                xlWorkSheet.Cells[3, 2] = "Two";
-                xlWorkBook.SaveAs("your-file-name.xls");
+                //_Workbook xlWorkBook = xlApp.Workbooks.Add();
+                //_Worksheet xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+                //xlWorkSheet.Cells[1, 1] = "ID";
+                //xlWorkSheet.Cells[1, 2] = "Name";
+                //xlWorkSheet.Cells[2, 1] = "1";
+                //xlWorkSheet.Cells[2, 2] = "One";
+                //xlWorkSheet.Cells[3, 1] = "2";
+                //xlWorkSheet.Cells[3, 2] = "Two";
+                //xlWorkBook.SaveAs("your-file-name.xls");
             }
             //var game = new Game(meanTFT, andreiMF);
             //var game = new Game(dana, andrei);

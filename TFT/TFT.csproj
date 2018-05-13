@@ -86,6 +86,7 @@
     <Compile Include="RandomStrategy.cs" />
     <Compile Include="TFTPlayerMean.cs" />
     <Compile Include="TFTPlayernice.cs" />
+    <Compile Include="TitForTat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
