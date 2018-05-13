@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{774990CE-33C3-4187-9211-4A5171CC190E}"
 EndProject
@@ -38,6 +38,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs20", "Curs20\Curs20.csproj", "{FA08F67A-913B-4C42-9848-F108A1C75D70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFT", "TFT\TFT.csproj", "{223C7DD8-6CA4-4006-8E51-3C7DA791FA3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs26", "Curs26\Curs26.csproj", "{F1A6429F-AEFB-4985-B401-38EA526DADC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{223C7DD8-6CA4-4006-8E51-3C7DA791FA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223C7DD8-6CA4-4006-8E51-3C7DA791FA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223C7DD8-6CA4-4006-8E51-3C7DA791FA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A6429F-AEFB-4985-B401-38EA526DADC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A6429F-AEFB-4985-B401-38EA526DADC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A6429F-AEFB-4985-B401-38EA526DADC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A6429F-AEFB-4985-B401-38EA526DADC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

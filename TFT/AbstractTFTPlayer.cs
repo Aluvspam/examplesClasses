@@ -10,33 +10,59 @@ namespace TFT
 
     abstract class AbstractTFTPlayer : IPlayer
     {
-        public event BossDelegate event1;
-        public event BossDelegate event2;
+        public static event BossDelegate event1;
+        public static event BossDelegate event2;
 
         protected AbstractStrategy strategy;
+
+        public AbstractTFTPlayer()
+        {
+
+        }
+
         public virtual Moves FirstMove()
         {
             return Moves.C;
         }
-        protected void Invoke1()
+        protected bool Invoke1()
         {
-            event1.Invoke();
+            if (event1 != null)
+            {
+                //WhenIInvoke1();
+                event1.Invoke();
+                return true;
+            }
+            return false;
         }
         public virtual Moves MyMove(Moves myLastMove, Moves othersLastMove)
         {
             var result = (othersLastMove == Moves.B) ? Moves.D : othersLastMove;
             return result;
         }
-        public void Event1Handler()
+        protected virtual void Event1Handler()
         {
             if (event2 != null)
             {
                 event2.Invoke();
             }
         }
-        public virtual void Event2Handler()
+        protected virtual void Event2Handler()
         {
 
         }
+        public void Subscribe(byte n, BossDelegate a)
+        {
+            if (n == 1)
+            {
+                event1 += a;
+            }
+            else if (n == 2)
+            {
+                event2 += a;
+            }
+        }
+        //protected virtual void WhenIInvoke1()
+        //{
+        //}
     }
 }

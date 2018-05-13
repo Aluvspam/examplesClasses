@@ -8,6 +8,7 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+            exampleThreads.Run();
             //DanProblem.Execute();
             //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
             //Console.ReadLine();

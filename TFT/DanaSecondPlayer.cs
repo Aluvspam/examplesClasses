@@ -1,17 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace TFT
 {
-    public class OanaPlayer2 : IPlayer
+    public class DanaSecondPlayer
     {
+
         public Moves FirstMove()
         {
             return Moves.D;
         }
 
-        public Moves MyMove(Moves myLastMove, Moves othersLastMove)
+        public Moves MyMove(Moves myLastMove, Moves othersLastMove )
         {
-            if (myLastMove == Moves.D || myLastMove == Moves.C && othersLastMove == Moves.B)
+            if (myLastMove == Moves.C || myLastMove == Moves.D && othersLastMove == Moves.C)
             {
                 myLastMove = Moves.D;
             }
@@ -19,7 +24,7 @@ namespace TFT
             {
                 myLastMove = Moves.D;
             }
-            else if (myLastMove == Moves.D && othersLastMove == Moves.C || othersLastMove == Moves.D)
+            else if (myLastMove == Moves.C && othersLastMove == Moves.D || othersLastMove == Moves.D)
             {
                 myLastMove = Moves.D;
             }
