@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
       <HintPath>..\packages\NLog.4.5.4\lib\net45\NLog.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -54,7 +53,7 @@
   <ItemGroup>
     <Compile Include="AbstractStrategy.cs" />
     <Compile Include="AbstractTFTPlayer.cs" />
-    <Compile Include="ALog.cs" />
+    <Compile Include="Andrei3Player.cs" />
     <Compile Include="AndreiMFPlayer.cs" />
     <Compile Include="AndreiPlayer.cs" />
     <Compile Include="Atac.cs" />
@@ -66,7 +65,6 @@
     <Compile Include="DanaPlayer.cs" />
     <Compile Include="DanaSecondPlayer.cs" />
     <Compile Include="DanielPlayer.cs" />
-    <Compile Include="DanielPlayer2.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="LuanaPlayer.cs" />
@@ -75,7 +73,6 @@
     <Compile Include="Moves.cs" />
     <Compile Include="OanaPlayer.cs" />
     <Compile Include="OanaPlayer2.cs" />
-    <Compile Include="OanaPlayer3.cs" />
     <Compile Include="player2.cs" />
     <Compile Include="PlayerWithError.cs" />
     <Compile Include="PlayLikeABoss.cs" />
@@ -91,22 +88,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
-    <Content Include="NLog.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="NLog.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Log.txt" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
       <VersionMajor>2</VersionMajor>
-      <VersionMinor>4</VersionMinor>
+      <VersionMinor>8</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
@@ -115,7 +103,7 @@
     <COMReference Include="Microsoft.Office.Interop.Excel">
       <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>1</VersionMajor>
-      <VersionMinor>6</VersionMinor>
+      <VersionMinor>9</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>

@@ -44,7 +44,7 @@ namespace TFT
             IPlayer cristi2 = new CristiSecondPlayer();
             IPlayer player2 = new Player2();
             IPlayer boss = new PlayLikeABoss();
-
+          
             var game = new Game(cristi2, boss);
             var var = boss.GetType().ToString();
             List<IPlayer> players = new List<TFT.IPlayer>();
@@ -101,7 +101,7 @@ namespace TFT
             }
             catch (Exception e)
             {
-                aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
+                //aLogger.Log("error message: " + e.Message + ";source: " + e.Source);
                 logger.Error("error message: " + e.Message + ";source: " + e.Source);
                 Console.WriteLine("Ai gresit jocu' baiatu meu!");
             }
