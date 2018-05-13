@@ -15,7 +15,7 @@ namespace TFT
     class Program
     {
         private static Logger logger = LogManager.GetCurrentClassLogger();
-        // private static ALog aLogger = new ALog();
+        private static ALog aLogger = new ALog();
         static bool excelAvailable = false;
         static void Main(string[] args)
         {
@@ -32,11 +32,11 @@ namespace TFT
             IPlayer daniel = new DanielPlayer();
             IPlayer luana = new LuanaPlayer();
             IPlayer andrei = new AndreiPlayer();
-            //IPlayer random = new RandomPlayer();
+            IPlayer random = new RandomPlayer();
             IPlayer oana = new OanaPlayer();
             IPlayer oana2 = new OanaPlayer2();
             IPlayer dana = new DanaPlayer();
-          //  IPlayer dana2 = new DanaSecondPlayer();
+            IPlayer dana2 = new DanaSecondPlayer();
             IPlayer random2 = new RandomPlayer2();
             IPlayer tftnice = new TFTPlayernice();
             IPlayer meanTFT = new TFTPlayerMean();
@@ -55,7 +55,7 @@ namespace TFT
             players.Add(andrei);
             players.Add(oana);
             players.Add(dana);
-          //  players.Add(dana2);
+            players.Add(dana2);
             players.Add(random2);
             players.Add(tftnice);
             players.Add(meanTFT);

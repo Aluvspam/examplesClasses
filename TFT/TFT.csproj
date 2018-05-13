@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="AbstractStrategy.cs" />
     <Compile Include="AbstractTFTPlayer.cs" />
+    <Compile Include="ALog.cs" />
     <Compile Include="Andrei3Player.cs" />
     <Compile Include="AndreiMFPlayer.cs" />
     <Compile Include="AndreiPlayer.cs" />
