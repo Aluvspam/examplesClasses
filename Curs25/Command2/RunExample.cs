@@ -17,6 +17,11 @@ namespace Curs25.Command2
             Console.WriteLine("Urmeaza undoable...");
             a.RemoveCommand(new State1());
             a.Start();
+
+            //ASCII A + B
+            int c = 0;
+            c = (int)'A' + (int)'B';
+            Console.WriteLine(c);
             Console.ReadLine();
 
 
