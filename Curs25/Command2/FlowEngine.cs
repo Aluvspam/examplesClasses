@@ -31,6 +31,16 @@ namespace Curs25.Command2
                 command.Execute();
             }
         }
-
+        public void Undo()
+        {
+            foreach (var command in commands)
+            {
+                var undoState = command as IUndo;
+                if (undoState != null)
+                {
+                    undoState.Undo();
+                }
+            }
+        }
     }
 }

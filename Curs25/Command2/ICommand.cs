@@ -6,7 +6,10 @@ namespace Curs25.Command2
     {
         void Execute();
     }
-
+    public interface IUndo
+    {
+        void Undo();
+    }
     public class State1 : ICommand
     {
         public void Execute()
@@ -30,7 +33,7 @@ namespace Curs25.Command2
             Console.WriteLine("Get notifications");
         }
     }
-    public class State4 : ICommand
+    public class State4 : ICommand, IUndo
     {
         FlowEngine f;
         ICommand stare;

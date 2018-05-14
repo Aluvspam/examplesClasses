@@ -18,8 +18,13 @@ namespace Curs25.Command2
             a.RemoveCommand(new State1());
             a.Start();
             Console.ReadLine();
-
-
+            //with undo
+            FlowEngine b = new FlowEngine();
+            var command = new State4();
+            b.AddCommand(command);
+            b.Start();
+            b.Undo();
+            Console.ReadLine();
         }
     }
 }
