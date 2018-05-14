@@ -30,4 +30,22 @@ namespace Curs25.Command2
             Console.WriteLine("Get notifications");
         }
     }
+    public class State4 : ICommand
+    {
+        FlowEngine f;
+        ICommand stare;
+        public State4()
+        {
+            f = new FlowEngine();
+            stare = new State1();
+        }
+        public void Execute()
+        {
+            f.AddCommand(stare);
+        }
+        public void Undo()
+        {
+            f.RemoveCommand(stare);
+        }
+    }
 }

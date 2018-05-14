@@ -16,6 +16,13 @@ namespace Curs25.Command2
         {
             commands.Add(command);
         }
+        public void RemoveCommand(ICommand command)
+        {
+            if (commands.Contains(command))
+            {
+                commands.Remove(command);
+            }
+        }
 
         public void Start()
         {
