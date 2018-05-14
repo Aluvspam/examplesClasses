@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Singleton;
 using System.Threading;
+using AndreiShaormaDecoratorPattern;
 
 namespace ExercisesCsharp
 {
@@ -10,8 +11,9 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-           var s = Singleton.Singleton.GetInstance();
-           
+            AndreiShaormaDecoratorPattern.ComandaRun.Execute();
+            Console.Beep();
+            Console.ReadLine();
         }
         public static List<string> Wave(string str)
         {

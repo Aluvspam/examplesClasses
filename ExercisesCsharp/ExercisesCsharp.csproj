@@ -61,6 +61,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AndreiShaormaDecoratorPattern\AndreiShaormaDecoratorPattern.csproj">
+      <Project>{a5982945-dd8d-4721-a96f-9e43887acc46}</Project>
+      <Name>AndreiShaormaDecoratorPattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Singleton\Singleton.csproj">
       <Project>{146d9a1d-0908-408f-9cc4-aea41cc75d75}</Project>
       <Name>Singleton</Name>

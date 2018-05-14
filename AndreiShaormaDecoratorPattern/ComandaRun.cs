@@ -17,6 +17,8 @@ namespace AndreiShaormaDecoratorPattern
             Print(DeVita);
             ShaormaComponent dePui = new PuiDecorator(new RosiiDecorator(new CastravetiMuratiDecorator(new CeapaDecorator(new VarzaDecorator(new LaFarfurieBase())))));
             Print(dePui);
+            ShaormaComponent dePuicuVarza = new PuiDecorator(new VarzaDecorator(new LaFarfurieBase()));
+            Print(dePuicuVarza);
         }
         public static void Print (ShaormaComponent cBase)
         {
