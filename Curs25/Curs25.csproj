@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command2\RunExample.cs" />
     <Compile Include="Command3\AbstractCommand.cs" />
     <Compile Include="Command2\FlowEngine.cs" />
     <Compile Include="Command2\ICommand.cs" />

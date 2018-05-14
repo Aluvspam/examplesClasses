@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using Curs25;
 namespace ExercisesCsharp
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            Curs25.Command2.RunExample.Run();
             exampleThreads.Run();
             //DanProblem.Execute();
             //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
