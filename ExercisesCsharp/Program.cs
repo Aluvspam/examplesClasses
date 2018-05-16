@@ -8,10 +8,10 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
-            byte[] NumereDastea = new byte[] { 27,29,31 };
+            byte[] NumereDastea = new byte[] { 27, 29, 31 };
             InturiSiDuble NR = new InturiSiDuble(NumereDastea);
-            Afisare( ref NR);
-           
+            Afisare(ref NR);
+
             #region Niste cod
             string[] Row = new string[5];
             {
@@ -46,8 +46,19 @@ namespace ExercisesCsharp
             Console.WriteLine(string.Join(" ", Wave("Andrei")));
             Console.ReadLine();
             #endregion
-            
 
+
+        }
+        public static int Ceas(int ora, int min)
+        {
+            int sumaUnghiOra = 0;
+            int sumaUnghiMin = 0;
+            sumaUnghiOra = (360 /12)* ora;
+            sumaUnghiMin = (360 / 60) * min;
+            int sumaTotala = ora + min;
+            
+            return sumaTotala>180?sumaTotala - 360: sumaTotala;
+            
         }
         public static void Afisare(ref InturiSiDuble nr)
         {
@@ -281,7 +292,7 @@ namespace ExercisesCsharp
             for (int i = 0; i < b.Length; i++)
             {
                 suma += b[i];
-                
+
             }
             average = suma / b.Length;
         }
