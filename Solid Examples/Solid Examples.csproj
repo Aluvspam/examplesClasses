@@ -54,6 +54,7 @@
     <Compile Include="CoR\HandlerMix.cs" />
     <Compile Include="CoR\HandleUniversal.cs" />
     <Compile Include="CoR\Request.cs" />
+    <Compile Include="CristiClockLinesAngles.cs" />
     <Compile Include="cristi\dictionary parse OK.cs" />
     <Compile Include="cristi\dictionary parse.cs" />
     <Compile Include="Point.cs" />
