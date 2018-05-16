@@ -8,6 +8,16 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+            string[] Row = new string[5];
+            {
+                Row[0] = "  # ### ### # # ### ### ### ### ### ### ";
+                Row[1] = "  #   #   # # # #   #     # # # # # # # ";
+                Row[2] = "  # ### ### ### ### ###   # ### ### # # ";
+                Row[3] = "  # #     #   #   # # #   # # #   # # # ";
+                Row[4] = "  # ### ###   # ### ###   # ###   # ### ";
+            }
+
+            Afisare(Row);
             Curs25.Command2.RunExample.Run();
             exampleThreads.Run();
             //DanProblem.Execute();
@@ -31,6 +41,79 @@ namespace ExercisesCsharp
             Console.WriteLine(string.Join(" ", Wave("Andrei")));
             Console.ReadLine();
         }
+
+        public static void Afisare(string[] Row)
+        {
+            //aici trebuie sa definesc n sa primeasca un int mai mare si sa-l depasta in cifre...
+            while (true)
+            {
+                Console.WriteLine("Introduceti un nr: ");
+                int n = int.Parse(Console.ReadLine());
+
+                for (int i = 0; i < Row.Length; i++)
+                {
+                    for (int j = 0; j < Row.Length; j++)
+                    {
+                        if (n == 1)
+                        {
+                            Console.WriteLine(Row[i].Substring(0, 4));
+                            break;
+                        }
+                        else if (n == 2)
+                        {
+
+                            Console.WriteLine(Row[i].Substring(3, 5));
+                            break;
+                        }
+
+                        else if (n == 3)
+                        {
+
+                            Console.WriteLine(Row[i].Substring(7, 5));
+                            break;
+                        }
+                        else if (n == 4)
+                        {
+                            Console.WriteLine(Row[i].Substring(11, 5));
+                            break;
+                        }
+                        else if (n == 5)
+                        {
+                            Console.WriteLine(Row[i].Substring(15, 5));
+                            break;
+                        }
+                        else if (n == 6)
+                        {
+                            Console.WriteLine(Row[i].Substring(19, 5));
+                            break;
+                        }
+                        else if (n == 7)
+                        {
+                            Console.WriteLine(Row[i].Substring(23, 5));
+                            break;
+                        }
+                        else if (n == 8)
+                        {
+                            Console.WriteLine(Row[i].Substring(27, 5));
+                            break;
+                        }
+                        else if (n == 9)
+                        {
+                            Console.WriteLine(Row[i].Substring(31, 5));
+                            break;
+                        }
+                        else if (n == 0)
+                        {
+                            Console.WriteLine(Row[i].Substring(35, 5));
+
+                            break;
+                        }
+
+                    }
+                }
+            }
+        }
+
         public static double Impartire(int x, int y)
         {
             var b = new int[3];
