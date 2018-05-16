@@ -8,6 +8,11 @@ namespace ExercisesCsharp
     {
         public static void Main(string[] args)
         {
+            byte[] NumereDastea = new byte[] { 27,29,31 };
+            InturiSiDuble NR = new InturiSiDuble(NumereDastea);
+            Afisare( ref NR);
+           
+            #region Niste cod
             string[] Row = new string[5];
             {
                 Row[0] = "  # ### ### # # ### ### ### ### ### ### ";
@@ -40,6 +45,14 @@ namespace ExercisesCsharp
             }
             Console.WriteLine(string.Join(" ", Wave("Andrei")));
             Console.ReadLine();
+            #endregion
+            
+
+        }
+        public static void Afisare(ref InturiSiDuble nr)
+        {
+            Console.WriteLine("Suma elementelor din array-ul de bite e: " + nr.suma);
+            Console.WriteLine("Media elementelor din array-ul de bite e " + nr.average);
         }
 
         public static void Afisare(string[] Row)
@@ -255,6 +268,22 @@ namespace ExercisesCsharp
             else s += n;
 
             return s;
+        }
+    }
+
+    public class InturiSiDuble
+    {
+        public int suma;
+        public double average;
+
+        public InturiSiDuble(byte[] b)
+        {
+            for (int i = 0; i < b.Length; i++)
+            {
+                suma += b[i];
+                
+            }
+            average = suma / b.Length;
         }
     }
 }
