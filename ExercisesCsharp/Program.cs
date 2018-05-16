@@ -55,10 +55,9 @@ namespace ExercisesCsharp
             int sumaUnghiMin = 0;
             sumaUnghiOra = (360 /12)* ora;
             sumaUnghiMin = (360 / 60) * min;
-            int sumaTotala = ora + min;
+            int sumaTotala = sumaUnghiOra - sumaUnghiMin;
             
-            return sumaTotala>180?sumaTotala - 360: sumaTotala;
-            
+            return sumaTotala>180?360 - sumaTotala: sumaTotala;
         }
         public static void Afisare(ref InturiSiDuble nr)
         {

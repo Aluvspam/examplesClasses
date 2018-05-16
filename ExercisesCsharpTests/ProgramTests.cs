@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using ExercisesCsharp;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Linq;
 
@@ -33,6 +34,12 @@ namespace ExercisesCsharp.Tests
         {
             //Assert.AreEqual(new int[] { 1, 15, 15 }, Dinglemouse.humanYearsCatYearsDogYears(1));
             Assert.IsTrue((new int[] { 1, 15, 15 }).SequenceEqual(Dinglemouse.humanYearsCatYearsDogYears(1)));
+        }
+
+        [TestMethod()]
+        public void CeasTest()
+        {
+            Assert.AreEqual(ExercisesCsharp.Program.Ceas(8, 5), 150);
         }
     }
 }
