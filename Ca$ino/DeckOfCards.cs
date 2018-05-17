@@ -8,8 +8,8 @@ namespace Casino
 {
     public class DeckOfCards
     {
-       public Card [] deck;
-        public Random ranNum;
+        public Card[] deck;
+        public static Random ranNum;
         public int currentCard;
         public int numberOfCard = 52;
 
@@ -32,6 +32,19 @@ namespace Casino
             {
                 return null;
             }
+        }
+        public static Card[] Suffle(Card[] initialSet)
+        {
+            Card[] exitSet = new Card[] { };
+
+            for (int i = 0; i < initialSet.Length; i++)
+            {
+
+                exitSet[i] = initialSet[ranNum.Next(0, 52)];
+            }
+
+            return exitSet;
+        
         }
     }
 }

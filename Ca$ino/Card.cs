@@ -10,7 +10,7 @@ namespace Casino
     {
         public Card()
         {
-
+            
         }
     }
 }

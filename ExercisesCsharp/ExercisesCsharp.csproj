@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="ClashSameBirthDay.cs" />
     <Compile Include="DanProblem.cs" />
-    <Compile Include="DeckOfCards.cs" />
     <Compile Include="Dinglemouse.cs" />
     <Compile Include="DingleMouseByOana.cs" />
     <Compile Include="exampleThreads.cs" />
