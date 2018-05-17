@@ -8,7 +8,7 @@ namespace Casino
 {
     public class DeckOfCards
     {
-       // public Card [] deck;
+       public Card [] deck;
         public Random ranNum;
         public int currentCard;
         public int numberOfCard = 52;
@@ -17,10 +17,11 @@ namespace Casino
         {
             currentCard = 0;
             ranNum = new Random();
-       //     deck = new Card;
+            deck = new Card[] { new Card() };
+           
 
         }
-     /*   public Card PullCard()
+        public Card PullCard()
         {
             if (currentCard < deck.Length)
             {
@@ -31,6 +32,6 @@ namespace Casino
             {
                 return null;
             }
-        }*/
+        }
     }
 }
