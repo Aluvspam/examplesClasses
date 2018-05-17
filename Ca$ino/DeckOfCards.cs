@@ -8,16 +8,17 @@ namespace Casino
 {
     public class DeckOfCards
     {
-        public Card[] deck;
-        public static Random ranNum;
-        public int currentCard;
-        public int numberOfCard = 52;
+        
+        private Card[] deck;
+        private static Random ranNum;
+        private int currentCard;
+        private int numberOfCard = 52;
 
         public DeckOfCards()
         {
             currentCard = 0;
             ranNum = new Random();
-            deck = new Card[] { new Card() };
+            deck = new Card[] { new Card() };//Dana: aici am vrut sa spun deck = new Card[numberOfCard],dar vedem ce si cum 
 
 
         }
@@ -33,7 +34,7 @@ namespace Casino
                 return null;
             }
         }
-        public static void Shuffle(Card[] initialSet)
+        public void Shuffle(Card[] initialSet)//am sters static ca sa pot chema metoda din main dar nu stiu ce-i cu acest parametru
         {
             int n = initialSet.Length;
             for (int i = 0; i < n; i++)
