@@ -23,6 +23,7 @@ namespace ExercisesCsharp
             }
 
             Afisare(Row);
+            Console.WriteLine("Unghiul dintre cele doua limibi este:{0} ", unghiCeas(11, 12));
             Curs25.Command2.RunExample.Run();
             exampleThreads.Run();
             //DanProblem.Execute();
@@ -47,7 +48,7 @@ namespace ExercisesCsharp
             Console.ReadLine();
             #endregion
 
-
+           
         }
         public static int Ceas(int ora, int min)
         {
@@ -59,6 +60,22 @@ namespace ExercisesCsharp
             
             return sumaTotala>180?360 - sumaTotala: sumaTotala;
         }
+        public static int unghiCeas(int ora, int min)
+        {
+
+            int unghiOra = ora * 30;
+            int unghiMin = min * 6;
+            int unghi = Math.Abs(unghiOra - unghiMin);
+            if (unghi <= 180)
+            {
+                return unghi;
+            }
+            else
+            {
+                return 360 - unghi;
+            }
+        }
+           
         public static void Afisare(ref InturiSiDuble nr)
         {
             Console.WriteLine("Suma elementelor din array-ul de bite e: " + nr.suma);

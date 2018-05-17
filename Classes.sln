@@ -48,6 +48,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs25", "Curs25\Curs25.csproj", "{FC8B72B4-F9B3-46D9-87A7-8FB24226BEFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casino", "Ca$ino\Casino.csproj", "{29D14C02-2002-4166-A6C7-795257E2C410}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -134,6 +136,10 @@ Global
 		{FC8B72B4-F9B3-46D9-87A7-8FB24226BEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC8B72B4-F9B3-46D9-87A7-8FB24226BEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC8B72B4-F9B3-46D9-87A7-8FB24226BEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D14C02-2002-4166-A6C7-795257E2C410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D14C02-2002-4166-A6C7-795257E2C410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D14C02-2002-4166-A6C7-795257E2C410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D14C02-2002-4166-A6C7-795257E2C410}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
