@@ -18,7 +18,7 @@ namespace Casino
             currentCard = 0;
             ranNum = new Random();
             deck = new Card[] { new Card() };
-           
+
 
         }
         public Card PullCard()
@@ -33,18 +33,18 @@ namespace Casino
                 return null;
             }
         }
-        public static Card[] Suffle(Card[] initialSet)
+        public static void Shuffle(Card[] initialSet)
         {
-            Card[] exitSet = new Card[] { };
-
-            for (int i = 0; i < initialSet.Length; i++)
+            int n = initialSet.Length;
+            for (int i = 0; i < n; i++)
             {
-
-                exitSet[i] = initialSet[ranNum.Next(0, 52)];
+                int random = i + ranNum.Next(n - i);
+                var temp = initialSet[random];
+                initialSet[random] = initialSet[i];
+                initialSet[i] = temp;
             }
-
-            return exitSet;
-        
         }
+
     }
 }
+
