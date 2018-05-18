@@ -9,24 +9,27 @@ namespace Casino
     public class DeckOfCards
     {
         
-        private Card[] deck;
+        private static Card[] initialSet;
         private static Random ranNum;
         private int currentCard;
         private int numberOfCard = 52;
-
+        
         public DeckOfCards()
         {
+            string[] faces = { };//trebuie declarati in card membrii, const, etc
+            string[] suits = { };
             currentCard = 0;
             ranNum = new Random();
-            deck = new Card[] { new Card() };//Dana: aici am vrut sa spun deck = new Card[numberOfCard],dar vedem ce si cum 
-
-
+            initialSet = new Card[numberOfCard];
+            for (int count = 0; count < initialSet.Length; count++)
+            
+                initialSet[count] = new Card(faces[count % 13], suits[count / 13]);
         }
         public Card PullCard()
         {
-            if (currentCard < deck.Length)
+            if (currentCard < initialSet.Length)
             {
-                return deck[currentCard++];
+                return initialSet[currentCard++];
 
             }
             else
@@ -34,7 +37,7 @@ namespace Casino
                 return null;
             }
         }
-        public void Shuffle(Card[] initialSet)//am sters static ca sa pot chema metoda din main dar nu stiu ce-i cu acest parametru
+        public static void Shuffle(Card[] initialSet)
         {
             int n = initialSet.Length;
             for (int i = 0; i < n; i++)
@@ -46,6 +49,21 @@ namespace Casino
             }
         }
 
+        public static void Execute()
+        {
+            DeckOfCards deck = new DeckOfCards();
+            Shuffle(initialSet);
+            for (int i = 0; i < 52; i++)
+            {
+                Console.WriteLine("{0, -19}", deck.PullCard());
+                if (i%4==0)
+                {
+                    Console.WriteLine();
+                }
+            }
+            Console.ReadLine();
+        }
+        
     }
 }
 
