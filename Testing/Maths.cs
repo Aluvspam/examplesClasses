@@ -8,14 +8,19 @@ namespace Testing
 {
     public class Maths
     {
-        private int calculatePower(int Base, int Exponent)
+        //private int calculatePower(int Base, int Exponent)
+        //{
+        //    int Product = 1;
+        //    for (int i = 1; i <= Exponent; i++)
+        //    {
+        //        Product = Product * Base;
+        //    }
+        //    return Product;
+        //}
+        public static int Divide(int numerator, int denominator)
         {
-            int Product = 1;
-            for (int i = 1; i <= Exponent; i++)
-            {
-                Product = Product * Base;
-            }
-            return Product;
+            int result = numerator / denominator;
+            return result;
         }
     }
 }

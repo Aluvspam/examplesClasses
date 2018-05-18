@@ -41,5 +41,11 @@ namespace ExercisesCsharp.Tests
         {
             Assert.AreEqual(ExercisesCsharp.Program.Ceas(8, 5), 150);
         }
+
+        [TestMethod()]
+        public void unghiCeasTest()
+        {
+            Assert.AreEqual(ExercisesCsharp.Program.unghiCeas(8, 5), 150);
+        }
     }
 }

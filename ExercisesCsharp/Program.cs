@@ -22,10 +22,10 @@ namespace ExercisesCsharp
                 Row[4] = "  # ### ###   # ### ###   # ###   # ### ";
             }
 
-            Afisare(Row);
-            Console.WriteLine("Unghiul dintre cele doua limibi este:{0} ", unghiCeas(11, 12));
-            Curs25.Command2.RunExample.Run();
-            exampleThreads.Run();
+            //Afisare(Row);
+            //Console.WriteLine("Unghiul este:{0} ", unghiCeas(8, 5));
+            //Curs25.Command2.RunExample.Run();
+            //exampleThreads.Run();
             //DanProblem.Execute();
             //Console.WriteLine(ScrambleProblem.Scramble("Ana", "cr"));
             //Console.ReadLine();
