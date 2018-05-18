@@ -11,8 +11,8 @@ namespace Casino
         static void Main(string[] args)
         {
             DeckOfCards deck = new DeckOfCards();
-            deck.
-            deck.Shuffle();
+           
+            deck.Shuffle(Card [] );
             for (int i = 0; i < 52; i++)
             {
                 Console.WriteLine("{0}", deck.PullCard());
