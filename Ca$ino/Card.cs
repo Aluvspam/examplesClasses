@@ -8,12 +8,40 @@ namespace Casino
 {
     public class Card
     {
-        public Card()
+        public CardNumber number 
         {
-            // cards members
-            // card constr.
-
+            get 
+            { 
+                return this.number; 
+            }
+            set 
+            {
+                this.number = value;
+            }
         }
-       
+
+        /*
+        public CardColor color 
+        {
+            get 
+            { 
+                return this.color; 
+            }
+            set 
+            {
+                this.color = value;
+            }
+        }
+        */
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override string ToString()
+        {
+            //return string.Format("{0} of {1}", number, color);
+        }
     }
 }
