@@ -8,6 +8,11 @@ namespace Casino
 {
     public class Card
     {
+        public Card(int Number, string color)//Dana, imi cere constructor
+        {
+
+        }
+
         public CardNumber number 
         {
             get 
@@ -20,19 +25,19 @@ namespace Casino
             }
         }
 
-        /*
-        public CardColor color 
+
+        public CardColor color
         {
-            get 
-            { 
-                return this.color; 
+            get
+            {
+                return this.color;
             }
-            set 
+            set
             {
                 this.color = value;
             }
         }
-        */
+
 
         public override bool Equals(object obj)
         {
@@ -41,7 +46,7 @@ namespace Casino
 
         public override string ToString()
         {
-            //return string.Format("{0} of {1}", number, color);
+            return string.Format("{0} of {1}", number, color);
         }
     }
 }
