@@ -8,18 +8,15 @@ namespace Casino
 {
     public class Card
     {
-        private CardNumber number;
-        //private CardColor color;  -> nu e inca implementata
-
         public CardNumber number 
         {
             get 
             { 
-                return number; 
+                return this.number; 
             }
             set 
             {
-                number = value;
+                this.number = value;
             }
         }
 
@@ -28,11 +25,11 @@ namespace Casino
         {
             get 
             { 
-                return color; 
+                return this.color; 
             }
             set 
             {
-                color = value;
+                this.color = value;
             }
         }
         */
@@ -44,7 +41,7 @@ namespace Casino
 
         public override string ToString()
         {
-            return base.ToString();
+            //return string.Format("{0} of {1}", number, color);
         }
     }
 }
