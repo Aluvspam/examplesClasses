@@ -10,7 +10,10 @@ namespace Casino
     {
         public Card()
         {
-            
+            // cards members
+            // card constr.
+
         }
+       
     }
 }
