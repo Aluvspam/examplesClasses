@@ -54,9 +54,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Testing\Testing.csproj">
+    <ProjectReference Include="..\Testing\ForTesting.csproj">
       <Project>{cf44e15d-3070-4589-90c5-f99525db7953}</Project>
-      <Name>Testing</Name>
+      <Name>ForTesting</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

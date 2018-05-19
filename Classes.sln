@@ -52,7 +52,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casino", "Ca$ino\Casino.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTestingHomework", "UnitTestingHomework", "{892FC2E2-62BC-45B7-A368-41BC22EBC3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{CF44E15D-3070-4589-90C5-F99525DB7953}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForTesting", "Testing\ForTesting.csproj", "{CF44E15D-3070-4589-90C5-F99525DB7953}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "UnitTestProject1\Test.csproj", "{62A18913-0C1E-4B83-AB56-AD07E1988DC5}"
 EndProject

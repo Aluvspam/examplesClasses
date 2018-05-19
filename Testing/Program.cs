@@ -10,7 +10,7 @@ namespace Testing
     {
         static void Main(string[] args)
         {
-           
+            Maths.Divide(20,4);
         }
     }
 }
