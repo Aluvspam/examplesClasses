@@ -47,6 +47,7 @@
     <Compile Include="CardNumber.cs" />
     <Compile Include="CardColor.cs" />
     <Compile Include="DeckOfCards.cs" />
+    <Compile Include="Dice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
