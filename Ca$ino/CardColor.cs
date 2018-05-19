@@ -8,7 +8,9 @@ namespace Casino
 {
     public enum CardColor
     {
-        red,
-        black
+        Clubs,
+        Diamonds,
+        Spades,
+        Hearts
     }
 }
