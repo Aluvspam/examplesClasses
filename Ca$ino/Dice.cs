@@ -21,11 +21,16 @@ namespace Casino
             get { return die2; }
             set { die2 = value; }
         }
+        public Dice()
+        {
+            var newdie1 = Die1;
+            var newdie2 = Die2;
+        }
         public void RollDice()
         {
-            Random random1 = new Random();
-            Die1 = random1.Next(1, 6);
-            Die2 = random1.Next(1, 6);
+            Random rng = new Random();
+            Die1 = rng.Next(1, 6);
+            Die2 = rng.Next(1, 6);
         }
     }
 }
