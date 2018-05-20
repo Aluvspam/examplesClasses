@@ -16,14 +16,15 @@ namespace Casino
         
         public DeckOfCards()
         {
-            int[] number = { };
-            string[] color = { };
+            IEnumerable<CardRank> rank;
+           string [] rank = { };
+            string[] suit = { };
             currentCard = 0;
             ranNum = new Random();
             initialSet = new Card[numberOfCard];
             for (int count = 0; count < initialSet.Length; count++)
             
-                initialSet[count] = new Card(number[count % 13], color[count / 13]);
+                initialSet[count] = new Card(rank<count % 11> , suit[count / 13]);
         }
         public Card PullCard()
         {
