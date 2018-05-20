@@ -8,23 +8,24 @@ namespace Casino
 {
     public class DeckOfCards
     {
-        
+
         private static Card[] initialSet;
         private static Random ranNum;
         private int currentCard;
         private int numberOfCard = 52;
-        
+
         public DeckOfCards()
         {
-            string[] rank = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
-       
-            string[] suit = { "Club", "Diamond", "Spade", "Heart" };
+            string[] rank = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace " };
+
+            string[] suit = { "Club \u2663 ", "Diamond \u2666", "Spade \u2660", "Heart \u2665" };
             currentCard = 0;
             ranNum = new Random();
             initialSet = new Card[numberOfCard];
+            //populez pachetul de carti
             for (int count = 0; count < initialSet.Length; count++)
-            
-                initialSet[count] = new Card(rank[count % 11], suit[count / 13]);
+
+                initialSet[count] = new Card(rank[count % 13], suit[count / 13]);
         }
         public Card PullCard()
         {
@@ -57,14 +58,13 @@ namespace Casino
             for (int i = 0; i < 52; i++)
             {
                 Console.WriteLine("{0, -19}", deck.PullCard());
-                if (i%4==0)
+                if (i % 4 == 0)
                 {
                     Console.WriteLine();
                 }
             }
             Console.ReadLine();
         }
-        
+       
     }
 }
-
