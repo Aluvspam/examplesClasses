@@ -9,9 +9,9 @@ namespace Casino
     public class Card
     {
         private string suit;
-        private int rank;
+        private string rank;
 
-        public Card(int CardRank, string CardSuit)
+        public Card(string CardRank, string CardSuit)
         {
             suit = CardSuit;
             rank = CardRank;
@@ -45,14 +45,14 @@ namespace Casino
         //}
 
 
-        //public override bool Equals(object obj)
-        //{
-        //    return base.Equals(obj);
-        //}
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
 
         public override string ToString()
         {
-            return rank + "of" + suit;
+            return rank + " of " + suit;
         }
     }
 }

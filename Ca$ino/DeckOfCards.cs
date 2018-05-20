@@ -16,8 +16,9 @@ namespace Casino
         
         public DeckOfCards()
         {
-           int [] rank = { };
-            string[] suit = { };
+            string[] rank = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
+       
+            string[] suit = { "Club", "Diamond", "Spade", "Heart" };
             currentCard = 0;
             ranNum = new Random();
             initialSet = new Card[numberOfCard];
