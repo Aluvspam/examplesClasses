@@ -13,7 +13,9 @@ namespace Casino
         static void Main(string[] args)
         {
             
-            DeckOfCards.Execute();
+            Dice.RollDice();
+            Console.ReadLine();
+            //DeckOfCards.Execute();
         }
     }
 }
