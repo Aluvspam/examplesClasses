@@ -26,11 +26,13 @@ namespace Casino
             var newdie1 = Die1;
             var newdie2 = Die2;
         }
-        public void RollDice()
+        public int RollDice()
         {
             Random rng = new Random();
-            Die1 = rng.Next(1, 6);
-            Die2 = rng.Next(1, 6);
+            Die1 = rng.Next(1, 7);
+            Die2 = rng.Next(1, 7);
+            int[] result = new int[] { Die1, Die2 };
+            return result;
         }
     }
 }
