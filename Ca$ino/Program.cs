@@ -19,12 +19,29 @@ namespace Casino
             Dice a = new Dice();
             Dice x = new Dice();
             Console.WriteLine(string.Join(" " ,d.RollDice()));
-            //Console.WriteLine(string.Join(" ", c.RollDice()));
-            //Console.WriteLine(string.Join(" ", a.RollDice()));
-            //Console.WriteLine(string.Join(" ", x.RollDice()));
-
+            Console.WriteLine(string.Join(" ", c.RollDice()));
+            Console.WriteLine(string.Join(" ", a.RollDice()));
+            Console.WriteLine(string.Join(" ", x.RollDice()));
+            ClasaTest C = new ClasaTest();
+            Console.WriteLine(C.CatCostaOPaine);
             Console.ReadLine();
             //DeckOfCards.Execute();
         }
+    }
+    public class ClasaTest
+    {
+        public int CatCostaOPaine
+        {
+            get
+            {
+                return this.CatCostaOPaine;
+            }
+            set
+            {
+                CatCostaOPaine = value;
+            }
+        }
+
+
     }
 }
