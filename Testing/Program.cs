@@ -11,6 +11,8 @@ namespace Testing
         static void Main(string[] args)
         {
             Maths.Divide(20,4);
+            DiceDanaTry dice = new DiceDanaTry();
+            dice.RollDice();
         }
     }
 }
