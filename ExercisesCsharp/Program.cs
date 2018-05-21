@@ -10,7 +10,7 @@ namespace ExercisesCsharp
         {
             byte[] NumereDastea = new byte[] { 27, 29, 31 };
             InturiSiDuble NR = new InturiSiDuble(NumereDastea);
-            Afisare(ref NR);
+            Afisare( ref NR);
 
             #region Niste cod
             string[] Row = new string[5];
@@ -76,7 +76,7 @@ namespace ExercisesCsharp
             }
         }
            
-        public static void Afisare(ref InturiSiDuble nr)
+        public static void Afisare( ref InturiSiDuble nr)
         {
             Console.WriteLine("Suma elementelor din array-ul de bite e: " + nr.suma);
             Console.WriteLine("Media elementelor din array-ul de bite e " + nr.average);
