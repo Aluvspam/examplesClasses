@@ -39,12 +39,13 @@ namespace Casino
                 return null;
             }
         }
-        public static void Shuffle(Card[] initialSet)
+        public static void Shuffle(Card[] initialSet)//TO DO: cu liste 
         {
             int n = initialSet.Length;
             for (int i = 0; i < n; i++)
             {
-                int random = i + ranNum.Next(n - i);
+                int random = i + ranNum.Next(n - i);//i + (0...51)?
+                // partea de jos e o schimbare ca la Bubble 
                 var temp = initialSet[random];
                 initialSet[random] = initialSet[i];
                 initialSet[i] = temp;

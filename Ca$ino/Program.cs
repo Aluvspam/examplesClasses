@@ -22,10 +22,9 @@ namespace Casino
             Console.WriteLine(string.Join(" ", c.RollDice()));
             Console.WriteLine(string.Join(" ", a.RollDice()));
             Console.WriteLine(string.Join(" ", x.RollDice()));
-            ClasaTest C = new ClasaTest();
-            Console.WriteLine(C.CatCostaOPaine);
+            DeckOfCards.Execute();
             Console.ReadLine();
-            //DeckOfCards.Execute();
+           
         }
     }
     public class ClasaTest
