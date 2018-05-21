@@ -8,24 +8,22 @@ namespace Casino
 {
     class Program
     {
-       
+
 
         static void Main(string[] args)
         {
-            
-          
             Dice d = new Dice();
             Dice c = new Dice();
             Dice a = new Dice();
             Dice x = new Dice();
-            Console.WriteLine(string.Join(" " ,d.RollDice()));
+            Console.WriteLine(string.Join(" ", d.RollDice()));
             Console.WriteLine(string.Join(" ", c.RollDice()));
             Console.WriteLine(string.Join(" ", a.RollDice()));
             Console.WriteLine(string.Join(" ", x.RollDice()));
+            DeckOfCards.Execute();
             ClasaTest C = new ClasaTest();
             Console.WriteLine(C.CatCostaOPaine);
             Console.ReadLine();
-            //DeckOfCards.Execute();
         }
     }
     public class ClasaTest
