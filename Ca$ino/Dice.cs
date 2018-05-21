@@ -9,14 +9,14 @@ namespace Casino
 {
     public class Dice
     {
-        private static int die1;
-        private static int die2;
-        public static int Die1
+        private int die1;
+        private int die2;
+        public int Die1
         {
             get { return die1; }
             set { die1 = value; }
         }
-        public static int Die2
+        public int Die2
         {
             get { return die2; }
             set { die2 = value; }
