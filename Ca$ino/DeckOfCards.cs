@@ -66,6 +66,6 @@ namespace Casino
             }
             Console.ReadLine();
         }
-       
+
     }
 }
