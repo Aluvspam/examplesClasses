@@ -8,31 +8,42 @@ namespace Casino
 {
     public class Card
     {
-        public CardNumber number 
+        private string suit;
+        private string rank;
+
+        public Card(string CardRank, string CardSuit)
         {
-            get 
-            { 
-                return this.number; 
-            }
-            set 
-            {
-                this.number = value;
-            }
+            suit = CardSuit;
+            rank = CardRank;
         }
 
-        /*
-        public CardColor color 
-        {
-            get 
-            { 
-                return this.color; 
-            }
-            set 
-            {
-                this.color = value;
-            }
-        }
-        */
+
+        //public CardNumber number
+        //{
+        //    get
+        //    {
+        //        return this.number;
+        //    }
+        //    set
+        //    {
+        //        this.number = value;
+        //    }
+        //}
+
+
+        //public CardSuit color
+
+        //{
+        //    get
+        //    {
+        //        return this.color;
+        //    }
+        //    set
+        //    {
+        //        this.color = value;
+        //    }
+        //}
+
 
         public override bool Equals(object obj)
         {
@@ -41,7 +52,7 @@ namespace Casino
 
         public override string ToString()
         {
-            //return string.Format("{0} of {1}", number, color);
+            return rank + " of " + suit;
         }
     }
 }
