@@ -8,12 +8,10 @@ namespace GeometryOana
     {
         private short x, y;
 
-        public short X, Y;
-
-        public Point(short x, short y)
+        public Point(short X, short Y)
         {
-            X = x;
-            Y = y;
+            x = X;
+            y = Y;
         }
     }
 }

@@ -8,10 +8,10 @@ namespace Casino
 {
     public class Card 
     {
-        private string suit;
-        private string rank;
+        private CardSuit suit;//am modificat din tipul initial (string) in Enum de CardSuit
+        private CardRank rank;//am modificat din tipul initial (string) in Enum de CardRank
 
-        public Card(string CardRank, string CardSuit)
+        public Card(CardRank CardRank, CardSuit CardSuit)
         {
             suit = CardSuit;
             rank = CardRank;
@@ -43,10 +43,10 @@ namespace Casino
         //}
 
 
-        public override bool Equals(object obj)
-        {
-            return base.Equals(obj);
-        }
+        //public override bool Equals(object obj)
+        //{
+        //    return base.Equals(obj);
+        //}
 
         public override string ToString()
         {

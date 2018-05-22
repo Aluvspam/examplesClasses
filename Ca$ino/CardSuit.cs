@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Casino
 {
     public enum CardSuit
-
     {
         Club,
         Diamond,
