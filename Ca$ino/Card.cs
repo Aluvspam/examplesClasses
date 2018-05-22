@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Casino
 {
-    public class Card
+    public class Card 
     {
         private string suit;
         private string rank;
@@ -16,8 +16,6 @@ namespace Casino
             suit = CardSuit;
             rank = CardRank;
         }
-
-
         //public CardNumber number
         //{
         //    get
