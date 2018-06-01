@@ -9,16 +9,15 @@ namespace DesignPatterns.StatePatternFeeling
 {
     public class SadState : AbstractState
     {
-        public override void GoNext(Human human)
-        {
-            human.SetState(new HappyState());
-        }
-
         public override void ToDo(Human human)
         {
             Console.WriteLine("The human is now sad...");
             Thread.Sleep(1000);
             GoNext(human);
+        }
+        public override void GoNext(Human human)
+        {
+            human.SetState(new HappyState());
         }
     }
 }

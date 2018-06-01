@@ -1,4 +1,5 @@
-﻿using DesignPatterns.StatePatternFeeling;
+﻿using DesignPatterns.FactoryMethodPattern;
+using DesignPatterns.StatePatternFeeling;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,13 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
-            Human om = new Human();
-            AbstractState trist = new SadState();
-            om.SetState(trist);
+            FactoryCar newFact = new ConcreteFactoryAudiCar();
+            newFact.ShowCar();
+            CarBMW BMW = new CarBMW();
+
+            FactoryCar factoryInjection = new ConcreteFactoryCarWithDI(BMW);
+            factoryInjection.ShowCar();
+            Console.ReadLine();
         }
     }
 }
