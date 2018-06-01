@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Singleton
+namespace Singleton//EXEMPLU DE SINGLETON CU LOCK - PENTRU A VERIFICA IN CAZ DE THREAD-URI MULTIPLE 
 {
     public class Singleton
     {

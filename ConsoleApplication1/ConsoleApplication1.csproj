@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Solid Examples\Solid Examples.csproj">
+      <Project>{4838f67c-047e-4659-b1bd-fbb48e324fa1}</Project>
+      <Name>Solid Examples</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TamplateDesign\TamplateDesign.csproj">
       <Project>{a80e9804-ac40-46cd-9694-871ad598eb23}</Project>
       <Name>TamplateDesign</Name>
