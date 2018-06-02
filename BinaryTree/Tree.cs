@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinaryTree
+namespace BinaryTree //sursa: https://www.youtube.com/watch?v=5DW5ScDBH-E
 {
     class Tree
     {
