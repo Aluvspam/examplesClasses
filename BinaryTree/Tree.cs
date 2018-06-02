@@ -19,21 +19,95 @@ namespace BinaryTree
             top = new Node(initial);
         }
 
-        public void Add(int value)
+        public void Add(int value)//pentru adaugarea valorilor copacului, cautam locatia perfecta pentru noul nod pentru ca left < nod && right > nod
         {
-            //non recursive
+            if (top == null)//daca copacul e gol, facem nodul
+            {
+                Node newNode = new Node(value);
+                top = newNode;
+                return;//-ul se va opri din a executa altceva dupa ce am facut nodul 
+            }
+            Node curentNode = top;
+            bool added = false;
+            do
+            {
+                //mai jos parcurgem copacul
+                if (value < curentNode.value)//du-te in stanga
+                {
+                    if (curentNode.Left == null)//daca valoarea din stanga e goala, atunci...
+                    {
+                        //mai jos adaugam
+                        Node newNode = new Node(value);
+                        curentNode.Left = newNode;
+                        added = true;
+                    }
+                    else
+                    {
+                        curentNode = curentNode.Left;
+                    }
+                }
+                if (value >= curentNode.value)
+                {
+                    if (curentNode.Right == null)
+                    {
+                        Node newNode = new Node(value);
+                        curentNode.Right = newNode;
+                        added = true;
+                    }
+                    else
+                    {
+                        curentNode = curentNode.Right;
+                    }
+
+                }
+            }
+            while (!added);
+
+
         }
         public void AddRC(int value)
         {
-            AddR(ref top, value); //o sa ne zica exact unde trebuie sa adaugam valoarea 
+            AddRecursive(ref top, value); //o sa ne zica exact unde trebuie sa adaugam valoarea 
         }
-        public void AddR(ref Node N, int value)// si aici se intampla recursivitatea
+        public void AddRecursive(ref Node N, int value)//aici avem metoda de adaugare recursiva
         {
+            if (N == null)
+            {
+                Node newNode = new Node(value);
+                N = newNode;
+                return;
 
+            }
+            if(value < N.value)
+            {
+                AddRecursive(ref N.Left, value);
+                return;
+            }
+            if (value >= N.value)
+            {
+                AddRecursive(ref N.Right, value);
+                return;
+            }
         }
-        public void Print(ref string newString)
+        public void Print(Node N, ref string newString)//metoda de printare cu recursivitate 
         {
-            //sa scriem copacul in ordine 
+            if(N == null)
+            {
+                N = top;
+            }
+            if (N.Left != null)
+            {
+                Print(N.Left, ref newString);
+                newString = newString + N.value.ToString().PadLeft(3);
+            }
+            else
+            {
+                newString = newString + N.value.ToString().PadLeft(3);
+            }
+            if (N.Right !=null)
+            {
+                Print(N.Right, ref newString);
+            }
         }
     }
 }
