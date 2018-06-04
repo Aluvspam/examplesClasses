@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Solid_Examples
 
 {
-    class CristiSingleDice
+    public class CristiSingleDice
     {
         static void Main(string[] args)
         {
